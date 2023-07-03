@@ -115,7 +115,7 @@ li{
         padding: 16px;
     }
     .home-inner-container h1 {
-        font-size: 40px;
+        font-size: 36px;
     }
     .home-inner-container p {
         font-size: 12px;
@@ -180,6 +180,16 @@ width: 100%;
     line-height: normal;
     padding-bottom: 40px;    
 }
+@media (max-width:991px){
+    .partner-container h3 {
+    font-size: 18px;
+    padding-bottom: 20px;
+    }
+    .partner-bg {
+        background: #1E1E1E;
+        padding: 40px 0px 40px;
+    }
+}
 /* partner-section-end */
 
 
@@ -193,7 +203,7 @@ width: 100%;
 .feature-info h3{
     color: #1E1E1E;
     text-align: center;
-    font-size: 32px;
+    font-size: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -273,7 +283,7 @@ width: 100%;
         padding: 40px 16px;
     }
     .feature-info h3 {
-        font-size: 16px;
+        font-size: 18px;
         width: 80%;
     }
     .feature-gallery-container  {
@@ -350,7 +360,7 @@ textarea:focus{
 }
 .uptodate-info h1  {
     color: #FFF;
-    font-size: 47.461px;
+    font-size: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -363,7 +373,7 @@ textarea:focus{
 }
 .uptodate-info p {
     color: #FFF;
-    font-size: 18px;
+    font-size: 24px;
     font-family: Inter;
     font-style: normal;
     font-weight: 300;
@@ -409,6 +419,19 @@ textarea:focus{
     .uptodate-info {
         width: 100%;
     }
+    .uptodate-info h1 {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 18px;
+        font-size: 18px;
+    }
+    .uptodate-info p { 
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 12px;
+    }
 }
 /* contact form section up yto date end*/
 
@@ -424,7 +447,7 @@ textarea:focus{
 .GetKnow-heading h3{
     color: #1E1E1E;
     text-align: center;
-    font-size: 32px;
+    font-size: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -465,10 +488,11 @@ textarea:focus{
 
 .GetKnow-inner-container{
    flex-direction: column-reverse;
+   margin-top: 18px;
 }
 .GetKnow-main-container {
     max-width: 1440px;
-    padding: 40px 16px;
+    padding: 40px 16px 30px;
     margin: 0px;
 }
 .GetKnow-tags-img{
@@ -480,13 +504,17 @@ textarea:focus{
 }
 .GetKnow-tags ul{
     display: flex;
-    width: 780px;
+    width: 524px;
     margin: 30px auto 0px;
     justify-content: space-between;
 }
 .GetKnow-tags li{
     padding: 10px;
-    font-size: 15px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.GetKnow-heading h3{
+    font-size: 18px;
 }
   }
 /* GetKnow section end's here */
@@ -509,7 +537,7 @@ textarea:focus{
 }
 .news-heading h3 {
     color: #FFF;
-    font-size: 47.461px;
+    font-size: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -517,7 +545,7 @@ textarea:focus{
 }
 .news-heading h3 span {
     color: #64A47C;
-    font-size: 80px;
+    font-size: 56px;
     text-decoration: underline;
 }
 .news-cards-container .card {
@@ -576,13 +604,13 @@ textarea:focus{
         flex-direction: column;
     }
     .news-heading h3 {
-        font-size: 30px;
+        font-size: 18px;
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 8px;
     }
     .news-heading h3 span {
-        font-size: 30px;
+        font-size: 18px;
     }
     .news-heading {
         margin-bottom: 30px;
@@ -604,7 +632,7 @@ textarea:focus{
 }
 .for-you-info h3{
     color: #1E1E1E;
-    font-size: 47.461px;
+    font-size: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -613,7 +641,7 @@ textarea:focus{
 }
 .for-you-content h5{
     color: #1E1E1E;
-    font-size: 18px;
+    font-size: 24px;
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -621,7 +649,7 @@ textarea:focus{
 }
 .for-you-content  p {
     color: #777;
-    font-size: 14px;
+    font-size: 18px;
     font-family: Inter;
     font-style: normal;
     font-weight: 300;
@@ -679,8 +707,25 @@ textarea:focus{
         padding-right: 0px;
     }
     .for-you-info h3{
+        gap: 10px;
         padding: 0px;
-        font-size: 30px;
+        font-size: 18px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .for-you-content h5 {
+        font-size: 12px;
+        text-align: center;
+    }
+    .for-you-content p {
+        font-size: 11px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .for-you-content {
+        margin: 20px 20px 0px;
     }
 }
 
@@ -697,7 +742,7 @@ textarea:focus{
 .Industry-Experts-info h3 {
     color: #FFF;
     text-align: center;
-    font-size: 32px;
+    font-size: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -756,9 +801,10 @@ textarea:focus{
     .slide {
         margin: 15px;
         padding: 16px;
+        width: 210px !important;
     }
     .slide h5 {
-        font-size: 14px;
+        font-size: 12px;
         line-height: inherit;
     }
     .Industry-Experts-bg {
@@ -766,6 +812,7 @@ textarea:focus{
     }
     .Industry-Experts-info h3{
         padding: 15px;
+        font-size: 18px;
     }
   }
 /* Industry-Experts-end */
@@ -789,7 +836,7 @@ textarea:focus{
 }
 .offering-heading h1 {
     color: #1E1E1E;
-    font-size: 44px;
+    font-size: 36px;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -801,7 +848,7 @@ textarea:focus{
 }
 .offering-content p{
     color: #777;
-    font-size: 20px;
+    font-size: 24px;
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
@@ -835,15 +882,34 @@ textarea:focus{
     }
     .offering-heading h1 {
         color: #1E1E1E;
-        font-size: 22px;
+        font-size: 18px;
         font-family: Inter;
         font-style: normal;
         text-align: center;
         font-weight: 600;
         line-height: normal;
     }
-  
-    
+    .offering-content p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .offering-img {     
+        /* width: 60%; */
+        margin: auto;
+    }
+    .rupee {
+        position: absolute;
+        z-index: -1;
+        bottom: -10%;
+        width: 40%;
+        right: -34%;
+    }
+}
+@media (max-width:525px){
+    .offering-img {     
+        width: 40%;
+        margin: auto;
+    }
 }
 
 /* our offering end's here */
