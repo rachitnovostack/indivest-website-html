@@ -13,6 +13,15 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+@media (max-width:991px){
+    input, input::-webkit-input-placeholder {
+        font-size: 12px !important;
+    }
+    input, textarea::-webkit-input-placeholder {
+        font-size: 12px !important;
+    }
+}
+
 ul{
     margin: 0px;
     padding: 0px;
@@ -37,6 +46,7 @@ li{
     max-width: 1440px;
     margin: auto;
     padding: 32px 100px;
+    align-items: flex-start !important;
 }
 
 .nav-item button {
@@ -100,12 +110,18 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.upload {
+    position: absolute;
+    bottom: -17%;
+    right: 6.5%;
+    width: 13%;
 }
 
-
-.banner-img img{
+.banner-img .bnnrimg{
    width: 80%;
-   /* padding-top: 80px; */
+   margin-bottom: -3.4%;
 }
 
 
@@ -120,6 +136,7 @@ li{
     .home-inner-container p {
         font-size: 12px;
         margin: 5px;
+        
     }
 }
 
@@ -130,6 +147,8 @@ li{
 .swiper-wrapper {
     max-width: 1440px;
     margin: auto;
+    align-items: center;
+    gap: 45px;
 }
 .swiper-container {
     width: 100%;
@@ -355,6 +374,7 @@ textarea:focus{
     max-width: 1440px;
     margin: auto;
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -365,8 +385,8 @@ textarea:focus{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    width: 85%;
-    margin-bottom: 45px;
+    /* width: 85%; */
+    margin-bottom: 30px;
 }
 .uptodate-info h1 span {
     border-bottom: 4px solid; 
@@ -400,6 +420,30 @@ textarea:focus{
     background: #FF9B12;
 
 }
+.uptodate-info a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-decoration: none;
+    gap: 10px;
+}
+.uptodate-info a i{
+    font-size: 24px;
+    color: white;
+    margin-top: 5px;
+    width: 4%;
+}
+.uptodate-info a p{
+   color: #FFF;
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    /* margin: 20px 0px; */
+    line-height: normal;
+    text-align: left;
+}
+
 
 
 @media (max-width:991px){
@@ -427,9 +471,16 @@ textarea:focus{
         font-size: 18px;
     }
     .uptodate-info p { 
-        text-align: center;
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+        font-size: 12px !important;
+    }
+    .uptodate-info a i{
+        font-size: 12px;
+        color: white;
+        margin-top: 1px;
+    }
+    .uptodate-form button {
         font-size: 12px;
     }
 }
@@ -639,6 +690,10 @@ textarea:focus{
     line-height: normal;
     padding: 30px 0px;
 }
+.for-you-info span{
+    color: #64A47C;
+    border-bottom: 4px solid;
+}
 .for-you-content h5{
     color: #1E1E1E;
     font-size: 24px;
@@ -664,7 +719,7 @@ textarea:focus{
 .for-you{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
 }
 .for-you-img{
@@ -674,13 +729,15 @@ textarea:focus{
 }
 .for-you-img .beginer2{
     width: 100%;
+    width: 100%;
+    margin-bottom: -11.4%;
 }
 .pot{
     position: absolute;
-    bottom: -25px;
-    left: -62px;
     z-index: 0;
     width: 25%;
+    bottom: -2%;
+    left: -4%;
 }
 
 .pot img{
@@ -736,7 +793,7 @@ textarea:focus{
 /* Industry-Experts-start */
 
 .Industry-Experts-bg {
-    background: #92C9A8;
+    background: #64A47C;
     padding: 40px 0px;
 }
 .Industry-Experts-info h3 {
@@ -763,7 +820,7 @@ textarea:focus{
   }
   .slide h5 {
     color: #413D45;
-    font-size: 19.592px;
+    font-size: 16px;
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
@@ -814,6 +871,9 @@ textarea:focus{
         padding: 15px;
         font-size: 18px;
     }
+    .slide svg {
+        width: 40px;
+    }
   }
 /* Industry-Experts-end */
 
@@ -841,6 +901,11 @@ textarea:focus{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    width: 30%;
+}
+.offering-heading span{
+    color: #64A47C;
+    border-bottom: 4px solid;
 }
 .offering-info {
     width: 55%;
@@ -888,6 +953,7 @@ textarea:focus{
         text-align: center;
         font-weight: 600;
         line-height: normal;
+        width: inherit;
     }
     .offering-content p {
         font-size: 12px;
