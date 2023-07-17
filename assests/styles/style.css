@@ -26,6 +26,13 @@ select:focus {
   outline: none;
 }
 
+textarea {
+    resize: none;
+    overflow: hidden;
+    min-height: 50px;
+    min-height: 150px;
+    max-height: 1000px;
+  }
 
 
 ul{
@@ -1102,3 +1109,9 @@ textarea:focus{
     justify-content: flex-start;
     margin: 20px 0px 0px;
 }
+
+#resizableTextarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 50px; /* Set a minimum height */
+  }
+  

@@ -12,3 +12,9 @@ var swiper = new Swiper('.swiper-container', {
 
 // partner-swiper js end 
 // // //   
+
+
+function auto_grow(element) {
+  element.style.height = "5px";
+  element.style.height = (element.scrollHeight) + "px";
+}
