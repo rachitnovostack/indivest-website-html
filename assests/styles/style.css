@@ -518,6 +518,10 @@ textarea:focus{
     font-weight: 600;
     line-height: normal;
 }
+.GetKnow-heading span{
+    color: #64A47C;
+    border-bottom: 4px solid;
+}
 .GetKnow-inner-container {
     display: flex;
     justify-content: space-between;
@@ -724,7 +728,7 @@ textarea:focus{
 /* for-you" start */
 .for-you-bg{
     max-width: 1440px;
-    margin: 100px auto 0px;
+    margin: 20px auto 0px;
     padding: 0px 0 0px 100px;
 }
 .for-you-info h3{
@@ -819,6 +823,7 @@ textarea:focus{
 @media (max-width:1220px){
     .for-you {
         align-items: flex-end;
+        justify-content: center;
     }
 }
 @media (max-width:991px){
@@ -982,7 +987,7 @@ textarea:focus{
 }
 .offering-info {
     width: 55%;
-    margin: 45px 0px;
+    margin: 100px 0px;
 }
 .offering-content p{
     color: #777;
@@ -999,9 +1004,9 @@ textarea:focus{
 .rupee {
     position: absolute;
     z-index: -1;
-    bottom: -10%;
-    width: 60%;
-    right: -50%;
+    bottom: 10%;
+    width: 42%;
+    right: -27%;
 }
 
 
