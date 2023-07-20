@@ -761,13 +761,7 @@ textarea:focus{
     line-height: normal;
     margin-bottom: 28px;
 }
-.for-you-content ul li::before{
-     content: url('/assests/images/lisvg.svg'); /* Replace 'your-svg-file.svg' with the path to your SVG file */
-      display: inline-block;
-      width: fit-content; /* Set the desired gap between SVG and list item text */
-      height: 26px; /* Set the desired height of your SVG */
-      margin-right: 12px; /* Set the desired gap between SVG and list item text */
-}
+
 .for-you-content ul li {
     color: #3E3E3E;
     font-family: Inter;
@@ -777,7 +771,16 @@ textarea:focus{
     align-items: center;
     font-weight: 400;
     line-height: 29px; /* 161.111% */
-    margin-bottom: 26px;
+}
+.coin-sep {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.coin-sep img {
+    width: 24px;
 }
 .for-you-content  p {
     color: #777;
