@@ -755,11 +755,28 @@ textarea:focus{
 .for-you-content h1{
     color: #1E1E1E;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-bottom: 28px;
+    text-align: center;
+}
+
+@media (max-width:991px){
+    .for-you-content h1{  
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .for-you-content ul li { 
+        font-size: 10px !important;
+    }
+     .coin-sep {
+        margin-bottom: 5px !important;
+     }
+     .coin-sep img  {
+        width: 18px !important;
+     }
 }
 
 .for-you-content ul li {
