@@ -1091,14 +1091,15 @@ textarea:focus{
     width: 42%;
     right: -27%;
 }
-
-
-@media (max-width:991px){
-   
+@media (max-width:590px){
     .our-offering {
         padding: 0 16px;
         flex-direction: column-reverse;
     }
+}
+
+@media (max-width:991px){
+
     .offering-info{
         width: 100%;
         margin: 0px;
