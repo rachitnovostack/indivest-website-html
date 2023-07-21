@@ -26,18 +26,38 @@ function auto_grow(element) {
   element.style.height = (element.scrollHeight) + "px";
 }
 
+function isValidEmail(email) {
+  // Simple email validation using regular expression
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
 function checkAndShowPopup() {
   var emailInput = document.querySelector('input[type="email"]');
   var queryInput = document.querySelector('textarea');
 
-  if (emailInput.value.trim() !== '' || queryInput.value.trim() !== '') {
-    var popup = document.getElementById('popup');
-    popup.style.display = 'block';
+  var emailValue = emailInput.value.trim();
+  var queryValue = queryInput.value.trim();
 
-    setTimeout(function () {
-      popup.style.display = 'none';
-      emailInput.value = '';
-      queryInput.value = ''; 
-    }, 3000); 
+  // Validate email and query inputs
+  if (emailValue === '' || !isValidEmail(emailValue)) {
+    alert("Please enter a valid email address.");
+    emailInput.focus();
+    return;
   }
+
+  if (queryValue === '') {
+    alert("Please enter your query.");
+    queryInput.focus();
+    return;
+  }
+
+  var popup = document.getElementById('popup');
+  popup.style.display = 'block';
+
+  setTimeout(function () {
+    popup.style.display = 'none';
+    emailInput.value = ''; // Clear email input field
+    queryInput.value = ''; // Clear query input field
+  }, 3000); // 3000 milliseconds = 3 seconds
 }
