@@ -264,6 +264,30 @@ width: 100%;
         padding: 40px 0px 40px;
     }
 }
+
+
+@media (max-width:540px){
+    .partner-container h3 {
+    font-size: 20px;
+    padding-bottom: 0px;
+    }
+    .partner-bg {
+        background: #1E1E1E;
+        padding: 12px 0px 12px;
+    }
+    .swiper-slide {
+        width: 100px !important;
+    }
+    .swiper-wrapper {
+        gap: 20px;   
+    }
+    .swiper-container {
+        margin: 15px;
+    }
+    .home-inner-container h1 {
+        font-size: 28px;
+    }
+}
 /* partner-section-end */
 
 
