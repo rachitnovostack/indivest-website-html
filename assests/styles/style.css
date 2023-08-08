@@ -45,10 +45,10 @@ body{
 
 @media (max-width:991px){
     input, input::-webkit-input-placeholder {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     input, textarea::-webkit-input-placeholder {
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
 }
 
@@ -110,6 +110,10 @@ li{
     .navbar-inner {
         padding: 16px;
     }
+    .navbar-brand img{
+        width: 100px;
+        height: auto;
+   }
 }
 /* navbar end's here  */
 
@@ -136,7 +140,6 @@ li{
     color: #1E1E1E;
     text-align: center;
     font-size: 80px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -145,7 +148,6 @@ li{
     color: #8A8A8A;
     text-align: center;
     font-size: 24px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -188,7 +190,7 @@ li{
         font-size: 36px;
     }
     .home-inner-container p {
-        font-size: 12px;
+        font-size: 14px;
         margin: 5px;
         
     }
@@ -247,7 +249,6 @@ width: 100%;
     color: #F3F3F3;
     text-align: center;
     font-size: 24px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -255,7 +256,7 @@ width: 100%;
 }
 @media (max-width:991px){
     .partner-container h3 {
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: 20px;
     }
     .partner-bg {
@@ -277,7 +278,6 @@ width: 100%;
     color: #1E1E1E;
     text-align: center;
     font-size: 36px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 600;
     width: 30%;
@@ -325,8 +325,7 @@ width: 100%;
 }
 .feature-card h5 {
     color: #1E1E1E;
-    font-size: 16px;
-    font-family: Inter;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -334,8 +333,7 @@ width: 100%;
 }
 .feature-card p {
     color: #777;
-    font-size: 14px;
-    font-family: Inter;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -364,7 +362,7 @@ width: 100%;
         padding: 40px 16px;
     }
     .feature-info h3 {
-        font-size: 18px;
+        font-size: 20px;
         width: 80%;
     }
     .feature-gallery-container  {
@@ -443,7 +441,6 @@ textarea:focus{
 .uptodate-info h1  {
     color: #FFF;
     font-size: 36px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -456,7 +453,6 @@ textarea:focus{
 .uptodate-info p {
     color: #FFF;
     font-size: 24px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -498,7 +494,6 @@ textarea:focus{
 .uptodate-info a p{
    color: #FFF;
     font-size: 20px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 300;
     /* margin: 20px 0px; */
@@ -531,20 +526,20 @@ textarea:focus{
         width: 100%;
         text-align: center;
         margin-bottom: 18px;
-        font-size: 18px;
+        font-size: 20px;
     }
     .uptodate-info p { 
         width: 100%;
         margin-bottom: 15px;
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
     .uptodate-info a i{
-        font-size: 12px;
+        font-size: 14px;
         color: white;
         margin-top: 1px;
     }
     .uptodate-form button {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 /* contact form section up yto date end*/
@@ -563,7 +558,6 @@ textarea:focus{
     color: #1E1E1E;
     text-align: center;
     font-size: 36px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -689,7 +683,6 @@ textarea:focus{
 .news-heading h3 {
     color: #FFF;
     font-size: 36px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -716,6 +709,8 @@ textarea:focus{
     line-height: 20.092px;
     margin-bottom: 0px;
 }
+
+
 .news-cards-container .card img {
     border-radius: 9px;
 }
@@ -744,6 +739,9 @@ textarea:focus{
 }
 
 @media (max-width:991px){
+    .news-cards-container .card p{
+        font-size: 14px;
+    }
     .news-main-container{
         padding:  40px 16px;
     }
@@ -755,13 +753,13 @@ textarea:focus{
         flex-direction: column;
     }
     .news-heading h3 {
-        font-size: 18px;
+        font-size: 20px;
         display: flex;
         align-items: center;
         gap: 8px;
     }
     .news-heading h3 span {
-        font-size: 18px;
+        font-size: 20px;
     }
     .news-heading {
         margin-bottom: 30px;
@@ -784,7 +782,6 @@ textarea:focus{
 .for-you-info h3{
     color: #1E1E1E;
     font-size: 36px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -797,14 +794,12 @@ textarea:focus{
 .for-you-content h5{
     color: #1E1E1E;
     font-size: 24px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 500;
     line-height: normal;    
 }
 .for-you-content h1{
     color: #1E1E1E;
-    font-family: Inter;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -814,12 +809,12 @@ textarea:focus{
 
 @media (max-width:991px){
     .for-you-content h1{  
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 12px;
         text-align: center;
     }
     .for-you-content ul li { 
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
      .coin-sep {
         margin-bottom: 5px !important;
@@ -831,7 +826,6 @@ textarea:focus{
 
 .for-you-content ul li {
     color: #3E3E3E;
-    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     display: flex;
@@ -852,7 +846,6 @@ textarea:focus{
 .for-you-content  p {
     color: #777;
     font-size: 18px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -912,7 +905,7 @@ textarea:focus{
     .for-you-info h3{
         gap: 10px;
         padding: 0px;
-        font-size: 18px;
+        font-size: 20px;
         display: flex;
         text-align: center;
         align-items: center;
@@ -961,7 +954,6 @@ textarea:focus{
     color: #FFF;
     text-align: center;
     font-size: 36px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 600;
     padding-bottom: 44px;
@@ -982,7 +974,6 @@ textarea:focus{
   .slide h5 {
     color: #413D45;
     font-size: 16px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 500;
     line-height: 27.127px;
@@ -991,7 +982,6 @@ textarea:focus{
   .slide h6{
     color: #67646A;
     font-size: 9.796px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 500;
     line-height: 13.563px;
@@ -1000,7 +990,6 @@ textarea:focus{
   .slide p{
     color: #413D45;
     font-size: 8.289px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 500;
     line-height: 12.056px;
@@ -1058,7 +1047,6 @@ textarea:focus{
 .offering-heading h1 {
     color: #1E1E1E;
     font-size: 36px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -1075,7 +1063,6 @@ textarea:focus{
 .offering-content p{
     color: #777;
     font-size: 24px;
-    font-family: Inter;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -1109,8 +1096,7 @@ textarea:focus{
     }
     .offering-heading h1 {
         color: #1E1E1E;
-        font-size: 18px;
-        font-family: Inter;
+        font-size: 20px;
         font-style: normal;
         text-align: center;
         font-weight: 600;
@@ -1118,7 +1104,7 @@ textarea:focus{
         width: inherit;
     }
     .offering-content p {
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
     }
     .offering-img {     
