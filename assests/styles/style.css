@@ -315,7 +315,7 @@ width: 100%;
 }
 
 .feature-card{
-    width: 307px;
+    width: 360px;
     padding: 24px;
     border-radius: 12px;
     background: #FFF;
@@ -323,17 +323,9 @@ width: 100%;
     cursor: pointer;
     /* position: relative;s */
 }
-.feature-card:hover {
-    width: 307px;
-    padding: 24px;
-    border-radius: 12px;
-    background: #FFF;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.349);
-    transition: .5s cubic-bezier(0,0,.11,1);
-}
 .feature-img{
     width: 62px;
-    background: rgba(255, 184, 0, 0.18);
+    background: rgba(100, 164, 124, 0.18);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,7 +367,7 @@ width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 40px 25px;
     max-width: 1440px;
     margin: auto;
     margin-top: 64px;
