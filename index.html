@@ -850,11 +850,11 @@
       </div>
       <div class="uptodate-form">
         <form action="" id="query-form">
-            <input type="email" id="email_id" placeholder="Enter your email">
-            <textarea id="query" placeholder="Type in your query" oninput="auto_grow(this)"></textarea>
-            <button type="button" onclick="submitQuery()">Submit</button>
+          <input type="email" id="email_id" placeholder="Enter your email">
+          <textarea id="query" placeholder="Type in your query" oninput="auto_grow(this)"></textarea>
+          <button type="button" onclick="submitQuery()">Submit</button>
         </form>
-    </div>
+      </div>
     </div>
   </div>
 
@@ -931,37 +931,38 @@
       $('.GetKnow-tags-list-drop').toggle();
     }
   </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
-    <script>
-        const apiUrl = "https:/rk.dev.racecondition.io/authService/api/query";
+  <script>
+    const apiUrl = "https://rk.dev.racecondition.io/authService/api/query";
 
-        function auto_grow(element) {
-            element.style.height = "5px";
-            element.style.height = (element.scrollHeight) + "px";
+    function auto_grow(element) {
+      element.style.height = "5px";
+      element.style.height = (element.scrollHeight) + "px";
+    }
+
+    async function submitQuery() {
+      const email = document.getElementById("email_id").value;
+      const query = document.getElementById("query").value;
+
+
+      const payload = {
+        email_id: email,
+        query: query,
+      };
+console.log(payload)
+      try {
+        const response = await fetch(apiUrl,{  method:"post",body:JSON.stringify(payload)});
+
+        if (!response.ok) {
+            console.log(response)
         }
 
-        async function submitQuery() {
-            const email = document.getElementById("email_id").value;
-            const query = document.getElementById("query").value;
-
-
-            var myHeaders = new Headers();
-            myHeaders.append("Content-Type", "application/json");
-            myHeaders.append("Access-Control-Allow-Origin", "*")
-           
-            await axios.post( apiUrl,
-                {
-                    query: query,
-                    email_id: email
-                }
-
-            )
-                .then(response => response.json())
-                .then(result => console.log(result))
-                .catch(error => console.log('error', error));
-
-        }
-    </script>
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    }
+  </script>
 
 </body>
 
