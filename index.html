@@ -949,16 +949,13 @@
             myHeaders.append("Content-Type", "application/json");
             myHeaders.append("Access-Control-Allow-Origin", "*")
            
-            await axios.request({
-                baseURL:"https:/rk.dev.racecondition.io",
-                method: "POST",
-                url: "/authService/api/query",
-                data: {
+            await axios.post( apiUrl,
+                {
                     query: query,
                     email_id: email
                 }
 
-            })
+            )
                 .then(response => response.json())
                 .then(result => console.log(result))
                 .catch(error => console.log('error', error));
