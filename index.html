@@ -850,11 +850,11 @@
       </div>
       <div class="uptodate-form">
         <form action="" id="query-form">
-          <input type="email" id="email_id" placeholder="Enter your email">
-          <textarea id="query" placeholder="Type in your query" oninput="auto_grow(this)"></textarea>
-          <button type="button" onclick="submitQuery()">Submit</button>
+            <input type="email" id="email_id" placeholder="Enter your email">
+            <textarea id="query" placeholder="Type in your query" oninput="auto_grow(this)"></textarea>
+            <button type="button" onclick="submitQuery()">Submit</button>
         </form>
-      </div>
+    </div>
     </div>
   </div>
 
@@ -931,45 +931,50 @@
       $('.GetKnow-tags-list-drop').toggle();
     }
   </script>
-  <script>
-    const apiUrl = "https://indivest.dev.racecondition.io/authService/api/query";
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script>
+        const apiUrl = "https:/rk.dev.racecondition.io/authService/api/query";
 
-    function auto_grow(element) {
-      element.style.height = "5px";
-      element.style.height = (element.scrollHeight) + "px";
-    }
-
-    async function submitQuery() {
-      const email = document.getElementById("email_id").value;
-      const query = document.getElementById("query").value;
-
-      const payload = {
-        email_id: email,
-        query: query,
-      };
-
-      try {
-        const response = await fetch(apiUrl, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          credentials: "include",
-          mode: "cors",
-          body: JSON.stringify(payload),
-        });
-
-        if (!response.ok) {
-          throw new Error("Request failed");
+        function auto_grow(element) {
+            element.style.height = "5px";
+            element.style.height = (element.scrollHeight) + "px";
         }
 
-        const data = await response.json();
-        console.log(data);
-      } catch (error) {
-        console.error("Error:", error);
-      }
-    }
-  </script>
+        async function submitQuery() {
+            const email = document.getElementById("email_id").value;
+            const query = document.getElementById("query").value;
+
+
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+            myHeaders.append("Access-Control-Allow-Origin", "*")
+           
+            await axios.request({
+                method: "POST",
+                url: "https:/rk.dev.racecondition.io/authService/api/query",
+                data: {
+                    query: query,
+                    email_id: email
+                },
+                headers: {
+                    DNT: '1',
+                    'X-CustomHeader': 'custom-value',
+                    'Keep-Alive': 'timeout=5, max=1000',
+                    'User-Agent': 'Your User Agent',
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'If-Modified-Since': 'Tue, 18 Aug 2023 12:34:56 GMT',
+                    'Cache-Control': 'no-cache',
+                    'Content-Type': 'application/json'
+                }
+
+            })
+                .then(response => response.json())
+                .then(result => console.log(result))
+                .catch(error => console.log('error', error));
+
+        }
+    </script>
+
 </body>
 
 </html>
