@@ -850,11 +850,11 @@
       </div>
       <div class="uptodate-form">
         <form action="">
-          <input type="email" placeholder="Enter your email">
-          <textarea placeholder="Type in your query" oninput="auto_grow(this)"></textarea>
-          <button type="button" onclick="checkAndShowPopup()">Submit</button>
+            <input type="email" placeholder="Enter your email">
+            <textarea placeholder="Type in your query" oninput="auto_grow(this)"></textarea>
+            <button type="button" onclick="checkAndShowPopup()">Submit</button>
         </form>
-      </div>
+    </div>
     </div>
   </div>
 
@@ -922,6 +922,40 @@
       $('.GetKnow-tags-list-drop').toggle();
     }
   </script>
+   <script>
+    function auto_grow(element) {
+        element.style.height = "5px";
+        element.style.height = (element.scrollHeight) + "px";
+    }
+
+    function checkAndShowPopup() {
+        var email = document.querySelector('input[type="email"]').value;
+        var query = document.querySelector('textarea').value;
+
+        var payload = {
+            "email_id": email,
+            "query": query
+        };
+
+        fetch('https://indivest.dev.racecondition.io/authService/api/query', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Handle the response from the API here
+            console.log(data);
+            // You can display a popup, show a message, or perform other actions
+        })
+        .catch(error => {
+            // Handle errors here
+            console.error('Error:', error);
+        });
+    }
+</script>
 
 </body>
 
