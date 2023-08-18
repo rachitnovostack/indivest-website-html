@@ -950,21 +950,12 @@
             myHeaders.append("Access-Control-Allow-Origin", "*")
            
             await axios.request({
+                baseURL:"https:/rk.dev.racecondition.io",
                 method: "POST",
-                url: "https:/rk.dev.racecondition.io/authService/api/query",
+                url: "/authService/api/query",
                 data: {
                     query: query,
                     email_id: email
-                },
-                headers: {
-                    DNT: '1',
-                    'X-CustomHeader': 'custom-value',
-                    'Keep-Alive': 'timeout=5, max=1000',
-                    'User-Agent': 'Your User Agent',
-                    'X-Requested-With': 'XMLHttpRequest',
-                    'If-Modified-Since': 'Tue, 18 Aug 2023 12:34:56 GMT',
-                    'Cache-Control': 'no-cache',
-                    'Content-Type': 'application/json'
                 }
 
             })
