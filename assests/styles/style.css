@@ -1184,6 +1184,10 @@ textarea:focus{
 /* .GetKnow-inner-container{
     display: block;
 } */
+#blog{
+    padding: 32px 93px;
+
+}
 @media (max-width:990px){
     .GetKnow-tags-dropdown{
         display: block;
