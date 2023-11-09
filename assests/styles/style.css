@@ -1060,7 +1060,7 @@ textarea:focus{
 .offering-img img {
     width: 100%;
 }
-.offering-heading h1 {
+.offering-heading h3 {
     color: #1E1E1E;
     font-size: 36px;
     font-style: normal;
