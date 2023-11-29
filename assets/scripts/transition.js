@@ -80,6 +80,7 @@ function increaseValue(org,element,pre,sub,counter,speed) {
         if (counter == org) {
             clearInterval(intervalId)
             // element.innerHTML = current + sub;
+            console.log("element => ",element)
             if(element == document.getElementById("thousand")){
                 let a = counter.toString().split("")
                 a.splice(1,0,',')
@@ -97,7 +98,7 @@ function increaseValue(org,element,pre,sub,counter,speed) {
 
 
 moveX(document.querySelectorAll('.hero-section .hero-content'),0.5);
-moveX(document.querySelectorAll('.hero-section .iphone-container'),0.2);
+moveX(document.querySelectorAll('.hero-section .iphone-container'),0.1);
 moveX(document.querySelectorAll('.what-in-it .content'),0.1);
 moveX(document.querySelectorAll('.what-in-it .images'),0.1);
 
@@ -124,4 +125,33 @@ moveX(document.querySelectorAll('.faq-section .content:nth-child(2)'),0.1);
 // videos section
 addShadow(document.querySelectorAll('.about-section .video-container'),0.5);
 
-increaseValue(document.querySelector(28,'.data-section .data:nth-child(1)'),"","",)
+
+function animateCard(element,pre="",sub,counter,speed) {
+    let delay = 0.8;
+    let cards_observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            console.log(entry.target);
+            if (entry.isIntersecting) {
+                entry.target.style.transition = delay.toString() + "s" + " ease";
+                entry.target.style.transform = 'translateY(0px)';
+                console.log((entry.target).innerHTML)
+                setTimeout(() => {
+                    (entry.target).style.visibility = "visible";
+                    increaseValue((entry.target).innerHTML,entry.target,pre,sub,counter,speed);
+                },delay*1000)
+                
+                cards_observer.unobserve(entry.target);
+                delay += 0.2;
+            }
+        })
+    }, {
+        threshold: 0.5
+    })
+
+    element.forEach(card => {
+        cards_observer.observe(card);
+    })
+}
+
+animateCard(document.querySelectorAll('.data-section .data:nth-child(2) .target'),"","+",1,10);
+animateCard(document.querySelectorAll('.data-section .data:nth-child(3) .target'),"","+",200,40);

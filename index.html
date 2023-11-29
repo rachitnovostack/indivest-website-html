@@ -64,13 +64,16 @@
                             <a href="index.html#contact" class="nav-link">Support</a>
                         </li>
                         <li class="nav-item cta-btn" id="get-started-btn">
-                            <a href="" class="nav-link">Get Started</a>
+                            <a href="" class="nav-link" >Login / Sign Up</a>
                         </li>
                     </ul>
                 </nav>
             </div>
 
             <div class="hamburger-menu">
+                <div class="app-btn" id="get-started-btn">
+                    <a href="" class="app-link" style="pointer-events: none;">Login/Sign Up</a>
+                </div>
                 <button class="toggle-btn" id="toggle-btn">
                     <i class="fa-solid fa-bars toggle-icon"></i>
                 </button>
@@ -115,25 +118,36 @@
                     </p>
                     <div class="data-section">
                         <div class="row">
-                            <div class="data col-3">
+                            <div class="data col-lg-3 col-sm-4">
                                 <h6>Monthly SIP</h6>
                             </div>
-                            <div class="data col-3">
-                                <h6>AMCs</h6>
-                                <p>28</p>
+                            <div class="data col-5 col-lg-3">
+                                <h6 class="target">30</h6>
+                                <h6 class="subtext">AMCs</h6>
                             </div>
-                            <div class="data col-3">
-                                <h6>Schemes</h6>
-                                <p>3119</p>
+                            <div class="data col-5 col-lg-3">
+                                <h6 class="target" id="thousand">3200</h6>
+                                <h6 class="subtext">Schemes</h6>
                             </div>
                         </div>
                     </div>
                     <div class="btn-container">
-                        <div class="app-btn">
-                            <a href="" class="app-link">Download App</a>
+                        <!-- <div class="app-btn">
+                            <a href="https://play.google.com/store/apps/details?id=com.indivest.indivest" class="app-link" target="_blank">Download App</a>
+                        </div> -->
+                        <!-- <div class="app-btn">
+                            <a href="" class="app-link" style="pointer-events: none;">Login/Sign Up</a>
+                        </div> -->
+                    </div>
+
+                    <div class="download-btn-container landing-download">
+                        <div class="app-btn android">
+                            <a href="https://play.google.com/store/apps/details?id=com.indivest.indivest" class="app-link" target="_blank"><img src="./assets/img/google-play-badge.a0416db4.webp" alt="indivest app download on android"></a>
                         </div>
-                        <div class="app-btn">
-                            <a href="" class="app-link">Get Started</a>
+                        <div class="app-btn apple" id="apple-landing">
+                            <a href="" class="app-link" style="pointer-events: none;" target="_blank">
+                                <img src="./assets/img/app-store-logo.151dc39e.webp" alt="indivest app download on apple">
+                            </a>
                         </div>
                     </div>
                     
@@ -155,6 +169,16 @@
                         </div>
                      </div>
                 </div>
+
+                <div class="download-btn-container">
+                    <div class="app-btn android">
+                        <a href="https://play.google.com/store/apps/details?id=com.indivest.indivest" class="app-link" target="_blank"><img src="./assets/img/google-play-badge.a0416db4.webp" alt="indivest app download on android"></a>
+                    </div>
+                    <div class="app-btn apple" id="apple-landing">
+                        <a href="" class="app-link" style="pointer-events: none;" target="_blank"><img src="./assets/img/app-store-logo.151dc39e.webp" alt="indivest app download on apple"></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -168,7 +192,7 @@
                     <div class="for-you-content">
                         <p>Invest today to achieve your dreams like</p>
                         <ul class="for-you-lists">
-                            <li class="item active" id="first">
+                            <li class="item" id="first">
                                 <img src="./assets/img/coin-icon.png" alt="coin icon indivest">
                                 <p>Building your home</p>
                             </li>
@@ -184,7 +208,9 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 col-md-6 images">
-                    <img src="./assets/img/building-home.png" alt="what in it image indivest">
+                    <img src="./assets/img/building-home.png" alt="indivest building hoem">
+                    <img src="./assets/img/taking-vacation.png" alt="indivest taking vacation">
+                    <img src="./assets/img/retiring-stress-free.png" alt="retiring stree free">
                 </div>
             </div>
         </div>
@@ -207,16 +233,22 @@
                 </div>
                 <div class="service-card col-10 col-lg-3 col-md-3 col-sm-5">
                     <div class="service-thumb">
+                        <img src="./assets/img/trend.png" alt="trends indivest">
+                    </div>
+                    <h3>Stocks</h3>
+                    <div class="coming-soon">
+                        Coming soon
+                    </div>
+                </div>
+                <div class="service-card col-10 col-lg-3 col-md-3 col-sm-5">
+                    <div class="service-thumb">
                         <!-- <img src="./assets/img/advisory.png" alt="services indivest"> -->
                         <img src="./assets/img/wallet.png" alt="deposits indivest">
                     </div>
                     <h3>Deposits</h3>
-                </div>
-                <div class="service-card col-10 col-lg-3 col-md-3 col-sm-5">
-                    <div class="service-thumb">
-                        <img src="./assets/img/trend.png" alt="trends indivest">
+                    <div class="coming-soon">
+                        Coming soon
                     </div>
-                    <h3>Stocks</h3>
                 </div>
             </div>
         </div>
@@ -361,7 +393,7 @@
                 </div>
               </li>
               <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/2.+Final+Compounding+-+Hindi.mp4')" data-language="hindi" style="display: none;" class="none">Compounding</li>
-              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/3.+Final+Goals+-+English.mp4')" data-language="english">
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/3.+Final+Goals+-+English.mp4')" data-language="english" id="goal">
                 <div class="video-preview col-5">
                     <img src="./assets/img/sixth.PNG" alt="">
                     </div>
@@ -395,9 +427,13 @@
               <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Small+Cap+funds+-+English.mp4')" data-language="english"> Small Cap funds</li>
               <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Small+Cap+funds+-+Hindi.mp4')" data-language="hindi"> Small Cap funds</li> -->
             </ul>
+
+            <div class="down-icon" onclick="scrollToBottom()">
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
           </div>
           <div class="GetKnow-tags-img col-lg-8 col-md-8">
-            <video loop="" id="dynamicVideo" controls="false" autoplay="false" src="https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4">
+            <video loop="" id="dynamicVideo" controls="false" autoplay="false" src="https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4" poster="./assets/img/preview.png">
               <source src="https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
@@ -423,7 +459,7 @@
                         <div class="video-section">
                             <!-- <img src="./assets/img/blog-img.jpg" alt="blog image indivest" class="blog-img"> -->
                             <!-- <video src="https://www.youtube.com/watch?v=ecOJdg-TXAs"></video> -->
-                            <video src="https://internovo-indirow.s3.ap-south-1.amazonaws.com/indivest_website/uploads/Indivest+X+Kshamata+Financial+Literacy+Programme.mp4" class="m-video" controls></video>
+                            <video src="https://internovo-indirow.s3.ap-south-1.amazonaws.com/indivest_website/uploads/Indivest+X+Kshamata+Financial+Literacy+Programme.mp4" class="m-video" controls poster="./assets/img/video1-thumbnail.png"></video>
                         </div>
                         
                         <p>Indivest collaborating with Kshamata NGO to empower women financially by creating awareness through financial literacy programmes!</p>
@@ -435,7 +471,7 @@
                     <div class="video-section">
                         <!-- <img src="./assets/img/blog-img.jpg" alt="blog image indivest" class="blog-img"> -->
                         <!-- <video src="https://www.youtube.com/watch?v=ecOJdg-TXAs"></video> -->
-                        <video src="https://internovo-indirow.s3.ap-south-1.amazonaws.com/indivest_website/uploads/Why+invest_+Explaining+_inflation_.MP4" class="m-video" controls></video>
+                        <video src="https://internovo-indirow.s3.ap-south-1.amazonaws.com/indivest_website/uploads/Why+invest_+Explaining+_inflation_.MP4" class="m-video" controls poster="./assets/img/video2-thumbnail.png"></video>
                     </div>
                     
                     <p>Explaining the concept of Inflation and deciphering the need to invest one's hard earned money!</p>
@@ -503,26 +539,8 @@
             <div>
                 <h2 class="heading">News</h2>
             </div>
-            <div class="row">
-                
-                <div class="news col-md-6 col-lg-3">
-                    <a href="https://inshorts.com/en/news/fired-openai-ceo-sam-altman-to-join-microsoft-says-satya-nadella-1700468598420" target="_blank">
-                        <img src="https://nis-gs.pix.in/inshorts/images/v1/variants/webp/xs/2023/11_nov/20_mon/img_1700467838699_562.webp?" alt="breaking news indivest" class="news-img">
-                        <p class="desc">Fired OpenAI CEO Sam Altman to join Microsoft, says Satya Nadella.</p>
-                    </a>
-                </div>
-                <div class="news col-md-6 col-lg-3">
-                    <a href="https://inshorts.com/en/news/indias-gdp-is-not-$4-trillion-yet-but-its-close-1700465201103" target="_blank">
-                        <img src="https://nis-gs.pix.in/inshorts/images/v1/variants/webp/xs/2023/11_nov/20_mon/img_1700464754313_895.webp?" alt="breaking news indivest" class="news-img">
-                        <p class="desc">India's GDP is not $4 trillion yet. But it's close.</p>
-                    </a>
-                </div>
-                <div class="news col-md-6 col-lg-3">
-                    <a href="https://inshorts.com/en/news/billionaire-nikhil-kamath-attends-world-cup-final-with-rbi-governor-das-shares-pics-1700465028767" target="_blank">
-                        <img src="https://nis-gs.pix.in/inshorts/images/v1/variants/webp/xs/2023/11_nov/20_mon/img_1700464617777_476.webp?" alt="breaking news indivest" class="news-img">
-                        <p class="desc">Billionaire Nikhil Kamath attends World Cup final with RBI Governor Das, shares pics.</p>
-                    </a>
-                </div>
+            <div class="row" id="index-news-row">
+
             </div>
             <div class="read-more">
                 <a href="news.html" class="read-more-btn">Read More</a>
@@ -540,29 +558,66 @@
                 <div class="col-lg-6 col-md-11 content">
                     <div class="faq-item">
                         <div class="question">
-                            Does Indivest charge me for using the platform ?
+                            What is Indivest ?
                             <div class="icon">
                                 <i class="fa-solid fa-plus"></i> 
                             </div>
                         </div>
                         <div class="answer">
-                            No, Indivest does not charge you for using the platform. It is free of cost.
+                            Indivest is a transactional and an educational platform, helping you create wealth! Our motto is to help you invest, and achieve financial freedom, by empowering you to make your own informed decisions. 
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="question">
-                            Does Indivest have its own investment products ?
+                            Why invest with Indivest ?
                             <div class="icon">
                                 <i class="fa-solid fa-plus"></i> 
                             </div>
                         </div>
                         <div class="answer">
-                            No, Indivest does not have its own investment products. Hence, it has no vested interest in the recommendations it gives to you.
+                            Indivest educates you about why and how to invest through simple videos to help you to make informed decisions easily, understands your profile and educates you about your financial health. It also empowers you to choose from different investment options like Mutual Funds, Deposits and Stocks.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            What’s in store for you ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i> 
+                            </div>
+                        </div>
+                        <div class="answer">
+                            You will be provided with handholding for the end-to-end process through animated videos and snippets to educate you! We promise you won’t get bored. 
+Want a test drive before investing actual money?? Indivest allows you to create your very own customized virtual portfolio, where you can earn virtual money and invest it. You can also share your portfolio with your friends and gift your Indivest coins to them!
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            Will Indivest help me in achieving my financial goals and objectives?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i> 
+                            </div>
+                        </div>
+                        <div class="answer">
+                            Yes, Indivest will definitely help you in achieving your financial goals and objectives through one of our IFAs (independent financial advisors).
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            Are there any account opening charges at Indivest ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i> 
+                            </div>
+                        </div>
+                        <div class="answer">
+                            Indivest doesn’t charge you for opening an account with us. It is absolutely free of cost!
                         </div>
                     </div>
                     
-                    <div class="faq-item">
+                    <div class="faq-item none">
                         <div class="question">
                             Can I create my own watchlist of funds on Indivest ?
                             <div class="icon">
@@ -574,7 +629,7 @@
                         </div>
                     </div>
 
-                    <div class="faq-item">
+                    <div class="faq-item none">
                         <div class="question">
                             Can non-resident Indians (NRIs) invest in mutual funds through Indivest ?
                             <div class="icon">
@@ -586,7 +641,7 @@
                         </div>
                     </div>
 
-                    <div class="faq-item">
+                    <div class="faq-item none">
                         <div class="question">
                             Do I need an account in a bank to invest in mutual funds through Indivest ?
                             <div class="icon">
@@ -621,8 +676,33 @@
                             You can start investing in SIP with as low as INR 100 on Indivest.
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-6 col-md-11 content">
+                    <div class="faq-item">
+                        <div class="question">
+                            Does Indivest charge me for using the platform ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i> 
+                            </div>
+                        </div>
+                        <div class="answer">
+                            No, Indivest does not charge you for using the platform. It is free of cost.
+                        </div>
+                    </div>
 
-                    <div class="faq-item none">
+                    <div class="faq-item">
+                        <div class="question">
+                            Does Indivest have its own investment products ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i> 
+                            </div>
+                        </div>
+                        <div class="answer">
+                            No, Indivest does not have its own investment products. Hence, it has no vested interest in the recommendations it gives to you.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
                         <div class="question">
                             How much money can I earn by referring another person ?
                             <div class="icon">
@@ -631,67 +711,6 @@
                         </div>
                         <div class="answer">
                             There is no limit to the number of Indivest coins you can earn by referring others. Share the referral link, spread the knowledge, and keep earning!
-                        </div>
-                    </div>
-
-                    <div class="faq-item none">
-                        <div class="question">
-                            How long does it take to open an Indivest account ?
-                            <div class="icon">
-                                <i class="fa-solid fa-plus"></i> 
-                            </div>
-                        </div>
-                        <div class="answer">
-                            The procedure to open an account with Indivest take less than 15 minutes.
-                        </div>
-                    </div>
-
-                    <div class="faq-item none">
-                        <div class="question">
-                            What is Indivest Virtual Portfolio ?
-                            <div class="icon">
-                                <i class="fa-solid fa-plus"></i> 
-                            </div>
-                        </div>
-                        <div class="answer">
-                            The most striking feature of Indivest is its virtual portfolio. Here, you can actually earn while you learn. You can create your personalized list of securities and invest in them with all the Indivest coins that you earn. You can earn coins through interesting ways like scratching a card, spinning the wheel and referring your friends.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-11 content">
-                    <div class="faq-item">
-                        <div class="question">
-                            What is Indivest ?
-                            <div class="icon">
-                                <i class="fa-solid fa-plus"></i> 
-                            </div>
-                        </div>
-                        <div class="answer">
-                            Indivest is a transactional and an educational platform, helping you create wealth! Our motto is to help you invest, and achieve financial freedom, by empowering you to make your own informed decisions. 
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="question">
-                            Why invest with Indivest ?
-                            <div class="icon">
-                                <i class="fa-solid fa-plus"></i> 
-                            </div>
-                        </div>
-                        <div class="answer">
-                            Indivest educates you about why and how to invest through simple videos to help you to make informed decisions easily, understands your profile and educates you about your financial health. It also empowers you to choose from different investment options like Mutual Funds, Deposits and Stocks.
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <div class="question">
-                            Are there any account opening charges at Indivest ?
-                            <div class="icon">
-                                <i class="fa-solid fa-plus"></i> 
-                            </div>
-                        </div>
-                        <div class="answer">
-                            Indivest doesn’t charge you for opening an account with us. It is absolutely free of cost!
                         </div>
                     </div>
 
@@ -721,26 +740,25 @@
 
                     <div class="faq-item none">
                         <div class="question">
-                            What’s in store for you ?
+                            What is Indivest Virtual Portfolio ?
                             <div class="icon">
                                 <i class="fa-solid fa-plus"></i> 
                             </div>
                         </div>
                         <div class="answer">
-                            You will be provided with handholding for the end-to-end process through animated videos and snippets to educate you! We promise you won’t get bored. 
-Want a test drive before investing actual money?? Indivest allows you to create your very own customized virtual portfolio, where you can earn virtual money and invest it. You can also share your portfolio with your friends and gift your Indivest coins to them!
+                            The most striking feature of Indivest is its virtual portfolio. Here, you can actually earn while you learn. You can create your personalized list of securities and invest in them with all the Indivest coins that you earn. You can earn coins through interesting ways like scratching a card, spinning the wheel and referring your friends.
                         </div>
                     </div>
 
                     <div class="faq-item none">
                         <div class="question">
-                            Will Indivest help me in achieving my financial goals and objectives?
+                            How long does it take to open an Indivest account ?
                             <div class="icon">
                                 <i class="fa-solid fa-plus"></i> 
                             </div>
                         </div>
                         <div class="answer">
-                            Yes, Indivest will definitely help you in achieving your financial goals and objectives through one of our IFAs (independent financial advisors).
+                            The procedure to open an account with Indivest take less than 15 minutes.
                         </div>
                     </div>
 
@@ -875,7 +893,7 @@ Want a test drive before investing actual money?? Indivest allows you to create 
                 headers: {
                     accept: 'application/json',
                     'content-type': 'application/json',
-                    'api-key': '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'
+                    'api-key': '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'
                 },
                 body: JSON.stringify({
                 sender: {name: 'New message', email: 'siddharth@internovo.in'},
@@ -960,6 +978,95 @@ Want a test drive before investing actual money?? Indivest allows you to create 
 
             console.log(name,email,message);
         })
+    </script>
+
+
+    <!-- news logic -->
+    <script>
+        const apiUrl = "https://inshortsapi.vercel.app/news";
+        const category = "business";
+        let news_list ;
+
+        // Construct the URL with the category parameter
+        const url = `${apiUrl}?category=${category}`;
+
+
+        fetch(url)
+        .then(response => {
+            if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.statusText}`);
+            }
+            return response.json();
+        })
+        .then(res => {
+            // Process the data as needed
+            let parentElement = document.getElementById("index-news-row");
+            let three_news = res.data.slice(0,3);
+
+            three_news.forEach(newsItem => {
+                // Create elements
+                const newsDiv = document.createElement("div");
+                newsDiv.classList.add("news", "col-md-6", "col-lg-3");
+
+                const newsLink = document.createElement("a");
+                newsLink.href = newsItem.url;
+                newsLink.target = "_blank";
+
+                const newsImg = document.createElement("img");
+                newsImg.src = newsItem.imageUrl;
+                newsImg.alt = newsItem.title;
+                newsImg.classList.add("news-img");
+
+                const newsDesc = document.createElement("p");
+                newsDesc.classList.add("desc");
+                newsDesc.textContent = newsItem.title;
+
+                // Append elements to the parent
+                newsLink.appendChild(newsImg);
+                newsLink.appendChild(newsDesc);
+                newsDiv.appendChild(newsLink);
+                parentElement.appendChild(newsDiv);
+
+
+                console.log(parentElement);
+            });
+
+            console.log(res.data[0]);
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+
+        function scrollToBottom() {
+            var element = document.querySelector('.GetKnow-tags');
+            element.scrollTop = element.scrollHeight;
+        }
+
+        function hide(element, threshold_value) {
+            let heading_observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    // console.log(entry.target)
+                    if (entry.isIntersecting) {
+                        var element = document.querySelector('.down-icon');
+                        element.style.display = "none";
+                        // heading_observer.unobserve(entry.target);
+                    }
+                    else{
+                        var element = document.querySelector('.down-icon');
+                        element.style.display = "flex";
+                    }
+                })
+                // console.log(entries)
+            }, {
+                threshold: threshold_value
+            })
+
+            element.forEach(e => {
+                heading_observer.observe(e)
+            });
+        }
+
+        hide(document.querySelectorAll('#goal'),0.3);
     </script>
 </body>
 </html>

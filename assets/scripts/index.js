@@ -61,66 +61,71 @@ links_arr.forEach(item=>{
     })
 })
 
-// what in it feature
-const listItem = document.querySelectorAll(".for-you-lists .item"); 
 
-listItem.forEach(item=>{
-    const image = document.querySelectorAll(".what-in-it .images img");
-    item.addEventListener('click',(e)=>{
-        // remove active class
-        listItem.forEach(item=>{
-            if(item.classList.contains("active") && item!=e.target){
-                item.classList.remove("active");
-            }
-            if(item==e.target){
-                item.classList.add("active");
-                switch(e.target){
-                    case listItem[0]: 
-                    image[0].src="./assets/img/building-home.png";
-                    image[0].classList.add("blink");
-                    setTimeout(()=>{
-                        image[0].classList.remove("blink")
-                    },600)
-                    break;
-                    case listItem[1]: 
-                    image[0].src="./assets/img/taking-vacation.png";
-                    image[0].classList.add("blink");
-                    setTimeout(()=>{
-                        image[0].classList.remove("blink")
-                    },600)
-                    break;
-                    default: 
-                    image[0].src="./assets/img/retiring-stress-free.png";
-                    image[0].classList.add("blink");
-                    setTimeout(()=>{
-                        image[0].classList.remove("blink")
-                    },600)
-                }
-            }
+// What in it section
+document.addEventListener("DOMContentLoaded", function() {
+    var images = document.querySelectorAll('.images img');
+        var index = 0;
 
-        })
-    })
+        function displayNextImage() {
+            images[index].style.display = 'none';
+            index = (index + 1) % images.length; // Move to the next image or reset to the first one
+            images[index].style.display = 'block';
+            setTimeout(displayNextImage, 1500); // Adjust the delay as needed
+        }
+
+        // Start the sequential display
+        displayNextImage();
 })
 
-// faq feature
 const faqItems = document.querySelectorAll('.faq-item');
 const plusIcon = '<i class="fa-solid fa-plus"></i>';
 const minusIcon = '<i class="fa-solid fa-minus"></i>';
 
 faqItems.forEach(item => {
     const question = item.querySelector('.question');
+    const icon = item.querySelector('.question .icon');
 
-    question.addEventListener('click', (e) => {
+    item.addEventListener('click', (e) => {
         // Toggle the 'active' class to show/hide the answer
         console.log((e.target).querySelector(".icon").innerHTML);
+        console.log("called here also")
         item.classList.toggle('active');
-        if(item.classList.contains('active')){
+        e.target.querySelector(".icon").innerHTML = ""
+        if (item.classList.contains('active')) {
             (e.target).querySelector(".icon").innerHTML = minusIcon;
-        }
-        else{
+        } else {
             (e.target).querySelector(".icon").innerHTML = plusIcon;
         }
     });
+    
+    icon.addEventListener('click', (e) => {
+        e.target.innerHTML = " "
+        // Toggle the 'active' class to show/hide the answer
+        e.stopPropagation(); // Stop the event from propagating up to the item
+        console.log("icon clicked");
+        console.log(e.target)
+        let i = findClosestLi(e.target);
+        function findClosestLi(element){
+            if (!element) {
+                return null;
+            } else if (element.tagName === "DIV") {
+                return element;
+            } else {
+                return findClosestLi(element.parentElement);
+            }
+        }
+        
+        item.classList.toggle('active');
+        if (item.classList.contains('active')) {
+            i.innerHTML = minusIcon;
+        } else {
+            i.innerHTML = plusIcon;
+        }
+    });
+    
+
+    
 });
 
 let count = 0;

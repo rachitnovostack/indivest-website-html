@@ -155,4 +155,7 @@ h6 {
     .blog-card{
         min-width: auto;
     }
+    .blog-desc-main-container {
+        margin: 55px auto;
+    }
 }

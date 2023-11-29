@@ -97,6 +97,7 @@ function changeVideo(newVideoUrl) {
 
   // pause video if video not visible on screen
   pauseVideo(document.querySelectorAll('#dynamicVideo'),0.1);
+  pauseVideo(document.querySelectorAll('.m-video'),0.1);
 
   // stoping video on load
   window.addEventListener('DOMContentLoaded', ()=>{
