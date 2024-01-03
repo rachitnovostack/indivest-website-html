@@ -18,6 +18,11 @@
     margin: 40px 0;
 }
 
+.news {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .news .news-img{
     width: 100%;
     max-height: 200px;
@@ -60,6 +65,7 @@
 .news-container .row{
     display: flex;
     justify-content: center;
+    
     gap: 30px;
 }
 
