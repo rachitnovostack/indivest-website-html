@@ -1,976 +1,1244 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Embark on financial freedom in India with Indivest, your trusted partner for mutual funds, stocks, and deposits. Begin your wealth journey now!">
+    <meta name="keywords" content="Investment, Financial Freedom,Stocks,Mutual Funds, Deposits">
+    <meta property="og:title" content="Unlock Financial Freedom with Indivest: Mutual Funds, Stocks and Deposits">
+    <meta property="og:description"
+        content="Embark on financial freedom in India with Indivest, your trusted partner for mutual funds, stocks, and deposits. Begin your wealth journey now!">
+    <meta property="og:url" content="https://indivest.in/">
+    <meta property="og:image" content="./assets/img/indivest-logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Indivest">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card"
+        content="Embark on financial freedom in India with Indivest, your trusted partner for mutual funds, stocks, and deposits. Begin your wealth journey now!">
+    <meta name="twitter:title" content="Unlock Financial Freedom with Indivest: Mutual Funds, Stocks and Deposits">
+    <meta name="twitter:description"
+        content="Embark on financial freedom in India with Indivest, your trusted partner for mutual funds, stocks, and deposits. Begin your wealth journey now!">
+    <meta name="twitter:image" content="./assets/img/indivest-logo.png">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="icon" href="/assests/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assests/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.svg">
+    <title>Unlock Financial Freedom with Indivest: Mutual Funds, Stocks and Deposits</title>
 
-  <title>Indivest</title>
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://indivest.in/" />
 
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name": "Indivest",
+          "url": "https://www.indivest.in",
+          "logo": "https://www.indivest.in/assets/img/indivest-logo.png",
+          "description": "Embark on financial freedom in India with Indivest, your trusted partner for mutual funds, stocks, and deposits. Begin your wealth journey now!",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "B-410, Knox Plaza, Near Inorbit Mall, Mindspace",
+            "addressLocality": "Malad West, Mumbai-400064",
+            "addressRegion": "Maharashtra",
+            "postalCode": "400064",
+            "addressCountry": "India"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "022 46003032",
+            "contactType": "Support"
+          }
+        }
+    </script>
 
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.svg">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/blog.css">
+    <link rel="stylesheet" href="./assets/styles/exploreProducts.css">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/4d92c1575f.js" crossorigin="anonymous"></script>
+    <!-- jQuery Script -->
+    <script src="./assets/scripts/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap Script -->
+    <!-- These 3 links are only for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="navbar-inner container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="assests/images/Indievest.png" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="flex-grow: initial;">
-        <ul class="navbar-nav align-items-center ml-auto mb-2 mb-lg-0" style="gap:40px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about">
-              About Us
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container max-width">
+            <!-- nav logo -->
+            <a href="https://indivest.in" class="navbar-brand">
+                <img src="./assets/img/logo.png" alt="Indivest Logo" class="nav-logo">
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#feature">
-              Features
+
+            <!-- Sidebar Navigation Option -->
+            <div id="sidebar" class="nav-side-container">
+                <nav>
+                    <ul class="navbar-nav" id="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html#hero-section" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#features" class="nav-link">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#about-us" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#contact" class="nav-link">Support</a>
+                        </li>
+                        <li class="nav-item cta-btn" id="get-started-btn">
+                            <a href="" class="nav-link">Login / Sign Up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="hamburger-menu">
+                <div class="app-btn" id="get-started-btn">
+                    <a href="" class="app-link" style="pointer-events: none;">Login/Sign Up</a>
+                </div>
+                <button class="toggle-btn" id="toggle-btn">
+                    <i class="fa-solid fa-bars toggle-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="toggle-nav">
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a href="index.html#hero-section" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about-us" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link">Support</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero-section" id="hero-section">
+        <div class="container max-width">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xs-10 hero-content">
+                    <h1 class="hero-heading">
+                        Investing made <span class="highlight">Uncomplicated</span>
+                    </h1>
+                    <p class="hero-subtext">
+                        Indivest <span style="color: #0b008e;"><b>empowers</b></span> you to take the right financial
+                        decisions. With Indivest, be your own boss and start your wealth creation journey TODAY!
+                    </p>
+                    <div class="data-section">
+                        <div class="row">
+                            <div class="data col-lg-3 col-sm-4">
+                                <h6>Monthly SIP</h6>
+                            </div>
+                            <div class="data col-5 col-lg-3">
+                                <h6 class="target">30</h6>
+                                <h6 class="subtext">AMCs</h6>
+                            </div>
+                            <div class="data col-5 col-lg-3">
+                                <h6 class="target" id="thousand">3200</h6>
+                                <h6 class="subtext">Schemes</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <!-- <div class="app-btn">
+                            <a href="https://play.google.com/store/apps/details?id=com.indivest.indivest" class="app-link" target="_blank">Download App</a>
+                        </div> -->
+                        <!-- <div class="app-btn">
+                            <a href="" class="app-link" style="pointer-events: none;">Login/Sign Up</a>
+                        </div> -->
+                    </div>
+
+                    <div class="download-btn-container landing-download">
+                        <div class="app-btn android">
+                            <a href="https://play.google.com/store/apps/details?id=com.indivest.indivest"
+                                class="app-link" target="_blank"><img src="./assets/img/google-play-badge.a0416db4.webp"
+                                    alt="indivest app download on android"></a>
+                        </div>
+                        <div class="app-btn apple" id="apple-landing">
+                            <a href="" class="app-link" style="pointer-events: none;" target="_blank">
+                                <img src="./assets/img/app-store-logo.151dc39e.webp"
+                                    alt="indivest app download on apple">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Phone Container -->
+                <div class="col-12 col-md-6 phone-container">
+                    <!-- Mobile Emulator -->
+                    <div class="iphone-container">
+                        <div id="mobile">
+                            <div id="notch"></div>
+                        </div>
+
+                        <div class="left-controls">
+                            <div class="silent control"></div>
+                            <div class="controls">
+                                <div class="plus-control control"></div>
+                                <div class="minus-control control"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-btn-container">
+                    <div class="app-btn android">
+                        <a href="https://play.google.com/store/apps/details?id=com.indivest.indivest" class="app-link"
+                            target="_blank"><img src="./assets/img/google-play-badge.a0416db4.webp"
+                                alt="indivest app download on android"></a>
+                    </div>
+                    <div class="app-btn apple" id="apple-landing">
+                        <a href="" class="app-link" style="pointer-events: none;" target="_blank"><img
+                                src="./assets/img/app-store-logo.151dc39e.webp"
+                                alt="indivest app download on apple"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- What in it section -->
+    <div class="what-in-it" id="what-in-it">
+        <div class="container max-width">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-6  content">
+                    <h2>What's in it for <span id="you" class="highlight">you ?</span></h2>
+                    <div class="for-you-content">
+                        <p>Invest today to achieve your dreams like</p>
+                        <ul class="for-you-lists">
+                            <li class="item" id="first">
+                                <img src="./assets/img/coin-icon.png" alt="coin icon indivest">
+                                <p>Building your home</p>
+                            </li>
+                            <li class="item" id="second">
+                                <img src="/assets/img/coin-icon.png" alt="coin icon indivest">
+                                <p>Taking a vacation</p>
+                            </li>
+                            <li class="item" id="third">
+                                <img src="./assets/img/coin-icon.png" alt="coin icon indivest">
+                                <p>Retiring stress free</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 images">
+                    <img src="./assets/img/building-home.png" alt="indivest building hoem">
+                    <img src="./assets/img/taking-vacation.png" alt="indivest taking vacation">
+                    <img src="./assets/img/retiring-stress-free.png" alt="retiring stree free">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div class="services-offering">
+        <div class="container max-width">
+            <div class="row first">
+                <h2 class="heading"><span class="highlight">Products</span> We Offer</h2>
+                <p class="subtext">Explore your investing needs under one roof with our products</p>
+            </div>
+            <div class="row service-cards">
+                <div class="service-card col-10 col-lg-3 col-md-3 col-sm-5">
+                    <div class="service-thumb">
+                        <!-- <img src="./assets/img/strategy.png" alt="services indivest"> -->
+                        <img src="./assets/img/fund.png" alt="mutual funds indivest">
+                    </div>
+                    <h3>Mutual Funds</h3>
+                </div>
+                <div class="service-card col-10 col-lg-3 col-md-3 col-sm-5">
+                    <div class="service-thumb">
+                        <img src="./assets/img/trend.png" alt="trends indivest">
+                    </div>
+                    <h3>Stocks</h3>
+                    <div class="coming-soon">
+                        Coming soon
+                    </div>
+                </div>
+                <div class="service-card col-10 col-lg-3 col-md-3 col-sm-5">
+                    <div class="service-thumb">
+                        <!-- <img src="./assets/img/advisory.png" alt="services indivest"> -->
+                        <img src="./assets/img/wallet.png" alt="deposits indivest">
+                    </div>
+                    <h3>Deposits</h3>
+                    <div class="coming-soon">
+                        Coming soon
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- features -->
+    <div class="features" id="features">
+        <div class="container max-width">
+            <div class="row first">
+                <h2 class="heading">Key <span class="highlight">Features</span></h2>
+                <p class="subtext">To help you transact better</p>
+            </div>
+            <div class="row blocks">
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6 dark blank"></div>
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6">
+                    <div class="feature">
+                        <div class="top">
+                            <h5>Indiplay</h5>
+                            <img src="./assets/img/bitcoin.png" alt="indivest indiplay feature">
+                        </div>
+
+                        <p class="description">Experience the thrill of investing without real financial risk, using
+                            Indivest coins.</p>
+                    </div>
+                </div>
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6 dark">
+                    <div class="feature">
+                        <div class="top">
+                            <h5>Large Reach</h5>
+                            <img src="./assets/img/marketing.png" alt="indivest large reach feature">
+                        </div>
+
+                        <p class="description">Access various suitable investment options customised as per your
+                            profile.</p>
+                    </div>
+                </div>
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6 blank"></div>
+                <div class="block col-11 dark col-lg-5 col-md-6 col-sm-6 blank"></div>
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6">
+                    <div class="feature">
+                        <div class="top">
+                            <h5>Personalised Service</h5>
+                            <img src="./assets/img/maintenance.png" alt="indivest personalised service">
+                        </div>
+
+                        <p class="description">A dedicated Indivest Executive will support you through the investment
+                            journey to help you make informed financial decisions.</p>
+                    </div>
+                </div>
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6">
+                    <div class="feature">
+                        <div class="top">
+                            <h5>Simplicity</h5>
+                            <img src="./assets/img/simplicity.png" alt="indivest simplicity">
+                        </div>
+                        <p class="description">Enjoy our simple and intuitive user interface to make your investment
+                            decisions quickly and without confusion.</p>
+                    </div>
+                </div>
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6 blank"></div>
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6 blank"></div>
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6">
+                    <div class="feature">
+                        <div class="top">
+                            <h5>Indirecs</h5>
+                            <img src="./assets/img/money.png" alt="indivest indirecs">
+                        </div>
+
+                        <p class="description">Invest in funds customised as per your profile taking into consideration
+                            your age, risk appetite and investment horizon.</p>
+                    </div>
+                </div>
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6 last">
+                    <div class="feature">
+                        <div class="top">
+                            <h5>Educative</h5>
+                            <img src="./assets/img/mortarboard.png" alt="indivest educative">
+                        </div>
+                        <p class="description">Learn and earn through our fun 30 second videos on various concepts of
+                            investing. Educate yourself and start your journey today</p>
+                    </div>
+                </div>
+                <div class="block col-11 col-lg-5 col-md-6 col-sm-6 blank">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about us -->
+    <div id="about-us" class="GetKnow-main-container">
+        <div class="container max-width">
+
+            <div class="GetKnow-heading">
+                <h2>Get To <span class="highlight">Know</span> Us</h2>
+            </div>
+
+            <div class="GetKnow-inner-container">
+                <div class="GetKnow-tags col-lg-3 col-md-4" id="mob-hide-list">
+                    <ul>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4')"
+                            data-language="english" class="active" style="display:flex;">
+                            <div class="video-preview col-5">
+                                <img src="./assets/img/first.png" alt="">
+                            </div>
+                            <div class="video-text">
+                                <p class="title">About Indivest </p>
+                                <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;1:15</p>
+                            </div>
+                        </li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+HINDI.mp4')"
+                            data-language="hindi" class="active none" style="display: none;">About Indivest </li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/10.+Final+Virtual+Portfolio+-+English.mp4')"
+                            data-language="english">
+                            <div class="video-preview col-5">
+                                <img src="./assets/img/second.png" alt="">
+                            </div>
+                            <div class="video-text">
+                                <p class="title">Virtual Portfolio </p>
+                                <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;0.35</p>
+                            </div>
+                        </li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/10.+Final+Virtual+Portfolio+-+Hindi.mp4')"
+                            data-language="hindi" style="display: none;" class="none"> Virtual Portfolio</li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/5.+Final+Why+Invest+-+English.mp4')"
+                            data-language="english">
+                            <div class="video-preview col-5">
+                                <img src="./assets/img/third.png" alt="">
+                            </div>
+                            <div class="video-text">
+                                <p class="title">Why Indivest </p>
+                                <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;0.46</p>
+                            </div>
+                        </li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/5.+Final+Why+Invest+-+Hindi.mp4')"
+                            data-language="hindi" style="display: none;" class="none"> Why Invest</li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/7.+Final+Where+to+Invest+-+English.mp4')"
+                            data-language="english">
+                            <div class="video-preview col-5">
+                                <img src="./assets/img/fourth.png" alt="">
+                            </div>
+                            <div class="video-text">
+                                <p class="title">Where to Invest</p>
+                                <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;0.43</p>
+                            </div>
+                        </li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/7.+Final+Where+to+Invest+-+Hindi.mp4')"
+                            data-language="hindi" style="display: none;" class="none"> Where to Invest</li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/2.+Final+Compounding+-+English.mp4')"
+                            data-language="english">
+                            <div class="video-preview col-5">
+                                <img src="./assets/img/fifth.png" alt="">
+                            </div>
+                            <div class="video-text">
+                                <p class="title">Compounding</p>
+                                <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;0.54</p>
+                            </div>
+                        </li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/2.+Final+Compounding+-+Hindi.mp4')"
+                            data-language="hindi" style="display: none;" class="none">Compounding</li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/3.+Final+Goals+-+English.mp4')"
+                            data-language="english" id="goal">
+                            <div class="video-preview col-5">
+                                <img src="./assets/img/sixth.png" alt="">
+                            </div>
+                            <div class="video-text">
+                                <p class="title">Goal</p>
+                                <p class="duration"><i class="fa-solid fa-play"></i> &nbsp;0.42</p>
+                            </div>
+                        </li>
+                        <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/3.+Final+Goals+-+Hindi.mp4')"
+                            data-language="hindi" style="display: none;" class="none">Goals</li>
+                        <!-- <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/4.+Final+Budgeting+-+English.mp4')" data-language="english">Budgeting</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/4.+Final+Budgeting+-+Hindi.mp4')" data-language="hindi"> Budgeting</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/6.+Final+503020+rule+-+English.mp4')" data-language="english"> 50-30-20 Rule</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/6.+Final+503020+rule+-+Hindi.mp4')" data-language="hindi"> 50-30-20 Rule</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/8.+Final+Emergency+Funds+-+English.mp4')" data-language="english"> Emergency Funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/8.+Final+Emergency+Funds+-+Hindi.mp4')" data-language="hindi"> Emergency Funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/9.+Final+Refferal+-+English.mp4')" data-language="english"> Refferal</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/9.+Final+Refferal+-+Hindi.mp4')" data-language="hindi"> Refferal</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/11.+Final+Mutual+Funds+-+English.mp4')" data-language="english"> Mutual Funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/11.+Final+Mutual+Funds+-+Hindi.mp4')" data-language="hindi"> Mutual Funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/12.+Final+SIP+-+English.mp4')" data-language="english"> SIP</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/12.+Final+SIP+-+Hindi.mp4')" data-language="hindi"> SIP</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Liquid+Funds+-+English.mp4')" data-language="english"> Liquid Funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Liquid+Funds+-+Hindi.mp4')" data-language="hindi"> Liquid Funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Large+Cap+funds+-+English.mp4')" data-language="english"> Large Cap funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Large+Cap+funds+-+Hindi.mp4')" data-language="hindi"> Large Cap funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Hybrid+funds+-+English.mp4')" data-language="english"> Hybrid funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Hybrid+funds+-+Hindi.mp4')" data-language="hindi"> Hybrid funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Mid+Cap+funds+-+English.mp4')" data-language="english"> Mid Cap funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Mid+Cap+funds+-+Hindi.mp4')" data-language="hindi"> Mid Cap funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Short+Term+funds+-+English.mp4')" data-language="english"> Short Term funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Short+Term+funds+-+Hindi.mp4')" data-language="hindi"> Short Term funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Small+Cap+funds+-+English.mp4')" data-language="english"> Small Cap funds</li>
+              <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Small+Cap+funds+-+Hindi.mp4')" data-language="hindi"> Small Cap funds</li> -->
+                    </ul>
+
+                    <div class="down-icon" onclick="scrollToBottom()">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                </div>
+                <div class="GetKnow-tags-img col-lg-8 col-md-8">
+                    <video loop="" id="dynamicVideo" controls="false" autoplay="false"
+                        src="https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4"
+                        poster="./assets/img/preview.png">
+                        <source
+                            src="https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4"
+                            type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <select id="languageSelector" onchange="changeLang()">
+                        <option value="english" class="option-value">English</option>
+                        <option value="hindi" class="option-value">Hindi</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Media section -->
+    <div class="media-section">
+        <div class="container max-width">
+            <div>
+                <h2 class="heading">Media</h2>
+            </div>
+            <div class="media-container row">
+                <div class="media-card col-11 col-lg-4 col-md-4 col-sm-5">
+                    <div class="video-section">
+                        <!-- <img src="./assets/img/blog-img.jpg" alt="blog image indivest" class="blog-img"> -->
+                        <!-- <video src="https://www.youtube.com/watch?v=ecOJdg-TXAs"></video> -->
+                        <video
+                            src="https://internovo-indirow.s3.ap-south-1.amazonaws.com/indivest_website/uploads/Indivest+X+Kshamata+Financial+Literacy+Programme.mp4"
+                            class="m-video" controls poster="./assets/img/video1-thumbnail.png"></video>
+                    </div>
+
+                    <p>Indivest collaborating with Kshamata NGO to empower women financially by creating awareness
+                        through financial literacy programmes!</p>
+                    <!-- <p class="blog-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis?</p>
+                        <a href="" class="read-btn">Read More</a> -->
+                </div>
+
+                <div class="media-card col-11 col-lg-4 col-md-4 col-sm-5">
+                    <div class="video-section">
+                        <!-- <img src="./assets/img/blog-img.jpg" alt="blog image indivest" class="blog-img"> -->
+                        <!-- <video src="https://www.youtube.com/watch?v=ecOJdg-TXAs"></video> -->
+                        <video
+                            src="https://internovo-indirow.s3.ap-south-1.amazonaws.com/indivest_website/uploads/Why+invest_+Explaining+_inflation_.MP4"
+                            class="m-video" controls poster="./assets/img/video2-thumbnail.png"></video>
+                    </div>
+
+                    <p>Explaining the concept of Inflation and deciphering the need to invest one's hard earned money!
+                    </p>
+                    <!-- <p class="blog-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis?</p>
+                    <a href="" class="read-btn">Read More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog section -->
+    <div class="blog-section">
+        <div class="container max-width">
+            <div>
+                <h2 class="heading">Blogs</h2>
+            </div>
+            <div class="row">
+                <div class="blogs-container row">
+                    <div class="blog-card col-11 col-lg-3 col-md-4 col-sm-5">
+                        <a href="mutual-funds-unvailed.html">
+                            <div class="image-section">
+                                <img src="./assets/img/mutual-funds-unvailed.png" alt="Invest in mutual funds online"
+                                    class="blog-img">
+                            </div>
+
+                            <h3 class="blog-heading">Mutual Funds Unveiled</h3>
+                            <p class="blog-desc">Your Ticket to Smarter, Simpler Investing</p>
+                            <a href="mutual-funds-unvailed.html" class="read-btn">Read More</a>
+                        </a>
+                    </div>
+
+                    <div class="blog-card col-11 col-lg-3 col-md-4 col-sm-5">
+                        <a href="unlocking-financial-freedom-the-basics-of-investing.html">
+                            <div class="image-section">
+                                <img src="./assets/img/unlocking-financial-freedom-the-basics-of-investing.png"
+                                    alt="Financial freedom in India" class="blog-img">
+                            </div>
+
+                            <h3 class="blog-heading">Unlocking Financial Freedom</h3>
+                            <p class="blog-desc">The Basics of Investment Knowledge</p>
+                            <a href="unlocking-financial-freedom-the-basics-of-investing.html" class="read-btn">Read
+                                More</a>
+                        </a>
+                    </div>
+
+                    <div class="blog-card col-11 col-lg-3 col-md-4 col-sm-5">
+                        <a href="why-set-financial-goals-the-key-to-your-financial-future.html">
+                            <div class="image-section">
+                                <img src="./assets/img/why-set-financial-goals-the-key to-your-financial-future.png"
+                                    alt="Financial future in India" class="blog-img">
+                            </div>
+
+                            <h3 class="blog-heading">Why Set Financial Goals?</h3>
+                            <p class="blog-desc">The Key to Your Financial Future</p>
+                            <a href="why-set-financial-goals-the-key-to-your-financial-future.html"
+                                class="read-btn">Read More</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="read-more">
+                <a href="blog.html" class="read-more-btn">View More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- News section -->
+    <div class="news-section">
+        <div class="container max-width">
+            <div>
+                <h2 class="heading">News</h2>
+            </div>
+            <div class="row" id="index-news-row">
+
+            </div>
+            <div class="read-more">
+                <a href="news.html" class="read-more-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ section -->
+    <div class="faq-section">
+        <div class="container max-width">
+            <div>
+                <h2 class="heading"><span class="highlight">Frequently</span> Asked Questions</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-11 content">
+                    <div class="faq-item">
+                        <div class="question">
+                            What is Indivest ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            Indivest is a transactional and an educational platform, helping you create wealth! Our
+                            motto is to help you invest, and achieve financial freedom, by empowering you to make your
+                            own informed decisions.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            Why invest with Indivest ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            Indivest educates you about why and how to invest through simple videos to help you to make
+                            informed decisions easily, understands your profile and educates you about your financial
+                            health. It also empowers you to choose from different investment options like Mutual Funds,
+                            Deposits and Stocks.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            What’s in store for you ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            You will be provided with handholding for the end-to-end process through animated videos and
+                            snippets to educate you! We promise you won’t get bored.
+                            Want a test drive before investing actual money?? Indivest allows you to create your very
+                            own customized virtual portfolio, where you can earn virtual money and invest it. You can
+                            also share your portfolio with your friends and gift your Indivest coins to them!
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            Will Indivest help me in achieving my financial goals and objectives?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            Yes, Indivest will definitely help you in achieving your financial goals and objectives
+                            through one of our IFAs (independent financial advisors).
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            Are there any account opening charges at Indivest ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            Indivest doesn’t charge you for opening an account with us. It is absolutely free of cost!
+                        </div>
+                    </div>
+
+                    <div class="faq-item none">
+                        <div class="question">
+                            Can I create my own watchlist of funds on Indivest ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            Yes, you can create your own watchlist of funds on Indivest through the Virtual Portfolio.
+                        </div>
+                    </div>
+
+                    <div class="faq-item none">
+                        <div class="question">
+                            Can non-resident Indians (NRIs) invest in mutual funds through Indivest ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            No, currently NRIs cannot invest in mutual funds through Indivest.
+                        </div>
+                    </div>
+
+                    <div class="faq-item none">
+                        <div class="question">
+                            Do I need an account in a bank to invest in mutual funds through Indivest ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            Yes, it is mandatory to have a bank account to be able to invest in mutual funds through
+                            Indivest.
+                        </div>
+                    </div>
+
+                    <div class="faq-item none">
+                        <div class="question">
+                            How do referrals work ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            You can earn coins by sharing your referral link with your family and friends. When someone
+                            signs up on our platform through your referral link, you earn 10,000 Indivest coins! While
+                            sharing your referral link, you can also gift coins to your family & friends to welcome them
+                            onboard.
+                        </div>
+                    </div>
+
+                    <div class="faq-item none">
+                        <div class="question">
+                            What is the minimum amount you can invest in mutual funds through SIP on Indivest ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            You can start investing in SIP with as low as INR 100 on Indivest.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-11 content">
+                    <div class="faq-item">
+                        <div class="question">
+                            Does Indivest charge me for using the platform ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            No, Indivest does not charge you for using the platform. It is free of cost.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            Does Indivest have its own investment products ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            No, Indivest does not have its own investment products. Hence, it has no vested interest in
+                            the recommendations it gives to you.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            How much money can I earn by referring another person ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            There is no limit to the number of Indivest coins you can earn by referring others. Share
+                            the referral link, spread the knowledge, and keep earning!
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            Is Indivest associated with any bank or AMC?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            No, Indivest is not associated with any banks or AMCs. It is an independent entity.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="question">
+                            How long does it take to reach a customer care executive via call on Indivest ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            Once you raise a ticket on Indivest, a customer care executive will get in touch with you at
+                            the earliest.
+                        </div>
+                    </div>
+
+                    <div class="faq-item none">
+                        <div class="question">
+                            What is Indivest Virtual Portfolio ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            The most striking feature of Indivest is its virtual portfolio. Here, you can actually earn
+                            while you learn. You can create your personalized list of securities and invest in them with
+                            all the Indivest coins that you earn. You can earn coins through interesting ways like
+                            scratching a card, spinning the wheel and referring your friends.
+                        </div>
+                    </div>
+
+                    <div class="faq-item none">
+                        <div class="question">
+                            How long does it take to open an Indivest account ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            The procedure to open an account with Indivest take less than 15 minutes.
+                        </div>
+                    </div>
+
+                    <div class="faq-item none">
+                        <div class="question">
+                            What documents are required to open an account online ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            The following documents are required to open an online Indivest account:
+                            1. Pan card
+                            2. Voter ID/ passport/ driver's license
+                            3. Cancelled cheque
+                        </div>
+                    </div>
+
+                    <div class="faq-item none">
+                        <div class="question">
+                            What are the charges for opening an account at Indivest ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">Zero. There are no charges to open an Indivest account. It is absolutely
+                            free of cost.
+                        </div>
+                    </div>
+
+                    <div class="faq-item none">
+                        <div class="question">
+                            What are the ways in which you can earn Indivest coins ?
+                            <div class="icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="answer">Indivest coins can be earned by sharing your referral link with your family
+                            & friends and investing the Indivest coins earned to make more money!
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-6 col-md-5 image">
+                    <img src="./assets/img/faq.png" alt="frequently asked questions indivest">
+                </div> -->
+            </div>
+            <div class="read-more">
+                <p class="read-more-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+    <!-- explore Product section -->
+    <div class="explore-container">
+        <div class="explore-heading">
+            <h2>Explore Our Other <span>Products</span></h2>
+        </div>
+        <div class="explore-cards">
+
+            <div class="explore-box-1">
+                <a href="https://indirow.com/" target="_blank" >
+                    <div class="explore-img">
+                        <img class="explore-indirow-img-1" src="assets/img/indirow.webp" alt="indirow-logo">
+                    </div>
+                    <hr>
+                    <div class="explore-indirow-container">
+                        <div class="content">
+                            <p>Indirow brings you freedom from calls from
+                                multiple bankers chasing you for your loan
+                                requirements. We are dedicted to help our users
+                                to become financially immune. To provide you
+                                with a "one-stop solution" for all of your borrowing
+                                needs, we have teamed with one of the largest
+                                loan placement platforms in the nation, which
+                                helps facilitate over INR 25,000 crores yearly.</p>
+                        </div>
+                        <div class="explore-social">
+                            <a href="https://www.instagram.com/indirow_india" target="_blank">
+                                <img src="assets/img/icons8-instagram-96.webp"
+                                    alt="instagram />
+                            </a>
+                            <a href="https://www.linkedin.com/company/indirow/" target="_blank">
+                                <img src="assets/img/icons8-linkedin-96.webp"
+                                    alt="linkedin" />
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="explore-box-2">
+                <a href="https://indibook.in/" target="_blank">
+                <div class="explore-img">
+                    <img class="explore-indibook-img-2" src="assets/img/inbookchaitanya.jpeg" alt="indibook-logo">
+                </div>
+                <hr>
+                <div class="explore-indirow-container">
+                    <div class="content">
+                        <p>Indibook is designed to make your routine record-keeping tasks more efficient. With
+                            Indibook, small merchants can effortlessly monitor the credit (udhaar) given to
+                            their customers, send payment reminders to them, organize their suppliers, and
+                            produce comprehensive monthly reports that offer complete oversight of their
+                            business cashflows. Indibook also makes the application process seamless for various
+                            loan products.</p>
+                    </div>
+                    <div class="explore-social">
+                        <a href="https://www.instagram.com/indibook_india/" target="_blank">
+                            <img src="assets/img/icons8-instagram-96.webp"
+                                alt="instagram />
+                        </a>
+                        <a href="https://in.linkedin.com/company/indibook" target="_blank">
+                            <img src="assets/img/icons8-linkedin-96.webp"
+                                alt="linkedin" />
+                        </a>
+                    </div>
+                </div>
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#contact">
-              Support
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <button>
-                Get Started
-              </button>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- home section start -->
-  <div class="home-section-bg">
-    <div class="home-section-main-container">
-      <div class="home-inner-container">
-        <h1>
-          Empowering you to Transact
-          bigger & <span>better</span>
-        </h1>
-        <p>Indivest empowers you to take the right financial decisions!</p>
-        <!-- <div class="home-btn-sep">
-          <button>
-            Get started
-          </button>
-          <button>
-            Watch video
-            <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M25.4474 9.81822C25.8992 9.36633 25.8992 8.63367 25.4474 8.18178L18.0833 0.817765C17.6314 0.365872 16.8988 0.365872 16.4469 0.817765C15.995 1.26966 15.995 2.00232 16.4469 2.45421L22.9927 9L16.4469 15.5458C15.995 15.9977 15.995 16.7303 16.4469 17.1822C16.8988 17.6341 17.6314 17.6341 18.0833 17.1822L25.4474 9.81822ZM0.714844 10.1571L24.6291 10.1571V7.84286L0.714844 7.84286L0.714844 10.1571Z"
-                fill="#FBA32A" />
-            </svg>
-          </button>
-        </div> -->
-      </div>
-      <div class="banner-img">
-        <img class="bnnrimg" src="/assests/images/beginer.png" alt="">
-        <img class="upload" src="/assests/images/upload.png" alt="">
-      </div>
-    </div>
-  </div>
-  <!-- home section end -->
-
-  <!-- Available Mutual Funds start-->
-  <div class="partner-bg">
-    <div class="partner-container">
-      <div class="partner-info">
-        <h3>Available Mutual Funds</h3>
-      </div>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="https://www.axismf.com/assets/images/shared/header/axis_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.dspim.com/media/pages/header-new-homepage/e17e28d4f7-1680288494/log-dsp.png" style="background: #ffffff63;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mutualfund.adityabirlacapital.com/portal/investor/assets/images/abc-logo-3-d@3x.png"
-              alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.hdfcfund.com/images/hdfc_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.edelweissmf.com/assets/images/EMF_Final%20Logo_2022__W.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.icicipruamc.com/assets/images/logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.licmf.com/assets/images/LIC-Logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.sbimf.com/Content/Images/black.svg" style="background: #68686863;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mf.nipponindiaim.com/investeasy/assets/images/rebranding/mutual-fund-logo-02.png" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://navi.com/static/media/naviLogo.c2380d7b.svg" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.axismf.com/assets/images/shared/header/axis_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.dspim.com/media/pages/header-new-homepage/e17e28d4f7-1680288494/log-dsp.png" style="background: #ffffff63;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mutualfund.adityabirlacapital.com/portal/investor/assets/images/abc-logo-3-d@3x.png"
-              alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.hdfcfund.com/images/hdfc_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.edelweissmf.com/assets/images/EMF_Final%20Logo_2022__W.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.icicipruamc.com/assets/images/logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.licmf.com/assets/images/LIC-Logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.sbimf.com/Content/Images/black.svg" style="background: #68686863;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mf.nipponindiaim.com/investeasy/assets/images/rebranding/mutual-fund-logo-02.png" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://navi.com/static/media/naviLogo.c2380d7b.svg" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.axismf.com/assets/images/shared/header/axis_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.dspim.com/media/pages/header-new-homepage/e17e28d4f7-1680288494/log-dsp.png" style="background: #ffffff63;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mutualfund.adityabirlacapital.com/portal/investor/assets/images/abc-logo-3-d@3x.png"
-              alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.hdfcfund.com/images/hdfc_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.edelweissmf.com/assets/images/EMF_Final%20Logo_2022__W.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.icicipruamc.com/assets/images/logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.licmf.com/assets/images/LIC-Logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.sbimf.com/Content/Images/black.svg" style="background: #68686863;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mf.nipponindiaim.com/investeasy/assets/images/rebranding/mutual-fund-logo-02.png" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://navi.com/static/media/naviLogo.c2380d7b.svg" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.axismf.com/assets/images/shared/header/axis_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.dspim.com/media/pages/header-new-homepage/e17e28d4f7-1680288494/log-dsp.png" style="background: #ffffff63;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mutualfund.adityabirlacapital.com/portal/investor/assets/images/abc-logo-3-d@3x.png"
-              alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.hdfcfund.com/images/hdfc_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.edelweissmf.com/assets/images/EMF_Final%20Logo_2022__W.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.icicipruamc.com/assets/images/logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.licmf.com/assets/images/LIC-Logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.sbimf.com/Content/Images/black.svg" style="background: #68686863;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mf.nipponindiaim.com/investeasy/assets/images/rebranding/mutual-fund-logo-02.png" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://navi.com/static/media/naviLogo.c2380d7b.svg" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.axismf.com/assets/images/shared/header/axis_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.dspim.com/media/pages/header-new-homepage/e17e28d4f7-1680288494/log-dsp.png" style="background: #ffffff63;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mutualfund.adityabirlacapital.com/portal/investor/assets/images/abc-logo-3-d@3x.png"
-              alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.hdfcfund.com/images/hdfc_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.edelweissmf.com/assets/images/EMF_Final%20Logo_2022__W.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.icicipruamc.com/assets/images/logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.licmf.com/assets/images/LIC-Logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.sbimf.com/Content/Images/black.svg" style="background: #68686863;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mf.nipponindiaim.com/investeasy/assets/images/rebranding/mutual-fund-logo-02.png" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://navi.com/static/media/naviLogo.c2380d7b.svg" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.axismf.com/assets/images/shared/header/axis_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.dspim.com/media/pages/header-new-homepage/e17e28d4f7-1680288494/log-dsp.png" style="background: #ffffff63;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mutualfund.adityabirlacapital.com/portal/investor/assets/images/abc-logo-3-d@3x.png"
-              alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.hdfcfund.com/images/hdfc_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.edelweissmf.com/assets/images/EMF_Final%20Logo_2022__W.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.icicipruamc.com/assets/images/logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.licmf.com/assets/images/LIC-Logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.sbimf.com/Content/Images/black.svg" style="background: #68686863;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mf.nipponindiaim.com/investeasy/assets/images/rebranding/mutual-fund-logo-02.png" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://navi.com/static/media/naviLogo.c2380d7b.svg" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.axismf.com/assets/images/shared/header/axis_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.dspim.com/media/pages/header-new-homepage/e17e28d4f7-1680288494/log-dsp.png" style="background: #ffffff63;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mutualfund.adityabirlacapital.com/portal/investor/assets/images/abc-logo-3-d@3x.png"
-              alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.hdfcfund.com/images/hdfc_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.edelweissmf.com/assets/images/EMF_Final%20Logo_2022__W.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.icicipruamc.com/assets/images/logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.licmf.com/assets/images/LIC-Logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.sbimf.com/Content/Images/black.svg" style="background: #68686863;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mf.nipponindiaim.com/investeasy/assets/images/rebranding/mutual-fund-logo-02.png" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://navi.com/static/media/naviLogo.c2380d7b.svg" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.axismf.com/assets/images/shared/header/axis_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.dspim.com/media/pages/header-new-homepage/e17e28d4f7-1680288494/log-dsp.png" style="background: #ffffff63;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mutualfund.adityabirlacapital.com/portal/investor/assets/images/abc-logo-3-d@3x.png"
-              alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.hdfcfund.com/images/hdfc_logo.svg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.edelweissmf.com/assets/images/EMF_Final%20Logo_2022__W.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.icicipruamc.com/assets/images/logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.licmf.com/assets/images/LIC-Logo.png" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://www.sbimf.com/Content/Images/black.svg" style="background: #68686863;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://mf.nipponindiaim.com/investeasy/assets/images/rebranding/mutual-fund-logo-02.png" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="https://navi.com/static/media/naviLogo.c2380d7b.svg" style="background: #ffffff;
-            padding: 5px 10px;" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Available Mutual Funds end-->
-
-
-  <!-- Key Feature start -->
-  <div id="feature" class="key-feature-bg">
-    <div class="key-feature-container">
-      <div class="feature-info">
-        <h3>Key features to help you transact <span>better</span></h3>
-      </div>
-      <div class="feature-gallery-container">
-        <div class="feature-card">
-          <div class="feature-img">
-            <img src="assests/images/feature/c1.png" alt="">
-          </div>
-          <h5>Indiplay</h5>
-          <p>Experience the thrill of investing without real financial risk, using Indivest coins.
-          </p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-img">
-            <img src="assests/images/feature/flag.png" alt="">
-          </div>
-          <h5>Large Reach</h5>
-          <p>Access various suitable investment options customised as per your profile.
-          </p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-img">
-            <img src="assests/images/feature/c1.png" alt="">
-          </div>
-          <h5>Personalised Service</h5>
-          <p>A dedicated Indivest Executive will support you through the investment journey to help you make informed
-            financial decisions.
-          </p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-img">
-            <img src="assests/images/feature/ux.png" alt="">
-          </div>
-          <h5>Simplicity</h5>
-          <p>Enjoy our simple and intuitive user interface to make your investment decisions quickly and without
-            confusion.
-          </p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-img">
-            <img src="assests/images/feature/Indirecs.png" alt="">
-          </div>
-          <h5>Indirecs</h5>
-          <p>Invest in funds customised as per your profile taking into consideration your age, risk appetite and
-            investment horizon.
-          </p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-img">
-            <img src="assests/images/feature/edu.png" alt="">
-          </div>
-          <h5>Educative</h5>
-          <p>Learn and earn through our fun 30 second videos on various concepts of investing. Educate yourself and
-            start your journey today
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- key feature end  -->
-
-
-  <!-- our offering start's here  -->
-  <div class="our-offering">
-    <div class="offering-img">
-      <img src="/assests/images/signup-2.png" alt="">
-      <div class="rupee">
-        <img src="/assests/images/rupee.png" alt="">
-      </div>
-    </div>
-
-    <div class="offering-info">
-      <div class="offering-heading">
-        <h1>
-          Our <span> Offerings</span>
-        </h1>
-      </div>
-      <div class="offering-content">
-        <p>Explore your investing needs under one roof with our products like Mutual Funds, Deposits & Stocks!
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- our offering end's here  -->
-
-
-  <!-- Industry Experts Speak start -->
-  <!-- <div class="Industry-Experts-bg">
-    <div class="partner-container">
-      <div class="Industry-Experts-info">
-        <h3>Industry Experts Speak</h3>
-      </div>
-      <div class="carousel">
-        <div class="slide">
-          <svg width="58" height="61" viewBox="0 0 58 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.2398 19.0086C12.147 18.7894 13.0742 18.6791 14.0043 18.6796C21.37 18.6796 27.3393 25.5015 27.3393 33.9133C27.3393 42.3276 21.37 49.1495 14.0043 49.1495C6.63865 49.1495 0.666992 42.3301 0.666992 33.9133C0.666992 33.6671 0.671702 33.4185 0.683475 33.1723H0.666992C0.666992 20.4755 9.70925 10.1447 20.8237 10.1447V15.2586C17.2186 15.2586 13.8936 16.6602 11.2398 19.0086ZM41.084 19.0086C41.9741 18.7926 42.8971 18.6796 43.8438 18.6796C51.2094 18.6796 57.1811 25.5015 57.1811 33.9133C57.1811 42.3276 51.2094 49.1495 43.8438 49.1495C36.4781 49.1495 30.5088 42.3301 30.5088 33.9133C30.5088 33.6671 30.5135 33.4185 30.5253 33.1723H30.5088C30.5088 20.4755 39.551 10.1447 50.6655 10.1447V15.2586C47.058 15.2586 43.7378 16.6602 41.084 19.0086Z"
-              fill="#FF7E1D" />
-          </svg>
-          <h5>
-            Headspace provides me with … a connection to myself, and a disconnection from negative thoughts, feelings,
-            and sensations.
-          </h5>
-          <h6>Keri, UK</h6>
-          <p>on finding her happy place</p>
-        </div>
-        <div class="slide">
-          <svg width="58" height="61" viewBox="0 0 58 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.2398 19.0086C12.147 18.7894 13.0742 18.6791 14.0043 18.6796C21.37 18.6796 27.3393 25.5015 27.3393 33.9133C27.3393 42.3276 21.37 49.1495 14.0043 49.1495C6.63865 49.1495 0.666992 42.3301 0.666992 33.9133C0.666992 33.6671 0.671702 33.4185 0.683475 33.1723H0.666992C0.666992 20.4755 9.70925 10.1447 20.8237 10.1447V15.2586C17.2186 15.2586 13.8936 16.6602 11.2398 19.0086ZM41.084 19.0086C41.9741 18.7926 42.8971 18.6796 43.8438 18.6796C51.2094 18.6796 57.1811 25.5015 57.1811 33.9133C57.1811 42.3276 51.2094 49.1495 43.8438 49.1495C36.4781 49.1495 30.5088 42.3301 30.5088 33.9133C30.5088 33.6671 30.5135 33.4185 30.5253 33.1723H30.5088C30.5088 20.4755 39.551 10.1447 50.6655 10.1447V15.2586C47.058 15.2586 43.7378 16.6602 41.084 19.0086Z"
-              fill="#FF7E1D" />
-          </svg>
-          <h5>
-            Headspace provides me with … a connection to myself, and a disconnection from negative thoughts, feelings,
-            and sensations.
-          </h5>
-          <h6>Keri, UK</h6>
-          <p>on finding her happy place</p>
-        </div>
-        <div class="slide">
-          <svg width="58" height="61" viewBox="0 0 58 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.2398 19.0086C12.147 18.7894 13.0742 18.6791 14.0043 18.6796C21.37 18.6796 27.3393 25.5015 27.3393 33.9133C27.3393 42.3276 21.37 49.1495 14.0043 49.1495C6.63865 49.1495 0.666992 42.3301 0.666992 33.9133C0.666992 33.6671 0.671702 33.4185 0.683475 33.1723H0.666992C0.666992 20.4755 9.70925 10.1447 20.8237 10.1447V15.2586C17.2186 15.2586 13.8936 16.6602 11.2398 19.0086ZM41.084 19.0086C41.9741 18.7926 42.8971 18.6796 43.8438 18.6796C51.2094 18.6796 57.1811 25.5015 57.1811 33.9133C57.1811 42.3276 51.2094 49.1495 43.8438 49.1495C36.4781 49.1495 30.5088 42.3301 30.5088 33.9133C30.5088 33.6671 30.5135 33.4185 30.5253 33.1723H30.5088C30.5088 20.4755 39.551 10.1447 50.6655 10.1447V15.2586C47.058 15.2586 43.7378 16.6602 41.084 19.0086Z"
-              fill="#FF7E1D" />
-          </svg>
-          <h5>
-            Headspace provides me with … a connection to myself, and a disconnection from negative thoughts, feelings,
-            and sensations.
-          </h5>
-          <h6>Keri, UK</h6>
-          <p>on finding her happy place</p>
-        </div>
-        <div class="slide">
-          <svg width="58" height="61" viewBox="0 0 58 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.2398 19.0086C12.147 18.7894 13.0742 18.6791 14.0043 18.6796C21.37 18.6796 27.3393 25.5015 27.3393 33.9133C27.3393 42.3276 21.37 49.1495 14.0043 49.1495C6.63865 49.1495 0.666992 42.3301 0.666992 33.9133C0.666992 33.6671 0.671702 33.4185 0.683475 33.1723H0.666992C0.666992 20.4755 9.70925 10.1447 20.8237 10.1447V15.2586C17.2186 15.2586 13.8936 16.6602 11.2398 19.0086ZM41.084 19.0086C41.9741 18.7926 42.8971 18.6796 43.8438 18.6796C51.2094 18.6796 57.1811 25.5015 57.1811 33.9133C57.1811 42.3276 51.2094 49.1495 43.8438 49.1495C36.4781 49.1495 30.5088 42.3301 30.5088 33.9133C30.5088 33.6671 30.5135 33.4185 30.5253 33.1723H30.5088C30.5088 20.4755 39.551 10.1447 50.6655 10.1447V15.2586C47.058 15.2586 43.7378 16.6602 41.084 19.0086Z"
-              fill="#FF7E1D" />
-          </svg>
-          <h5>
-            Headspace provides me with … a connection to myself, and a disconnection from negative thoughts, feelings,
-            and sensations.
-          </h5>
-          <h6>Keri, UK</h6>
-          <p>on finding her happy place</p>
-        </div>
-        <div class="slide">
-          <svg width="58" height="61" viewBox="0 0 58 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.2398 19.0086C12.147 18.7894 13.0742 18.6791 14.0043 18.6796C21.37 18.6796 27.3393 25.5015 27.3393 33.9133C27.3393 42.3276 21.37 49.1495 14.0043 49.1495C6.63865 49.1495 0.666992 42.3301 0.666992 33.9133C0.666992 33.6671 0.671702 33.4185 0.683475 33.1723H0.666992C0.666992 20.4755 9.70925 10.1447 20.8237 10.1447V15.2586C17.2186 15.2586 13.8936 16.6602 11.2398 19.0086ZM41.084 19.0086C41.9741 18.7926 42.8971 18.6796 43.8438 18.6796C51.2094 18.6796 57.1811 25.5015 57.1811 33.9133C57.1811 42.3276 51.2094 49.1495 43.8438 49.1495C36.4781 49.1495 30.5088 42.3301 30.5088 33.9133C30.5088 33.6671 30.5135 33.4185 30.5253 33.1723H30.5088C30.5088 20.4755 39.551 10.1447 50.6655 10.1447V15.2586C47.058 15.2586 43.7378 16.6602 41.084 19.0086Z"
-              fill="#FF7E1D" />
-          </svg>
-          <h5>
-            Headspace provides me with … a connection to myself, and a disconnection from negative thoughts, feelings,
-            and sensations.
-          </h5>
-          <h6>Keri, UK</h6>
-          <p>on finding her happy place</p>
-        </div>
-        <div class="slide">
-          <svg width="58" height="61" viewBox="0 0 58 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.2398 19.0086C12.147 18.7894 13.0742 18.6791 14.0043 18.6796C21.37 18.6796 27.3393 25.5015 27.3393 33.9133C27.3393 42.3276 21.37 49.1495 14.0043 49.1495C6.63865 49.1495 0.666992 42.3301 0.666992 33.9133C0.666992 33.6671 0.671702 33.4185 0.683475 33.1723H0.666992C0.666992 20.4755 9.70925 10.1447 20.8237 10.1447V15.2586C17.2186 15.2586 13.8936 16.6602 11.2398 19.0086ZM41.084 19.0086C41.9741 18.7926 42.8971 18.6796 43.8438 18.6796C51.2094 18.6796 57.1811 25.5015 57.1811 33.9133C57.1811 42.3276 51.2094 49.1495 43.8438 49.1495C36.4781 49.1495 30.5088 42.3301 30.5088 33.9133C30.5088 33.6671 30.5135 33.4185 30.5253 33.1723H30.5088C30.5088 20.4755 39.551 10.1447 50.6655 10.1447V15.2586C47.058 15.2586 43.7378 16.6602 41.084 19.0086Z"
-              fill="#FF7E1D" />
-          </svg>
-          <h5>
-            Headspace provides me with … a connection to myself, and a disconnection from negative thoughts, feelings,
-            and sensations.
-          </h5>
-          <h6>Keri, UK</h6>
-          <p>on finding her happy place</p>
-        </div>
-        <div class="slide">
-          <svg width="58" height="61" viewBox="0 0 58 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.2398 19.0086C12.147 18.7894 13.0742 18.6791 14.0043 18.6796C21.37 18.6796 27.3393 25.5015 27.3393 33.9133C27.3393 42.3276 21.37 49.1495 14.0043 49.1495C6.63865 49.1495 0.666992 42.3301 0.666992 33.9133C0.666992 33.6671 0.671702 33.4185 0.683475 33.1723H0.666992C0.666992 20.4755 9.70925 10.1447 20.8237 10.1447V15.2586C17.2186 15.2586 13.8936 16.6602 11.2398 19.0086ZM41.084 19.0086C41.9741 18.7926 42.8971 18.6796 43.8438 18.6796C51.2094 18.6796 57.1811 25.5015 57.1811 33.9133C57.1811 42.3276 51.2094 49.1495 43.8438 49.1495C36.4781 49.1495 30.5088 42.3301 30.5088 33.9133C30.5088 33.6671 30.5135 33.4185 30.5253 33.1723H30.5088C30.5088 20.4755 39.551 10.1447 50.6655 10.1447V15.2586C47.058 15.2586 43.7378 16.6602 41.084 19.0086Z"
-              fill="#FF7E1D" />
-          </svg>
-          <h5>
-            Headspace provides me with … a connection to myself, and a disconnection from negative thoughts, feelings,
-            and sensations.
-          </h5>
-          <h6>Keri, UK</h6>
-          <p>on finding her happy place</p>
-        </div>
-        <div class="slide">
-          <svg width="58" height="61" viewBox="0 0 58 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M11.2398 19.0086C12.147 18.7894 13.0742 18.6791 14.0043 18.6796C21.37 18.6796 27.3393 25.5015 27.3393 33.9133C27.3393 42.3276 21.37 49.1495 14.0043 49.1495C6.63865 49.1495 0.666992 42.3301 0.666992 33.9133C0.666992 33.6671 0.671702 33.4185 0.683475 33.1723H0.666992C0.666992 20.4755 9.70925 10.1447 20.8237 10.1447V15.2586C17.2186 15.2586 13.8936 16.6602 11.2398 19.0086ZM41.084 19.0086C41.9741 18.7926 42.8971 18.6796 43.8438 18.6796C51.2094 18.6796 57.1811 25.5015 57.1811 33.9133C57.1811 42.3276 51.2094 49.1495 43.8438 49.1495C36.4781 49.1495 30.5088 42.3301 30.5088 33.9133C30.5088 33.6671 30.5135 33.4185 30.5253 33.1723H30.5088C30.5088 20.4755 39.551 10.1447 50.6655 10.1447V15.2586C47.058 15.2586 43.7378 16.6602 41.084 19.0086Z"
-              fill="#FF7E1D" />
-          </svg>
-          <h5>
-            Headspace provides me with … a connection to myself, and a disconnection from negative thoughts, feelings,
-            and sensations.
-          </h5>
-          <h6>Keri, UK</h6>
-          <p>on finding her happy place</p>
-        </div>
-
-      </div>
-    </div>
-  </div> -->
-  <!-- Industry Experts Speak end -->
-
-
-
-
-  <!-- for you section start -->
-  <div class="for-you-bg">
-    <div class="for-you">
-      <div class="for-you-info">
-        <h3>What's In It For <br> <span>YOU?</span></h3>
-        <div class="for-you-content">
-          <h1>Invest today to achieve your dreams like</h1>
-          <ul>
-            <div class=" coin-sep ">
-              <img src="/assests/images/coin-i.png" alt="">
-              <li>Building your home</li>
             </div>
-            <div class=" coin-sep ">
-              <img src="/assests/images/coin-i.png" alt="">
-              <li>Taking a vacation</li>
+        </div>
+    </div>
+
+
+    <!-- Contact section -->
+    <div class="contact-section" id="contact">
+        <div class="container max-width row">
+
+            <div class="content col-lg-6">
+                <h3 class="heading">Reach Us At</h3>
+                <ul class="contact-options">
+                    <li class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="address">B-303, Knox Plaza, Chincholi Bunder Road, Malad(W), 400064</p>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="phone">022-48933333</p>
+                    </li>
+                    <li class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p class="email">support@internovo.in</p>
+                    </li>
+                </ul>
+                <div class="follow-us">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com/company/internovo-ventures"
+                                class="social__link social__link--style1" target="_blank">
+                                <img width="40" height="40" src="/assets/img/icons8-linkedin-96.webp" alt="linkedin" />
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com/indivest_india/" target="_blank"
+                                class="social__link social__link--style1">
+                                <!-- <i aria-hidden="true" class="fab fa-instagram instagram"></i>   -->
+                                <img width="40" height="40" src="/assets/img/icons8-instagram-96.webp"
+                                    alt="instagram" />
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.youtube.com/@InternovoVentures" target="_blank"
+                                class="social__link social__link--style1">
+                                <img width="40" height="40" src="/assets/img/icons8-youtube-96.webp" alt="youtube" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class=" coin-sep ">
-              <img src="/assests/images/coin-i.png" alt="">
-              <li>Retiring stress free</li>
+            <div class="message-box col-lg-6">
+                <form action="" class="contact-form" id="contact-form">
+                    <input type="email" placeholder="Enter your email" id="email">
+                    <textarea name="" id="message" cols="30" rows="5" placeholder="Enter your query"
+                        id="message"></textarea>
+                    <input type="submit" value="Submit" id="submit-btn">
+                </form>
+                <div class="loader">
+                    <div class="loader1"></div>
+                    <div class="text">Message sending</div>
+                    <div class="success">
+                        <i class="fa-solid fa-check"></i>
+                        <h3>Sent</h3>
+                    </div>
+                </div>
             </div>
-          </ul>
-          </p>
+
         </div>
-      </div>
-      <div class="for-you-img">
-        <div class="pot">
-          <img src="/assests/images/flwrpot.png" alt="">
-        </div>
-        <img class="beginer2" src="/assests/images/beginer2.png" alt="">
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-  <!-- for you section endt -->
-
-
-
-  <!-- Latest News start's here  -->
-
-  <div id="news" class="news-bg">
-    <div class="news-main-container">
-      <div class="news-inner-container">
-        <div class="news-heading">
-          <h3>Latest <br> <span>News</span></h3>
-        </div>
-        <div class="news-cards-container">
-          <div class="card">
-            <img class="card-img-top" src="/assests/images/news-img.png" alt="Card image cap">
-            <div class="card-body">
-              <p>WhiteOak Capital Mutual Fund (MF) on Wednesday announced the launch of two new fund offers (NFOs) -
-                ‘WhiteOak Capital Mid Cap Fund’ and ‘WhiteOak Capital Tax Saver Fund’</p>
-              <a href="">Know More <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.12222 7.27894C7.3592 7.52503 7.75317 7.52503 7.99015 7.27894L9.39764 5.81735C10.351 4.82736 10.351 3.26076 9.39764 2.27076L7.99016 0.809172C7.75317 0.563081 7.3592 0.563081 7.12221 0.809172V0.809172C6.89754 1.04248 6.89754 1.41168 7.12222 1.64498L7.33611 1.8671C7.9005 2.45319 7.48515 3.4298 6.67149 3.4298H0.677804C0.338587 3.4298 0.0635864 3.70477 0.0635473 4.04398V4.04398C0.0635082 4.38326 0.338531 4.65831 0.677803 4.65831H6.67149C7.48515 4.65831 7.9005 5.63492 7.33611 6.22101L7.12222 6.44313C6.89754 6.67643 6.89754 7.04563 7.12222 7.27894V7.27894Z"
-                    fill="#2E3A59" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="/assests/images/news-img.png" alt="Card image cap">
-            <div class="card-body">
-              <p>WhiteOak Capital Mutual Fund (MF) on Wednesday announced the launch of two new fund offers (NFOs) -
-                ‘WhiteOak Capital Mid Cap Fund’ and ‘WhiteOak Capital Tax Saver Fund’</p>
-              <a href="">Know More <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7.12222 7.27894C7.3592 7.52503 7.75317 7.52503 7.99015 7.27894L9.39764 5.81735C10.351 4.82736 10.351 3.26076 9.39764 2.27076L7.99016 0.809172C7.75317 0.563081 7.3592 0.563081 7.12221 0.809172V0.809172C6.89754 1.04248 6.89754 1.41168 7.12222 1.64498L7.33611 1.8671C7.9005 2.45319 7.48515 3.4298 6.67149 3.4298H0.677804C0.338587 3.4298 0.0635864 3.70477 0.0635473 4.04398V4.04398C0.0635082 4.38326 0.338531 4.65831 0.677803 4.65831H6.67149C7.48515 4.65831 7.9005 5.63492 7.33611 6.22101L7.12222 6.44313C6.89754 6.67643 6.89754 7.04563 7.12222 7.27894V7.27894Z"
-                    fill="#2E3A59" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Latest News end's here -->
-
-  <!-- Get To Know Us section start-->
-  <div id="about" class="GetKnow-main-container">
-    <div class="GetKnow-heading">
-      <h3>Get To <span>Know</span> Us</h3>
-    </div>
-    <div class="dropdown-main-container">
-      <div class="dropdown-language">
-        <select id="languageDropdown" onchange="changeLanguage()">
-          <option value="english" selected>English</option>
-          <option value="hindi">Hindi</option>
-        </select>
-      </div>
-      <div class="GetKnow-tags-dropdown">
-        <div class="GetKnow-tags-box" onclick="toggleTagsList()">
-          <p>About Indivest</p>
-          <svg width="11" height="11" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M17.4792 6.79149L10.4792 13.8123C10.3958 13.8957 10.3056 13.9548 10.2083 13.9898C10.1111 14.0248 10.0069 14.042 9.89583 14.0415C9.78472 14.0415 9.68056 14.0243 9.58333 13.9898C9.48611 13.9554 9.39583 13.8962 9.3125 13.8123L2.29167 6.79149C2.09722 6.59705 2 6.35399 2 6.06233C2 5.77066 2.10417 5.52066 2.3125 5.31233C2.52083 5.10399 2.76389 4.99983 3.04167 4.99983C3.31944 4.99983 3.5625 5.10399 3.77083 5.31233L9.89583 11.4373L16.0208 5.31233C16.2153 5.11788 16.455 5.02066 16.74 5.02066C17.025 5.02066 17.2714 5.12483 17.4792 5.33316C17.6875 5.54149 17.7917 5.78455 17.7917 6.06233C17.7917 6.3401 17.6875 6.58316 17.4792 6.79149Z"
-              fill="black" />
-          </svg>
-        </div>
-        <div class="GetKnow-tags-list-drop" style="display: none;">
-          <div class="GetKnow-tags">
-            <ul>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4')"
-                data-language="english" class="active">About Indivest </li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+HINDI.mp4')"
-                data-language="hindi" class="active">About Indivest </li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/10.+Final+Virtual+Portfolio+-+English.mp4')"
-                data-language="english"> Virtual Portfolio</li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/10.+Final+Virtual+Portfolio+-+Hindi.mp4')"
-                data-language="hindi"> Virtual Portfolio</li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/5.+Final+Why+Invest+-+English.mp4')"
-                data-language="english"> Why Invest</li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/5.+Final+Why+Invest+-+Hindi.mp4')"
-                data-language="hindi"> Why Invest</li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/7.+Final+Where+to+Invest+-+English.mp4')"
-                data-language="english"> Where to Invest</li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/7.+Final+Where+to+Invest+-+Hindi.mp4')"
-                data-language="hindi"> Where to Invest</li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/2.+Final+Compounding+-+English.mp4')"
-                data-language="english">Compounding </li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/2.+Final+Compounding+-+Hindi.mp4')"
-                data-language="hindi">Compounding</li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/3.+Final+Goals+-+English.mp4')"
-                data-language="english">Goals</li>
-              <li
-                onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/3.+Final+Goals+-+Hindi.mp4')"
-                data-language="hindi">Goals</li>
-            </ul>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="GetKnow-inner-container">
-      <div class="GetKnow-tags" id="mob-hide-list">
-        <ul>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4')"
-            data-language="english" class="active">About Indivest </li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+HINDI.mp4')"
-            data-language="hindi" class="active">About Indivest </li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/10.+Final+Virtual+Portfolio+-+English.mp4')"
-            data-language="english"> Virtual Portfolio</li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/10.+Final+Virtual+Portfolio+-+Hindi.mp4')"
-            data-language="hindi"> Virtual Portfolio</li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/5.+Final+Why+Invest+-+English.mp4')"
-            data-language="english"> Why Invest</li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/5.+Final+Why+Invest+-+Hindi.mp4')"
-            data-language="hindi"> Why Invest</li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/7.+Final+Where+to+Invest+-+English.mp4')"
-            data-language="english"> Where to Invest</li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/7.+Final+Where+to+Invest+-+Hindi.mp4')"
-            data-language="hindi"> Where to Invest</li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/2.+Final+Compounding+-+English.mp4')"
-            data-language="english">Compounding </li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/2.+Final+Compounding+-+Hindi.mp4')"
-            data-language="hindi">Compounding</li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/3.+Final+Goals+-+English.mp4')"
-            data-language="english">Goals</li>
-          <li
-            onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/3.+Final+Goals+-+Hindi.mp4')"
-            data-language="hindi">Goals</li>
-          <!-- <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/4.+Final+Budgeting+-+English.mp4')" data-language="english">Budgeting</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/4.+Final+Budgeting+-+Hindi.mp4')" data-language="hindi"> Budgeting</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/6.+Final+503020+rule+-+English.mp4')" data-language="english"> 50-30-20 Rule</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/6.+Final+503020+rule+-+Hindi.mp4')" data-language="hindi"> 50-30-20 Rule</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/8.+Final+Emergency+Funds+-+English.mp4')" data-language="english"> Emergency Funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/8.+Final+Emergency+Funds+-+Hindi.mp4')" data-language="hindi"> Emergency Funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/9.+Final+Refferal+-+English.mp4')" data-language="english"> Refferal</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/9.+Final+Refferal+-+Hindi.mp4')" data-language="hindi"> Refferal</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/11.+Final+Mutual+Funds+-+English.mp4')" data-language="english"> Mutual Funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/11.+Final+Mutual+Funds+-+Hindi.mp4')" data-language="hindi"> Mutual Funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/12.+Final+SIP+-+English.mp4')" data-language="english"> SIP</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/12.+Final+SIP+-+Hindi.mp4')" data-language="hindi"> SIP</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Liquid+Funds+-+English.mp4')" data-language="english"> Liquid Funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Liquid+Funds+-+Hindi.mp4')" data-language="hindi"> Liquid Funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Large+Cap+funds+-+English.mp4')" data-language="english"> Large Cap funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Large+Cap+funds+-+Hindi.mp4')" data-language="hindi"> Large Cap funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Hybrid+funds+-+English.mp4')" data-language="english"> Hybrid funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Hybrid+funds+-+Hindi.mp4')" data-language="hindi"> Hybrid funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Mid+Cap+funds+-+English.mp4')" data-language="english"> Mid Cap funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Mid+Cap+funds+-+Hindi.mp4')" data-language="hindi"> Mid Cap funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Short+Term+funds+-+English.mp4')" data-language="english"> Short Term funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Short+Term+funds+-+Hindi.mp4')" data-language="hindi"> Short Term funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Small+Cap+funds+-+English.mp4')" data-language="english"> Small Cap funds</li>
-          <li onclick="changeVideo('https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/Final+Small+Cap+funds+-+Hindi.mp4')" data-language="hindi"> Small Cap funds</li> -->
-        </ul>
-      </div>
-      <div class="GetKnow-tags-img">
-        <video loop id="dynamicVideo" controls="false" autoplay>
-          <source src="https://m-imagess.s3.ap-south-1.amazonaws.com/webVideos/1.+About+Indivest+-+English.mp4"
-            type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
+    <!-- custom scripts -->
+    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/player.js"></script>
+    <script src="./assets/scripts/transition.js"></script>
+    <script src="./assets/scripts/mobile.js"></script>
 
-  </div>
-  <!-- Get To Know Us end -->
+    <!-- Message Forward -->
+    <script>
+        document.getElementById("contact-form").addEventListener('submit', (e) => {
+            e.preventDefault();
+        })
+
+        document.getElementById("submit-btn").addEventListener('click', (e) => {
+
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            const url = 'https://api.brevo.com/v3/smtp/email';
+            const options = {
+                method: 'POST',
+                headers: {
+                    accept: 'application/json',
+                    'content-type': 'application/json',
+                    'api-key': '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'
+                },
+                body: JSON.stringify({
+                    sender: { name: 'New message', email: 'siddharth@internovo.in' },
+                    to: [{ email: 'support@internovo.in' }],
+                    // to: [{email:'siddharthsingh88505@gmail.com'}],
+                    // bcc: [{email: 'helen9766@example.com', name: 'Helen'}],
+                    // cc: [{email: 'ann6533@example.com', name: 'Ann'}],
+                    textContent: `${message} \n\n ${name} \n\n ${email}`,
+                    subject: 'Message From INDIVEST',
+                    replyTo: { email: `${email}` },
+                    // attachment: [
+                    // {
+                    //     url: 'https://attachment.domain.com/myAttachmentFromUrl.jpg',
+                    //     content: 'b3JkZXIucGRm',
+                    //     name: 'myAttachment.png'
+                    // }
+                    // ],
+                    headers: {
+                        // 'sender.ip': '1.2.3.4',
+                        "Content-Type": "application/json",
+                        // 'X-Mailin-custom': 'some_custom_header',
+                        // idempotencyKey: 'abc-123'
+                    },
+                    // templateId: 2,
+                    // params: {FNAME: 'Joe', LNAME: 'Doe'},
+                    // messageVersions: [
+                    // {
+                    //     to: [{email: 'jimmy98@example.com', name: 'Jimmy'}],
+                    //     params: {FNAME: 'Joe', LNAME: 'Doe'},
+                    //     bcc: [{email: 'helen9766@example.com', name: 'Helen'}],
+                    //     cc: [{email: 'ann6533@example.com', name: 'Ann'}],
+                    //     replyTo: {email: 'ann6533@example.com', name: 'Ann'},
+                    //     subject: 'Login Email confirmation'
+                    // }
+                    // ]
+                    // tags: ['tag1'],
+                    // scheduledAt: '2022-04-05T12:30:00+02:00',
+                    // batchId: '5c6cfa04-eed9-42c2-8b5c-6d470d978e9d'
+                })
+            };
 
 
-  <!-- keep upto date start-->
+            // validate input
+            if (email.trim().length) {
+                var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+                if (emailRegex.test(email.trim())) {
+                    if (message.trim().length) {
+                        fetch(url, options)
+                            .then(res => res.json()
+                            )
+                            .then(json => {
+                                console.log(json);
+                                console.log("gaya message");
+                                document.querySelector(".loader").style.display = "flex";
+                                setTimeout(() => {
+                                    document.getElementById("email").value = "";
+                                    document.getElementById("message").value = "";
+                                    setTimeout(() => {
+                                        document.querySelector('.loader1').style.display = "none";
+                                        document.querySelector(".loader .text").style.display = "none";
+                                        document.querySelector('.success').style.display = "flex";
+                                    }, 300)
+                                    setTimeout(() => {
+                                        document.querySelector(".loader").style.display = "none";
+                                    }, 600)
+                                }, 3000)
+                            })
+                            .catch(err => console.error('error:' + err));
+                    }
+                    else {
+                        alert("Please provide message!");
+                    }
+                }
+                else {
+                    alert("Please provide valid email!");
+                }
 
-  <div id="contact" class="uptodate-bg">
-    <div class="uptodate-container">
-      <div class="uptodate-info">
-        <h1>Reach Us At</h1>
-        <a href="#">
-          <i class="fa fa-map-marker"></i>
-          <p>B-303, Knox Plaza, Chincholi Bunder Road, Mindspace, Malad (W), Mumbai-400064</p>
-        </a>
-        <a href="tel:02248933333">
-          <i class="fa fa-phone"></i>
-          <p>02248933333</p>
-        </a>
-        <a href="mailto:support@internovo.in">
-          <i class="fa fa-envelope"></i>
-          <p>support@internovo.in</p>
-        </a>
-      </div>
-      <div class="uptodate-form">
-        <form action="" id="query-form">
-          <input type="email" id="email_id" placeholder="Enter your email">
-          <textarea id="query" placeholder="Type in your query" oninput="auto_grow(this)"></textarea>
-          <button type="button" onclick="submitQuery()">Submit</button>
-        </form>
-      </div>
-    </div>
-  </div>
+            }
+            else {
+                alert("Please provide email!");
+            }
 
-  <!-- Popup to show success message when query is send -->
-  <div id="popup" style="display: none;">
-    <div class="d-flex align-items-center" style="gap: 10px;">
-      <svg width="20" height="29" viewBox="0 0 20 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M14.7405 7.21598L0.985031 20.9783L-4.56241 26.5257L-4.74069 26.3954L-5.63212 27.28L-6.17383 27.1703V26.1143L-5.73497 25.6343L0.985031 18.256L12.7999 5.26855L14.6993 7.17484L14.7405 7.21598Z"
-          fill="#008C00" />
-        <path
-          d="M18.6825 11.1517L0.970542 28.6169L-2.13574 27.9929L16.6665 9.18374L15.9603 8.50488H16.0288L18.6825 11.1517Z"
-          fill="#008C00" />
-        <path
-          d="M18.3542 3.60203L18.3405 3.61575L14.7405 7.21575L0.985031 20.978L-4.56241 26.5255L-4.74069 26.3952L-5.73497 25.634L-6.17383 25.3117V23.8923L0.985031 16.8295L16.3382 1.68203L16.3862 1.63403L18.3542 3.60203Z"
-          fill="#FF9400" />
-        <path d="M17.3529 8.50488L16.6946 9.16317L16.6672 9.18374L15.9609 8.50488H17.3529Z" fill="white" />
-        <path
-          d="M18.8758 4.10956V4.13699L18.3409 3.61585L14.7478 7.21585L-4.56195 26.5256L-4.74023 26.3953L14.6998 7.17471L18.3203 3.59528L18.3409 3.57471L18.8758 4.10956Z"
-          fill="white" />
-        <path d="M18.8746 0.886719V4.137L18.3398 3.61586L18.3192 3.59529L16.3375 1.68215L15.5146 0.886719H18.8746Z"
-          fill="#FF9400" />
-        <path d="M19.3278 8.50488V11.7415L17.8809 10.3563L16.6672 9.18374L15.9609 8.50488H19.3278Z" fill="#008C00" />
-      </svg>
-      <p>Success</p>
-    </div>
-  </div>
+            console.log(name, email, message);
+        })
+    </script>
 
+    <!-- inShort news -->
+    <script>
+        const apiUrl = "https://inshortsapi.vercel.app/news";
+        const category = "business";
+        let news_list;
 
-  <!-- keep upto date end -->
+        // Construct the URL with the category parameter
+        const url = `${apiUrl}?category=${category}`;
 
 
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(res => {
+                // Process the data as needed
+                let parentElement = document.getElementById("index-news-row");
+                let three_news = res.data.slice(0, 3);
+
+                three_news.forEach(newsItem => {
+                    // Create elements
+                    const newsDiv = document.createElement("div");
+                    newsDiv.classList.add("news", "col-md-6", "col-lg-3");
+
+                    const newsLink = document.createElement("a");
+                    newsLink.href = newsItem.url;
+                    newsLink.target = "_blank";
+
+                    const newsImg = document.createElement("img");
+                    newsImg.src = newsItem.imageUrl;
+                    newsImg.alt = newsItem.title;
+                    newsImg.classList.add("news-img");
+
+                    const newsDesc = document.createElement("p");
+                    newsDesc.classList.add("desc");
+                    newsDesc.textContent = newsItem.title;
+
+                    // Append elements to the parent
+                    newsLink.appendChild(newsImg);
+                    newsLink.appendChild(newsDesc);
+                    newsDiv.appendChild(newsLink);
+                    parentElement.appendChild(newsDiv);
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="assests/js/main.js"></script>
-  <script src="assests/js/player.js"> </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      function initCarousel() {
-        var slidesToShow = 3;
-        if ($(window).width() < 991) {
-          slidesToShow = 2;
+                    console.log(parentElement);
+                });
+
+                console.log(res.data[0]);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+
+        function scrollToBottom() {
+            var element = document.querySelector('.GetKnow-tags');
+            element.scrollTop = element.scrollHeight;
         }
-        if ($(window).width() < 425) {
-          slidesToShow = 1;
+
+        function hide(element, threshold_value) {
+            let heading_observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    // console.log(entry.target)
+                    if (entry.isIntersecting) {
+                        var element = document.querySelector('.down-icon');
+                        element.style.display = "none";
+                        // heading_observer.unobserve(entry.target);
+                    }
+                    else {
+                        var element = document.querySelector('.down-icon');
+                        element.style.display = "flex";
+                    }
+                })
+                // console.log(entries)
+            }, {
+                threshold: threshold_value
+            })
+
+            element.forEach(e => {
+                heading_observer.observe(e)
+            });
         }
 
-        $('.carousel').slick({
-          slidesToShow: slidesToShow,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000
-        });
-      }
-
-      // Initialize the carousel on page load
-      initCarousel();
-
-      // Reinitialize the carousel on window resize
-      $(window).resize(function () {
-        $('.carousel').slick('unslick');
-        initCarousel();
-      });
-    });
-  </script>
-  <script>
-    function toggleTagsList() {
-      $('.GetKnow-tags-list-drop').toggle();
-    }
-  </script>
-  <script>
-    const apiUrl = "https://rk.dev.racecondition.io/authService/api/query";
-
-    function auto_grow(element) {
-      element.style.height = "5px";
-      element.style.height = (element.scrollHeight) + "px";
-    }
-
-    async function submitQuery() {
-      const email = document.getElementById("email_id").value;
-      const query = document.getElementById("query").value;
-
-
-      const payload = {
-        email_id: email,
-        query: query,
-      };
-      console.log(payload)
-      try {
-        const response = await
-          fetch(apiUrl, {
-            method: "post",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(payload)
-          });
-
-        if (!response.ok) {
-          console.log(response)
-        }
-
-        const data = await response.json();
-        console.log(data);
-      } catch (error) {
-        console.error("Error:", error);
-      }
-    }
-  </script>
-
+        hide(document.querySelectorAll('#goal'), 0.3);
+    </script>
 </body>
 
 </html>
