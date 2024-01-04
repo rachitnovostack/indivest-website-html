@@ -1,0 +1,123 @@
+/* Style the explore container */
+.explore-container {
+    width: 100vw;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the explore heading */
+.explore-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.explore-heading h2{
+    color:#64a47c;
+}
+
+/* Style the explore cards using Flexbox */
+.explore-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Style the individual row */
+.explore-box-1,.explore-box-2 {
+    position: relative; /* Added relative position for proper stacking context */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Set a fixed width or adjust as needed */
+    transition: transform 0.3s ease-in-out; /* Added transition for smooth hover effect */
+}
+.explore-box-1 a{
+    display: inline;
+    text-decoration: none;
+}
+.explore-box-2 a{
+    display: block;
+    text-decoration: none;
+}
+
+/* Style the explore image */
+.explore-img {
+    text-align: center;
+    padding: 20px;
+}
+
+.explore-indirow-img-1 {
+    width: 180px;
+    height: auto;
+}
+
+
+.explore-indibook-img-2 {
+    width: 200px;
+    height: auto;
+}
+
+/* Style the explore content container */
+.explore-indirow-container {
+    padding: 20px;
+}
+
+/* Style the content */
+.content p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Style the social media icon */
+.explore-social{
+    display: flex;
+}
+.explore-social img {
+
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+
+}
+
+/* Add some space between content and social icon */
+.explore-indirow-container .content {
+    margin-bottom: 10px;
+}
+
+/* Style the horizontal rule */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+/* Hover effect */
+.explore-box-1:hover {
+    transform: scale(1.02); /* Scale up on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a slightly larger shadow on hover */
+    cursor: pointer;
+    border: 1px solid #64a47c;
+}
+.explore-box-2:hover {
+    transform: scale(1.02); /* Scale up on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a slightly larger shadow on hover */
+    cursor: pointer;
+    border: 1px solid #64a47c;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .explore-box-1,.explore-box-2 {
+        width: calc(50% - 20px); /* Set width to 50% for screens wider than 768px */
+    }
+}
+
+@media (min-width: 992px) {
+    .explore-box-1,.explore-box-2 {
+        width: calc(33.33% - 20px); /* Set width to 33.33% for screens wider than 992px */
+    }
+}
+
