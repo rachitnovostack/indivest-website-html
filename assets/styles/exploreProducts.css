@@ -7,38 +7,52 @@
 /* Style the explore heading */
 .explore-heading {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
-.explore-heading h2{
-    color:#64a47c;
+
+.explore-heading span {
+    color: #64a47c;
 }
 
 /* Style the explore cards using Flexbox */
 .explore-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+
+
 }
+
+
 /* Style the individual row */
-.explore-box-1,.explore-box-2 {
-    position: relative; /* Added relative position for proper stacking context */
+.explore-box-1,
+.explore-box-2 {
+    width: 25%;
+    position: relative;
+    /* Added relative position for proper stacking context */
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
     font-size: small;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 350px; /* Set a fixed width or adjust as needed */
-    transition: transform 0.3s ease-in-out; /* Added transition for smooth hover effect */
+    transition: transform 0.3s ease-in-out;
+    /* Added transition for smooth hover effect */
+
 }
+
 .explore-box-1 a{
-    display: inline;
     text-decoration: none;
+
 }
+
 .explore-box-2 a{
-    display: block;
+
     text-decoration: none;
+
 }
 
 /* Style the explore image */
@@ -61,25 +75,37 @@
 /* Style the explore content container */
 .explore-indirow-container {
     padding: 20px;
+
 }
 
 /* Style the content */
 .content p {
-    color: #555;
-    line-height: 1.5;
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+
 }
 
 /* Style the social media icon */
-.explore-social{
-    display: flex;
+.explore-social {
+   
 }
+
+
 .explore-social img {
 
     width: 30px;
     height: 30px;
-    margin-top: 10px;
+
 
 }
+
+.explore-social img:hover {
+    border: 1px solid #64a47c;
+    border-radius: 2px;
+
+}
+
 
 /* Add some space between content and social icon */
 .explore-indirow-container .content {
@@ -87,37 +113,85 @@
 }
 
 /* Style the horizontal rule */
-hr {
+hr{
     border: 0;
     height: 1px;
     background: #ccc;
     margin: 10px 0;
 }
+.custom-line {
+    
+    border: 5px solid var(--cta-btn-bg); /* Adjust the border style and color as needed */
+    border-radius: 10px;
+    margin: 10px 0; /* Adjust the margin as needed */
+}
 
 /* Hover effect */
 .explore-box-1:hover {
-    transform: scale(1.02); /* Scale up on hover */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a slightly larger shadow on hover */
+    transform: scale(1.02);
+    /* Scale up on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* Add a slightly larger shadow on hover */
     cursor: pointer;
     border: 1px solid #64a47c;
 }
+
 .explore-box-2:hover {
-    transform: scale(1.02); /* Scale up on hover */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a slightly larger shadow on hover */
+    transform: scale(1.02);
+    /* Scale up on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    /* Add a slightly larger shadow on hover */
     cursor: pointer;
     border: 1px solid #64a47c;
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
-    .explore-box-1,.explore-box-2 {
-        width: calc(50% - 20px); /* Set width to 50% for screens wider than 768px */
+@media (max-width: 992px) {
+
+    .explore-box-1,
+    .explore-box-2 {
+        width: 75%;
+
+    }
+    .custom-line {
+    
+        display: none;
     }
 }
 
-@media (min-width: 992px) {
-    .explore-box-1,.explore-box-2 {
-        width: calc(33.33% - 20px); /* Set width to 33.33% for screens wider than 992px */
+@media (max-width: 768px) {
+    .explore-cards {
+        margin: 1rem;
+        width: auto;
     }
+
+    .explore-box-1,
+    .explore-box-2 {
+        width: 100%;
+
+    }
+    .custom-line {
+    
+        display: none;
+    }
+
 }
 
+@media (max-width: 576px) {
+    .explore-cards {
+        margin: 1rem;
+        width: auto;
+
+    }
+
+    .explore-box-1,
+    .explore-box-2 {
+        width: 100%;
+
+    }
+
+    .custom-line {
+    
+        display: none;
+    }
+}

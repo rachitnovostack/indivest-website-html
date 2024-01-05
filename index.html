@@ -57,6 +57,7 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/blog.css">
     <link rel="stylesheet" href="./assets/styles/exploreProducts.css">
+    <link rel="stylesheet" href="/indivest-website-html//style.css">
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/4d92c1575f.js" crossorigin="anonymous"></script>
     <!-- jQuery Script -->
@@ -67,6 +68,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
 </head>
 
 <body>
@@ -86,7 +89,7 @@
                             <a href="index.html#hero-section" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.html#features" class="nav-link">Features</a>
+                            <a href="index.html#features" class="nav-link" id="feature">Features</a>
                         </li>
                         <li class="nav-item">
                             <a href="index.html#about-us" class="nav-link">About Us</a>
@@ -300,7 +303,7 @@
     </div>
 
     <!-- features -->
-    <div class="features" id="features">
+    <section class="features" id="features">
         <div class="container max-width">
             <div class="row first">
                 <h2 class="heading">Key <span class="highlight">Features</span></h2>
@@ -381,10 +384,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- about us -->
-    <div id="about-us" class="GetKnow-main-container">
+    <section id="about-us" class="GetKnow-main-container">
         <div class="container max-width">
 
             <div class="GetKnow-heading">
@@ -514,7 +517,7 @@
 
         </div>
 
-    </div>
+    </section>
 
     <!-- Media section -->
     <div class="media-section">
@@ -522,8 +525,37 @@
             <div>
                 <h2 class="heading">Media</h2>
             </div>
-            <div class="media-container row">
-                <div class="media-card col-11 col-lg-4 col-md-4 col-sm-5">
+            <div class="media-box">
+                <div class="media-card">
+                    <div class="img-section">
+                        <img src="./assets/img/Karan Image.jpg" alt="blog image indivest" class="fintech-biz-news">
+                    </div>
+                    <h5>Fintech Platform Indivest Will Make Investments Easy</h5>
+                    <h6>Published at Fintech BizNews</h6>
+                    <p>Mumbai, January 4, 2024: Internovo Ventures, a joint venture between Interface Ventures and
+                        Novostack, has announced the launch of its .... <a
+                            href="https://www.fintechbiznews.com/fintech-it-security/fintech-platform-indivest-will-make-investments-easy"
+                            class="read-btn">
+                            Read More
+                        </a></p>
+                </div>
+                <div class="media-card">
+                    <div class="img-section">
+                        <img src="./assets/img/hindi text.jpeg" alt="blog image indivest" class="fintech-biz-news">
+                    </div>
+                    <h5>फिनटेक प्लेटफॉर्म इंडिवेस्ट निवेश को आसान बना देगा</h5>
+                    <h6>फिनटेक बिज़न्यूज़ पर प्रकाशित</h6>
+                    <p>मुंबई, 4 जनवरी, 2024: इंटरनोवो वेंचर्स, इंटरफ़ेस वेंचर्स और के बीच एक संयुक्त उद्यम
+                        नोवोस्टैक ने इसके लॉन्च की घोषणा की है...<a
+                        href="https://www.fintechbiznews.com/fintech-it-security/fintech-platform-indivest-will-make-investments-easy"
+                        class="read-btn">
+                        और पढ़ें
+                    </a>
+                    </p>
+                    <!-- <p class="blog-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis?</p>
+                    <a href="" class="read-btn">Read More</a> -->
+                </div>
+                <div class="media-card">
                     <div class="video-section">
                         <!-- <img src="./assets/img/blog-img.jpg" alt="blog image indivest" class="blog-img"> -->
                         <!-- <video src="https://www.youtube.com/watch?v=ecOJdg-TXAs"></video> -->
@@ -531,14 +563,11 @@
                             src="https://internovo-indirow.s3.ap-south-1.amazonaws.com/indivest_website/uploads/Indivest+X+Kshamata+Financial+Literacy+Programme.mp4"
                             class="m-video" controls poster="./assets/img/video1-thumbnail.png"></video>
                     </div>
-
+                    <h5>Indivest x Kshamata NGO Collaboration</h5>
                     <p>Indivest collaborating with Kshamata NGO to empower women financially by creating awareness
                         through financial literacy programmes!</p>
-                    <!-- <p class="blog-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis?</p>
-                        <a href="" class="read-btn">Read More</a> -->
                 </div>
-
-                <div class="media-card col-11 col-lg-4 col-md-4 col-sm-5">
+                <div class="media-card">
                     <div class="video-section">
                         <!-- <img src="./assets/img/blog-img.jpg" alt="blog image indivest" class="blog-img"> -->
                         <!-- <video src="https://www.youtube.com/watch?v=ecOJdg-TXAs"></video> -->
@@ -546,12 +575,14 @@
                             src="https://internovo-indirow.s3.ap-south-1.amazonaws.com/indivest_website/uploads/Why+invest_+Explaining+_inflation_.MP4"
                             class="m-video" controls poster="./assets/img/video2-thumbnail.png"></video>
                     </div>
-
+                    <h5>All About Inflation</h5>
                     <p>Explaining the concept of Inflation and deciphering the need to invest one's hard earned money!
                     </p>
                     <!-- <p class="blog-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis?</p>
                     <a href="" class="read-btn">Read More</a> -->
                 </div>
+
+               
             </div>
         </div>
     </div>
@@ -562,8 +593,36 @@
             <div>
                 <h2 class="heading">Blogs</h2>
             </div>
-            <div class="row">
-                <div class="blogs-container row">
+            <div class="blogs-container row">
+                <div class="blog-card col-11 col-lg-3 col-md-4 col-sm-5">
+                    <a href="/indivest-website-html/Handling-ups-and-downs.html">
+                        <div class="image-section">
+                            <img src="./assets/img/Handling Ups and Downs How to Navigate Changes in the Market.png"
+                                alt="Market Changes" class="blog-img">
+                        </div>
+
+                        <h3 class="blog-heading">Handling Ups and Downs:</h3>
+                        <p class="blog-desc">How to Navigate Changes in the Market?
+                        </p>
+                        <a href="/indivest-website-html/bonds-vs-stocks-which-offers-a-safer-haven-for-your-money.html"
+                            class="read-btn">Read More</a>
+                    </a>
+                </div>
+
+                <div class="blog-card col-11 col-lg-3 col-md-4 col-sm-5">
+                    <a href="/indivest-website-html/bonds-vs-stocks-which-offers-a-safer-haven-for-your-money.html">
+                        <div class="image-section">
+                            <img src="./assets/img/Bond vs. Stocks.png" alt="Bonds and stocks in India"
+                                class="blog-img">
+                        </div>
+
+                        <h3 class="blog-heading">Bonds vs. Stocks</h3>
+                        <p class="blog-desc">Which Offers a Safer Haven for Your Money?</p>
+                        <a href="/indivest-website-html/bonds-vs-stocks-which-offers-a-safer-haven-for-your-money.html"
+                            class="read-btn">Read More</a>
+                    </a>
+                </div>
+                <!-- <div class="blogs-container row">
                     <div class="blog-card col-11 col-lg-3 col-md-4 col-sm-5">
                         <a href="mutual-funds-unvailed.html">
                             <div class="image-section">
@@ -575,36 +634,36 @@
                             <p class="blog-desc">Your Ticket to Smarter, Simpler Investing</p>
                             <a href="mutual-funds-unvailed.html" class="read-btn">Read More</a>
                         </a>
-                    </div>
+                    </div> -->
 
-                    <div class="blog-card col-11 col-lg-3 col-md-4 col-sm-5">
-                        <a href="unlocking-financial-freedom-the-basics-of-investing.html">
-                            <div class="image-section">
-                                <img src="./assets/img/unlocking-financial-freedom-the-basics-of-investing.png"
-                                    alt="Financial freedom in India" class="blog-img">
-                            </div>
+                <div class="blog-card col-11 col-lg-3 col-md-4 col-sm-5">
+                    <a href="unlocking-financial-freedom-the-basics-of-investing.html">
+                        <div class="image-section">
+                            <img src="./assets/img/unlocking-financial-freedom-the-basics-of-investing.png"
+                                alt="Financial freedom in India" class="blog-img">
+                        </div>
 
-                            <h3 class="blog-heading">Unlocking Financial Freedom</h3>
-                            <p class="blog-desc">The Basics of Investment Knowledge</p>
-                            <a href="unlocking-financial-freedom-the-basics-of-investing.html" class="read-btn">Read
-                                More</a>
-                        </a>
-                    </div>
-
-                    <div class="blog-card col-11 col-lg-3 col-md-4 col-sm-5">
-                        <a href="why-set-financial-goals-the-key-to-your-financial-future.html">
-                            <div class="image-section">
-                                <img src="./assets/img/why-set-financial-goals-the-key to-your-financial-future.png"
-                                    alt="Financial future in India" class="blog-img">
-                            </div>
-
-                            <h3 class="blog-heading">Why Set Financial Goals?</h3>
-                            <p class="blog-desc">The Key to Your Financial Future</p>
-                            <a href="why-set-financial-goals-the-key-to-your-financial-future.html"
-                                class="read-btn">Read More</a>
-                        </a>
-                    </div>
+                        <h3 class="blog-heading">Unlocking Financial Freedom</h3>
+                        <p class="blog-desc">The Basics of Investment Knowledge</p>
+                        <a href="unlocking-financial-freedom-the-basics-of-investing.html" class="read-btn">Read
+                            More</a>
+                    </a>
                 </div>
+
+                <div class="blog-card col-11 col-lg-3 col-md-4 col-sm-5">
+                    <a href="why-set-financial-goals-the-key-to-your-financial-future.html">
+                        <div class="image-section">
+                            <img src="./assets/img/why-set-financial-goals-the-key to-your-financial-future.png"
+                                alt="Financial future in India" class="blog-img">
+                        </div>
+
+                        <h3 class="blog-heading">Why Set Financial Goals?</h3>
+                        <p class="blog-desc">The Key to Your Financial Future</p>
+                        <a href="why-set-financial-goals-the-key-to-your-financial-future.html" class="read-btn">Read
+                            More</a>
+                    </a>
+                </div>
+
             </div>
             <div class="read-more">
                 <a href="blog.html" class="read-more-btn">View More</a>
@@ -916,65 +975,67 @@
         <div class="explore-cards">
 
             <div class="explore-box-1">
-                <a href="https://indirow.com/" target="_blank" >
+                <a href="https://indirow.com/" target="_blank">
                     <div class="explore-img">
                         <img class="explore-indirow-img-1" src="assets/img/indirow.webp" alt="indirow-logo">
                     </div>
                     <hr>
                     <div class="explore-indirow-container">
                         <div class="content">
-                            <p>Indirow brings you freedom from calls from
-                                multiple bankers chasing you for your loan
-                                requirements. We are dedicted to help our users
-                                to become financially immune. To provide you
-                                with a "one-stop solution" for all of your borrowing
-                                needs, we have teamed with one of the largest
-                                loan placement platforms in the nation, which
-                                helps facilitate over INR 25,000 crores yearly.</p>
+                            <p>Indirow brings you freedom from calls from multiple bankers chasing you for your loan
+                                requirements. We are dedicated to helping our users become financially immune. To
+                                provide you with a "one-stop solution" for all of your borrowing needs, we have teamed
+                                with
+                                one of the largest loan placement platforms in the nation, which helps facilitate over
+                                INR
+                                25,000 crores yearly.</p>
                         </div>
                         <div class="explore-social">
                             <a href="https://www.instagram.com/indirow_india" target="_blank">
-                                <img src="assets/img/icons8-instagram-96.webp"
-                                    alt="instagram />
+                                <img src="assets/img/icons8-instagram-96.webp" alt="instagram" />
                             </a>
                             <a href="https://www.linkedin.com/company/indirow/" target="_blank">
-                                <img src="assets/img/icons8-linkedin-96.webp"
-                                    alt="linkedin" />
+                                <img src="assets/img/icons8-linkedin-96.webp" alt="linkedin" />
                             </a>
                         </div>
                     </div>
                 </a>
             </div>
+
+            <div class="custom-line">
+            </div>
+
             <div class="explore-box-2">
                 <a href="https://indibook.in/" target="_blank">
-                <div class="explore-img">
-                    <img class="explore-indibook-img-2" src="assets/img/inbookchaitanya.jpeg" alt="indibook-logo">
-                </div>
-                <hr>
-                <div class="explore-indirow-container">
-                    <div class="content">
-                        <p>Indibook is designed to make your routine record-keeping tasks more efficient. With
-                            Indibook, small merchants can effortlessly monitor the credit (udhaar) given to
-                            their customers, send payment reminders to them, organize their suppliers, and
-                            produce comprehensive monthly reports that offer complete oversight of their
-                            business cashflows. Indibook also makes the application process seamless for various
-                            loan products.</p>
+                    <div class="explore-img">
+                        <img class="explore-indibook-img-2" src="assets/img/inbookchaitanya.jpeg" alt="indibook-logo">
                     </div>
-                    <div class="explore-social">
-                        <a href="https://www.instagram.com/indibook_india/" target="_blank">
-                            <img src="assets/img/icons8-instagram-96.webp"
-                                alt="instagram />
-                        </a>
-                        <a href="https://in.linkedin.com/company/indibook" target="_blank">
-                            <img src="assets/img/icons8-linkedin-96.webp"
-                                alt="linkedin" />
-                        </a>
+                    <hr>
+                    <div class="explore-indirow-container">
+                        <div class="content">
+                            <p>Indibook is designed to make your routine record-keeping tasks more efficient. With
+                                Indibook,
+                                small merchants can effortlessly monitor the credit (udhaar) given to their customers,
+                                send
+                                payment reminders to them, organize their suppliers, and produce comprehensive monthly
+                                reports
+                                that offer complete oversight of their business cashflows. Indibook also makes the
+                                application process seamless for various loan products.</p>
+                        </div>
+                        <div class="explore-social">
+                            <a href="https://www.instagram.com/indibook_india/" target="_blank">
+                                <img src="assets/img/icons8-instagram-96.webp" alt="instagram" />
+                            </a>
+                            <a href="https://in.linkedin.com/company/indibook" target="_blank">
+                                <img src="assets/img/icons8-linkedin-96.webp" alt="linkedin" />
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
             </div>
         </div>
     </div>
+
 
 
     <!-- Contact section -->
@@ -1047,6 +1108,7 @@
     <script src="./assets/scripts/player.js"></script>
     <script src="./assets/scripts/transition.js"></script>
     <script src="./assets/scripts/mobile.js"></script>
+    <script src="./assets/scripts/scroll.js"></script>
 
     <!-- Message Forward -->
     <script>
@@ -1239,6 +1301,7 @@
 
         hide(document.querySelectorAll('#goal'), 0.3);
     </script>
+
 </body>
 
 </html>

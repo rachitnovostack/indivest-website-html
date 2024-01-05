@@ -3,13 +3,14 @@ const navbar = document.querySelector('.navbar');
 let preScrollPos = window.screenY || document.documentElement.scrollTop;
 
 window.onscroll = function(){
-    if(document.documentElement.scrollTop> 80){
+    if(document.documentElement.scrollTop> 30){
         navbar.classList.add('shadow')
     }
-    if(document.documentElement.scrollTop<80){
+    if(document.documentElement.scrollTop< 20){
         navbar.classList.remove("shadow")
     }
 }
+
 // Toggle Button (Nav)
 const toggleBtn = document.getElementById('toggle-btn');
 const bars = '<i class="fa-solid fa-bars toggle-icon"></i>';
