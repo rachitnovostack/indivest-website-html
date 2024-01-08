@@ -1,197 +1,149 @@
-/* Style the explore container */
-.explore-container {
-    width: 100vw;
-    font-family: 'Arial', sans-serif;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
-/* Style the explore heading */
+.explore-container {
+  width: 100vw;
+
+}
+
 .explore-heading {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.explore-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
 }
 
 .explore-heading span {
-    color: #64a47c;
-}
-
-/* Style the explore cards using Flexbox */
-.explore-cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 6rem;
-
-
+  color: #64a47c;
 }
 
 
-/* Style the individual row */
-.explore-box-1,
-.explore-box-2 {
-    width: 25%;
-    position: relative;
-    /* Added relative position for proper stacking context */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    font-size: small;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    /* Added transition for smooth hover effect */
-
+.explore-box {
+  width: 25%;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: small;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.explore-box-1 a{
-    text-decoration: none;
-
+.explore-box a {
+  text-decoration: none;
 }
 
-.explore-box-2 a{
 
-    text-decoration: none;
 
-}
-
-/* Style the explore image */
 .explore-img {
-    text-align: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 .explore-indirow-img-1 {
-    width: 180px;
-    height: auto;
+  width: 180px;
+  height: auto;
 }
-
 
 .explore-indibook-img-2 {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
-/* Style the explore content container */
 .explore-indirow-container {
-    padding: 20px;
-
+  padding: 20px;
 }
 
-/* Style the content */
 .content p {
-    color: #000000;
-    font-size: 14px;
-    text-align: justify;
-
+  color: #000000;
+  font-size: 14px;
+  text-align: justify;
 }
-
-/* Style the social media icon */
-.explore-social {
-   
-}
-
 
 .explore-social img {
-
-    width: 30px;
-    height: 30px;
-
-
+  width: 30px;
+  height: 30px;
 }
 
 .explore-social img:hover {
-    border: 1px solid #64a47c;
-    border-radius: 2px;
-
+  border: 1px solid #64a47c;
+  border-radius: 2px;
 }
 
-
-/* Add some space between content and social icon */
 .explore-indirow-container .content {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-/* Style the horizontal rule */
-hr{
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    margin: 10px 0;
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
 }
+
 .custom-line {
-    
-    border: 5px solid var(--cta-btn-bg); /* Adjust the border style and color as needed */
-    border-radius: 10px;
-    margin: 10px 0; /* Adjust the margin as needed */
+  border: 5px solid var(--cta-btn-bg);
+  border-radius: 10px;
+  margin: 10px 0;
 }
 
-/* Hover effect */
-.explore-box-1:hover {
-    transform: scale(1.02);
-    /* Scale up on hover */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    /* Add a slightly larger shadow on hover */
-    cursor: pointer;
-    border: 1px solid #64a47c;
+.explore-box:hover {
+  transform: scale(1.02);
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  border: 1px solid #64a47c;
 }
 
-.explore-box-2:hover {
-    transform: scale(1.02);
-    /* Scale up on hover */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    /* Add a slightly larger shadow on hover */
-    cursor: pointer;
-    border: 1px solid #64a47c;
-}
 
-/* Media Queries */
 @media (max-width: 992px) {
+  .explore-box {
+    width: 75%;
+  }
 
-    .explore-box-1,
-    .explore-box-2 {
-        width: 75%;
-
-    }
-    .custom-line {
-    
-        display: none;
-    }
+  .custom-line {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-    .explore-cards {
-        margin: 1rem;
-        width: auto;
-    }
+  .explore-cards {
+    margin: 1rem;
+    width: auto;
+  }
 
-    .explore-box-1,
-    .explore-box-2 {
-        width: 100%;
+  .explore-box {
+    width: 100%;
+  }
 
-    }
-    .custom-line {
-    
-        display: none;
-    }
-
+  .custom-line {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
-    .explore-cards {
-        margin: 1rem;
-        width: auto;
+  .explore-cards {
+    margin: 1rem;
+    width: auto;
+  }
 
-    }
+  .explore-box {
+    width: 100%;
+  }
 
-    .explore-box-1,
-    .explore-box-2 {
-        width: 100%;
-
-    }
-
-    .custom-line {
-    
-        display: none;
-    }
+  .custom-line {
+    display: none;
+  }
 }

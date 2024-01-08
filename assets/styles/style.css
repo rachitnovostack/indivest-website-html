@@ -104,11 +104,6 @@ body::-webkit-scrollbar-track {
     }
 }
 
-body {
-    /* background-color: var(--bg-color); */
-}
-
-
 ::selection {
     background-color: cyan;
 }
@@ -1024,6 +1019,7 @@ body {
 .faq-section {
     padding: 110px 0;
     padding-top: 0px;
+
 }
 
 .faq-section .read-more {
@@ -1044,39 +1040,41 @@ body {
     color: black;
 }
 
+/* Media Card Styles */
 .news-section .heading,
 .blog-section .heading,
 .faq-section .heading,
 .media-section .heading {
     text-align: center;
+}.media-section{
+    display: block;
 }
 
-/* Media Card Styles */
 .media-box{
-    /* height: 100vh; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
+    
 }
 .media-card{
-    background: white;
     height: auto;
     width: 300px;
-}
-.media-card {
     border-radius: 1rem;
     overflow: hidden;
     margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0px 16px 48px 0px rgba(6, 35, 63, 0.03), 0px -16px 48px 0px rgba(6, 35, 63, 0.03);
 }
+.media-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    transition: 0.3s;
+}
+
+
 .media-card p{
 text-justify:inter-word;
 margin-bottom: 1rem;
 }
 .media-card h5{
-    text-align: center;
 margin-top: 10px;
 font-weight: bold;
 }
@@ -1105,7 +1103,7 @@ color: #2997ff;
     object-fit: cover;
 }
 
-
+/* News Section Styling */
 
 .news-section .row {
     transform: translateY(130px);
@@ -1254,9 +1252,7 @@ color: #2997ff;
 }
 
 /* faq section */
-
 .faq-item {
-    /* border-bottom: 1px solid #ccc; */
     padding: 10px;
     background-color: #f4f3f37a;
     border-radius: 6px;
@@ -1300,6 +1296,8 @@ color: #2997ff;
     transition: 0.3s;
     padding-left: 6px;
     padding-right: 6px;
+    margin-top: 10px; /* Add margin-top to separate answer from question */
+    position: relative; /* Adjust position property */
 }
 
 .faq-section .heading {
@@ -1318,7 +1316,6 @@ color: #2997ff;
     opacity: 0;
 }
 
-
 @media (max-width: 991px) {
     .faq-section .image img {
         display: none;
@@ -1330,6 +1327,7 @@ color: #2997ff;
         align-items: center;
     }
 }
+
 
 /* About videos section */
 /* GetKnow section start's here */
@@ -1877,4 +1875,16 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/* inLine Styles */
+
+#colorSpan{
+color: #0b008e;
+}
+.active{
+    /* display: flex; */
+}
+.none{
+    display: none;
 }
