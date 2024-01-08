@@ -5,7 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
-
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
 /* variables */
 :root {
     --bg-color: #f6f4ef;
@@ -36,6 +39,8 @@
 
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
 }
 
 
@@ -73,10 +78,6 @@ h6 {
     color: var(--heading-text-color);
 }
 
-html {
-    /* width: fit-content; */
-    /* background-color: red; */
-}
 
 body::-webkit-scrollbar {
     width: 8px;
@@ -102,11 +103,6 @@ body::-webkit-scrollbar-track {
         font-size: 1.625rem;
     }
 }
-
-body {
-    /* background-color: var(--bg-color); */
-}
-
 
 ::selection {
     background-color: cyan;
@@ -1023,6 +1019,7 @@ body {
 .faq-section {
     padding: 110px 0;
     padding-top: 0px;
+
 }
 
 .faq-section .read-more {
@@ -1043,12 +1040,70 @@ body {
     color: black;
 }
 
+/* Media Card Styles */
 .news-section .heading,
 .blog-section .heading,
 .faq-section .heading,
 .media-section .heading {
     text-align: center;
+}.media-section{
+    display: block;
 }
+
+.media-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    
+}
+.media-card{
+    height: auto;
+    width: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.media-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    transition: 0.3s;
+}
+
+
+.media-card p{
+text-justify:inter-word;
+margin-bottom: 1rem;
+}
+.media-card h5{
+margin-top: 10px;
+font-weight: bold;
+}
+.media-card h6{
+
+font-size: 10px;
+font-weight: lighter;
+color: #2997ff;
+}
+
+
+
+
+/* Image Section Styles */
+.img-section {
+    display: flex;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* News Section Styling */
 
 .news-section .row {
     transform: translateY(130px);
@@ -1197,9 +1252,7 @@ body {
 }
 
 /* faq section */
-
 .faq-item {
-    /* border-bottom: 1px solid #ccc; */
     padding: 10px;
     background-color: #f4f3f37a;
     border-radius: 6px;
@@ -1243,6 +1296,8 @@ body {
     transition: 0.3s;
     padding-left: 6px;
     padding-right: 6px;
+    margin-top: 10px; /* Add margin-top to separate answer from question */
+    position: relative; /* Adjust position property */
 }
 
 .faq-section .heading {
@@ -1261,7 +1316,6 @@ body {
     opacity: 0;
 }
 
-
 @media (max-width: 991px) {
     .faq-section .image img {
         display: none;
@@ -1273,6 +1327,7 @@ body {
         align-items: center;
     }
 }
+
 
 /* About videos section */
 /* GetKnow section start's here */
@@ -1820,4 +1875,16 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/* inLine Styles */
+
+#colorSpan{
+color: #0b008e;
+}
+.active{
+    /* display: flex; */
+}
+.none{
+    display: none;
 }
