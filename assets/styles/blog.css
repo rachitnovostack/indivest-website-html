@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
 .blog-hero-section,.media-hero-section{
     background: white;
 }

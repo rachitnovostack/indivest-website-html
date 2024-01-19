@@ -1,0 +1,21 @@
+body {
+    max-width: 1440px;
+    margin: auto;
+    line-height: 30px;
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin: 60px;
+    text-decoration: underline;
+    padding-bottom: 2px;
+}
+
+.lasttag {
+    text-align: center;
+}
+
+.custom-ol{
+    list-style: lower-alpha;
+}

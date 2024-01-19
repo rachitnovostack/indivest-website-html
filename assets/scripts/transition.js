@@ -108,8 +108,8 @@ moveY(document.querySelectorAll('.service-card:nth-child(1)'),0.3);
 moveY(document.querySelectorAll('.service-card:nth-child(3)'),0.3);
 
 // features animation
-moveX(document.querySelectorAll('.block:nth-child(even) .feature'),0.1);
-moveX(document.querySelectorAll('.block:nth-child(odd) .feature'),0.1);
+moveX(document.querySelectorAll('.block:nth-child(even) .feature'),0.3);
+moveX(document.querySelectorAll('.block:nth-child(odd) .feature'),0.3);
 
 // news animation
 moveY(document.querySelectorAll('.news-section .row'),0.2);
@@ -123,7 +123,7 @@ moveX(document.querySelectorAll('.blog-section .blog-card:nth-child(3)'),0.2);
 moveX(document.querySelectorAll('.faq-section .content:nth-child(1)'),0.1);
 moveX(document.querySelectorAll('.faq-section .content:nth-child(2)'),0.1);
 // videos section
-addShadow(document.querySelectorAll('.about-section .video-container'),0.5);
+addShadow(document.querySelectorAll('.about-section .video-container'),0.1);
 
 
 function animateCard(element,pre="",sub,counter,speed) {
