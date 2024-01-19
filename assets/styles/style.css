@@ -1877,6 +1877,15 @@ input[type="submit"]:hover {
     gap: 10px;
 }
 
+.tc{
+    margin-top: 1rem;
+    text-align: center;
+}
+.tc a{
+    text-decoration: none;
+    color: darkblue;
+}
+
 /* inLine Styles */
 
 #colorSpan{
