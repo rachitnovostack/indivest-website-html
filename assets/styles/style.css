@@ -1115,6 +1115,7 @@ color: #2997ff;
 .news {
     margin-top: 50px;
     margin-bottom: 50px;
+    width: 300px;
 }
 
 .news .news-img {
@@ -1896,4 +1897,28 @@ color: #0b008e;
 }
 .none{
     display: none;
+}
+
+.doc-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#doc-btn{
+    padding: 1rem;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    background: orange;
+    text-decoration: none;
+}
+#doc-btn:hover{
+
+    background: rgb(255, 179, 38);
+    transform: scale(1.01);
 }
