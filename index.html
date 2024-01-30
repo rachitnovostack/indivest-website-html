@@ -32,23 +32,16 @@
 
     <!-- Title and Favicon -->
     <title>Achieve Financial Freedom with Indivest: Explore Mutual Funds, Stocks, and Deposits.</title>
-    <!-- <link rel="icon" type="image/x-icon" href="./assets/img/favicon.svg"> -->
-    <!-- <link rel="shortcut icon" type="image/png" href="./assets/img/faviconn.png">
-    <link rel="icon" sizes="16x16 32x32" type="image/png" href="./assets/img/faviconn.png">
-    <link rel="icon" sizes="192x192" type="image/png" href="https://indivest.in/assets/img/faviconn.png"> -->
-    <!-- <link rel="icon" sizes="16x16" type="image/png" href="./assets/img/favicon-16x16.png">
-    <link rel="icon" sizes="32x32" type="image/png" href="./assets/img/favicon-32x32.png">
-    <link rel="icon" sizes="192x192" type="image/png" href="./assets/img/favicon-192x192.png"> -->
 
+
+    <link rel="favicon" type="image/ico" href="https://indivest.in/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-<link rel="icon" type="image/x-icon"  href="./favicon-48x48.ico">
-<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 
 <!-- Schema Org -->
@@ -94,6 +87,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 
 
 </head>
@@ -1158,19 +1152,17 @@
             <div class="message-box col-lg-6">
                 <form action="" class="contact-form" id="contact-form">
                     <input type="email" placeholder="Enter your email" id="email">
-                    <textarea name="" id="message" cols="30" rows="5" placeholder="Enter your query"
-                        id="message"></textarea>
+                    <textarea name="" id="message" cols="30" rows="5" placeholder="Enter your query"></textarea>
                     <input type="submit" value="Submit" id="submit-btn">
+            
+                    <!-- Loading indicator -->
+                    <div id="loadingIndicator" style="display: none;">Loading...</div>
+            
+                    <!-- Display success message -->
+                    <p id="successMessage" style="color: green; display: none;"></p>
                 </form>
-                <div class="loader">
-                    <div class="loader1"></div>
-                    <div class="text">Message sending</div>
-                    <div class="success">
-                        <i class="fa-solid fa-check"></i>
-                        <h3>Sent</h3>
-                    </div>
-                </div>
             </div>
+            
         </div>
     </div>
 
@@ -1185,203 +1177,99 @@
 
     <!-- custom scripts -->
     <script src="./assets/scripts/index.js"></script>
+    <script type='text/javascript' src="key.js"></script>
     <script src="./assets/scripts/player.js"></script>
     <script src="./assets/scripts/transition.js"></script>
     <script src="./assets/scripts/mobile.js"></script>
     <script src="./assets/scripts/scroll.js"></script>
-
-    <!-- Message Forward -->
-    <script>
-        document.getElementById("contact-form").addEventListener('submit', (e) => {
-            e.preventDefault();
-        })
-
-        document.getElementById("submit-btn").addEventListener('click', (e) => {
-
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
-
-            const url = 'https://api.brevo.com/v3/smtp/email';
-            const options = {
-                method: 'POST',
-                headers: {
-                    accept: 'application/json',
-                    'content-type': 'application/json',
-                    'api-key': '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'
-                },
-                body: JSON.stringify({
-                    sender: { name: 'New message', email: 'siddharth@internovo.in' },
-                    to: [{ email: 'support@internovo.in' }],
-                    // to: [{email:'siddharthsingh88505@gmail.com'}],
-                    // bcc: [{email: 'helen9766@example.com', name: 'Helen'}],
-                    // cc: [{email: 'ann6533@example.com', name: 'Ann'}],
-                    textContent: `${message} \n\n ${name} \n\n ${email}`,
-                    subject: 'Message From INDIVEST',
-                    replyTo: { email: `${email}` },
-                    // attachment: [
-                    // {
-                    //     url: 'https://attachment.domain.com/myAttachmentFromUrl.jpg',
-                    //     content: 'b3JkZXIucGRm',
-                    //     name: 'myAttachment.png'
-                    // }
-                    // ],
-                    headers: {
-                        // 'sender.ip': '1.2.3.4',
-                        "Content-Type": "application/json",
-                        // 'X-Mailin-custom': 'some_custom_header',
-                        // idempotencyKey: 'abc-123'
-                    },
-                    // templateId: 2,
-                    // params: {FNAME: 'Joe', LNAME: 'Doe'},
-                    // messageVersions: [
-                    // {
-                    //     to: [{email: 'jimmy98@example.com', name: 'Jimmy'}],
-                    //     params: {FNAME: 'Joe', LNAME: 'Doe'},
-                    //     bcc: [{email: 'helen9766@example.com', name: 'Helen'}],
-                    //     cc: [{email: 'ann6533@example.com', name: 'Ann'}],
-                    //     replyTo: {email: 'ann6533@example.com', name: 'Ann'},
-                    //     subject: 'Login Email confirmation'
-                    // }
-                    // ]
-                    // tags: ['tag1'],
-                    // scheduledAt: '2022-04-05T12:30:00+02:00',
-                    // batchId: '5c6cfa04-eed9-42c2-8b5c-6d470d978e9d'
-                })
-            };
-
-
-            // validate input
-            if (email.trim().length) {
-                var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-                if (emailRegex.test(email.trim())) {
-                    if (message.trim().length) {
-                        fetch(url, options)
-                            .then(res => res.json()
-                            )
-                            .then(json => {
-                                console.log(json);
-                                console.log("gaya message");
-                                document.querySelector(".loader").style.display = "flex";
-                                setTimeout(() => {
-                                    document.getElementById("email").value = "";
-                                    document.getElementById("message").value = "";
-                                    setTimeout(() => {
-                                        document.querySelector('.loader1').style.display = "none";
-                                        document.querySelector(".loader .text").style.display = "none";
-                                        document.querySelector('.success').style.display = "flex";
-                                    }, 300)
-                                    setTimeout(() => {
-                                        document.querySelector(".loader").style.display = "none";
-                                    }, 600)
-                                }, 3000)
-                            })
-                            .catch(err => console.error('error:' + err));
-                    }
-                    else {
-                        alert("Please provide message!");
-                    }
-                }
-                else {
-                    alert("Please provide valid email!");
-                }
-
-            }
-            else {
-                alert("Please provide email!");
-            }
-
-            console.log(name, email, message);
-        })
-    </script>
-
+    <script src="./msgfwd.js"></script>
     <!-- inShort news -->
     <script>
-        const apiUrl = "https://inshortsapi.vercel.app/news";
-        const category = "business";
-        let news_list;
+            const apiUrl = "https://inshortsapi.vercel.app/news";
+            const category = "business";
+            let news_list;
 
-        // Construct the URL with the category parameter
-        const url = `${apiUrl}?category=${category}`;
-
-
-        fetch(url)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Network response was not ok: ${response.statusText}`);
-                }
-                return response.json();
-            })
-            .then(res => {
-                // Process the data as needed
-                let parentElement = document.getElementById("index-news-row");
-                let three_news = res.data.slice(0, 3);
-
-                three_news.forEach(newsItem => {
-                    // Create elements
-                    const newsDiv = document.createElement("div");
-                    newsDiv.classList.add("news", "col-md-6", "col-lg-3");
-
-                    const newsLink = document.createElement("a");
-                    newsLink.href = newsItem.url;
-                    newsLink.target = "_blank";
-
-                    const newsImg = document.createElement("img");
-                    newsImg.src = newsItem.imageUrl;
-                    newsImg.alt = newsItem.title;
-                    newsImg.classList.add("news-img");
-
-                    const newsDesc = document.createElement("p");
-                    newsDesc.classList.add("desc");
-                    newsDesc.textContent = newsItem.title;
-
-                    // Append elements to the parent
-                    newsLink.appendChild(newsImg);
-                    newsLink.appendChild(newsDesc);
-                    newsDiv.appendChild(newsLink);
-                    parentElement.appendChild(newsDiv);
+            // Construct the URL with the category parameter
+            const url = `${apiUrl}?category=${category}`;
 
 
-                    console.log(parentElement);
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Network response was not ok: ${response.statusText}`);
+                    }
+                    return response.json();
+                })
+                .then(res => {
+                    // Process the data as needed
+                    let parentElement = document.getElementById("index-news-row");
+                    let three_news = res.data.slice(0, 3);
+
+                    three_news.forEach(newsItem => {
+                        // Create elements
+                        const newsDiv = document.createElement("div");
+                        newsDiv.classList.add("news", "col-md-6", "col-lg-3");
+
+                        const newsLink = document.createElement("a");
+                        newsLink.href = newsItem.url;
+                        newsLink.target = "_blank";
+
+                        const newsImg = document.createElement("img");
+                        newsImg.src = newsItem.imageUrl;
+                        newsImg.alt = newsItem.title;
+                        newsImg.classList.add("news-img");
+
+                        const newsDesc = document.createElement("p");
+                        newsDesc.classList.add("desc");
+                        newsDesc.textContent = newsItem.title;
+
+                        // Append elements to the parent
+                        newsLink.appendChild(newsImg);
+                        newsLink.appendChild(newsDesc);
+                        newsDiv.appendChild(newsLink);
+                        parentElement.appendChild(newsDiv);
+
+
+                        console.log(parentElement);
+                    });
+
+                    console.log(res.data[0]);
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
                 });
 
-                console.log(res.data[0]);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
+            function scrollToBottom() {
+                var element = document.querySelector('.GetKnow-tags');
+                element.scrollTop = element.scrollHeight;
+            }
 
-        function scrollToBottom() {
-            var element = document.querySelector('.GetKnow-tags');
-            element.scrollTop = element.scrollHeight;
-        }
-
-        function hide(element, threshold_value) {
-            let heading_observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    // console.log(entry.target)
-                    if (entry.isIntersecting) {
-                        var element = document.querySelector('.down-icon');
-                        element.style.display = "none";
-                        // heading_observer.unobserve(entry.target);
-                    }
-                    else {
-                        var element = document.querySelector('.down-icon');
-                        element.style.display = "flex";
-                    }
+            function hide(element, threshold_value) {
+                let heading_observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        // console.log(entry.target)
+                        if (entry.isIntersecting) {
+                            var element = document.querySelector('.down-icon');
+                            element.style.display = "none";
+                            // heading_observer.unobserve(entry.target);
+                        }
+                        else {
+                            var element = document.querySelector('.down-icon');
+                            element.style.display = "flex";
+                        }
+                    })
+                    // console.log(entries)
+                }, {
+                    threshold: threshold_value
                 })
-                // console.log(entries)
-            }, {
-                threshold: threshold_value
-            })
 
-            element.forEach(e => {
-                heading_observer.observe(e)
-            });
-        }
+                element.forEach(e => {
+                    heading_observer.observe(e)
+                });
+            }
 
-        hide(document.querySelectorAll('#goal'), 0.3);
-    </script>
-
+            hide(document.querySelectorAll('#goal'), 0.3);
+        </script> 
 </body>
 
 </html>
