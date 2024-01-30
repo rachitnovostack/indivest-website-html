@@ -9,6 +9,8 @@ document.getElementById("submit-btn").addEventListener("click", (e) => {
 
   const message = document.getElementById("message").value;
 
+  const demo = document.getElementById("test").value;
+
   
   // validate input
   if (email.trim().length) {
@@ -22,7 +24,7 @@ document.getElementById("submit-btn").addEventListener("click", (e) => {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
-              'api-key': config.op,
+              'api-key': demo,
           },
           body: JSON.stringify({
               sender: {email: `${email}` },
