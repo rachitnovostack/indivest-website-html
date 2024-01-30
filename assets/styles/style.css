@@ -300,7 +300,7 @@ body::-webkit-scrollbar-track {
     border-radius: 5px;
     padding: 5px;
     display: block;
-    font-size: 12px;
+    font-size: 15px;
     /* left: 10px; */
     display: none;
 }
@@ -854,7 +854,7 @@ body::-webkit-scrollbar-track {
 .coming-soon {
     background-color: var(--cta-btn-bg);
     color: white;
-    font-size: 11px;
+    font-size: 15px;
     position: absolute;
     padding: 4px;
     border-radius: 5px;
@@ -1075,12 +1075,12 @@ text-justify:inter-word;
 margin-bottom: 1rem;
 }
 .media-card h5{
-margin-top: 10px;
+margin-top: 15px;
 font-weight: bold;
 }
 .media-card h6{
 
-font-size: 10px;
+font-size: 15px;
 font-weight: lighter;
 color: #2997ff;
 }
@@ -1483,7 +1483,7 @@ color: #2997ff;
     border-radius: 20px;
     outline: none;
     padding: 2px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     border: 2px solid #f3f3f3;
     cursor: pointer;
     color: black;
@@ -1922,3 +1922,4 @@ color: #0b008e;
     background: rgb(255, 179, 38);
     transform: scale(1.01);
 }
+
