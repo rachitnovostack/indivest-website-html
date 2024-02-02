@@ -4,7 +4,10 @@ body {
     margin: 0;
     padding: 0;
     background: #ffffff;
-    
+    background-image: url("./docimg/Untitled\ design\ \(9\).png");
+    background-position: 100% 100% 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
 
 }
 
@@ -49,6 +52,7 @@ nav {
     flex-wrap: wrap;
     align-items: start;
 
+
 }
 
 #docText{
@@ -79,8 +83,8 @@ nav {
 
 .box {
     background: white;
-    width: 283px;
-    height: 135px;
+    width: 300px;
+    height: 150px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -523,19 +527,22 @@ color: #37363a;
 }
 
 #mobile {
-    width:225px;
+    width: 225px;
     height: 430px; 
     border: 10px solid black;
     border-color: rgb(0, 0, 0);
     border-radius: 50px;
     margin: 0 auto;
     background: rgb(255, 255, 255);
-    background: url('./img3.jpg');
+    background-image: url('./img3.jpg');
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     display: flex;
     justify-content: center;
-    transition: 0.4s;
+    transition: 0.3s;
 }
+
 
 @media screen and (max-width: 300px) {
     #mobile {

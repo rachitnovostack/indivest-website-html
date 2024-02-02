@@ -1106,7 +1106,6 @@ color: #2997ff;
 /* News Section Styling */
 
 .news-section .row {
-    transform: translateY(130px);
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -1163,6 +1162,7 @@ color: #2997ff;
     transition: 0.3s;
     background-color: var(--cta-btn-hover);
 }
+
 
 /* blog section */
 .blog-section {
