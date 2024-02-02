@@ -9,7 +9,6 @@ document.getElementById("submit-btn").addEventListener("click", (e) => {
 
   const message = document.getElementById("message").value;
 
-  const demo = document.getElementById("test").value;
 
   
   // validate input
@@ -24,11 +23,11 @@ document.getElementById("submit-btn").addEventListener("click", (e) => {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
-              'api-key': demo,
+              'api-key': "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",
           },
           body: JSON.stringify({
               sender: {email: `${email}` },
-              to: [{ email: "support@internovo.in" }],
+              to: [{ email: "harsh@internovo.in" }],
               textContent: `from: ${email} \n message: ${message} \n `,
               subject: "Query from Indivest Website",
               replyTo: { email: `${email}` },

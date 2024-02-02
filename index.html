@@ -37,7 +37,7 @@
     <link rel="favicon" type="image/ico" href="https://indivest.in/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="favicon" type="image/ico"  sizes="16x16" href="./favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
@@ -1151,7 +1151,6 @@
             </div>
             <div class="message-box col-lg-6">
                 <form action="" class="contact-form" id="contact-form">
-                    <input type="hidden" value="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" id="test">
                     <input type="email" placeholder="Enter your email" id="email">
                     <textarea name="" id="message" cols="30" rows="5" placeholder="Enter your query"></textarea>
                     <input type="submit" value="Submit" id="submit-btn">
@@ -1178,99 +1177,13 @@
 
     <!-- custom scripts -->
     <script src="./assets/scripts/index.js"></script>
-    <script type='text/javascript' src="key.js"></script>
     <script src="./assets/scripts/player.js"></script>
     <script src="./assets/scripts/transition.js"></script>
     <script src="./assets/scripts/mobile.js"></script>
     <script src="./assets/scripts/scroll.js"></script>
     <script src="./msgfwd.js"></script>
-    <!-- inShort news -->
-    <script>
-            const apiUrl = "https://inshortsapi.vercel.app/news";
-            const category = "business";
-            let news_list;
+    <script src="./assets/scripts/indexNews.js"></script>
 
-            // Construct the URL with the category parameter
-            const url = `${apiUrl}?category=${category}`;
-
-
-            fetch(url)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`Network response was not ok: ${response.statusText}`);
-                    }
-                    return response.json();
-                })
-                .then(res => {
-                    // Process the data as needed
-                    let parentElement = document.getElementById("index-news-row");
-                    let three_news = res.data.slice(0, 3);
-
-                    three_news.forEach(newsItem => {
-                        // Create elements
-                        const newsDiv = document.createElement("div");
-                        newsDiv.classList.add("news", "col-md-6", "col-lg-3");
-
-                        const newsLink = document.createElement("a");
-                        newsLink.href = newsItem.url;
-                        newsLink.target = "_blank";
-
-                        const newsImg = document.createElement("img");
-                        newsImg.src = newsItem.imageUrl;
-                        newsImg.alt = newsItem.title;
-                        newsImg.classList.add("news-img");
-
-                        const newsDesc = document.createElement("p");
-                        newsDesc.classList.add("desc");
-                        newsDesc.textContent = newsItem.title;
-
-                        // Append elements to the parent
-                        newsLink.appendChild(newsImg);
-                        newsLink.appendChild(newsDesc);
-                        newsDiv.appendChild(newsLink);
-                        parentElement.appendChild(newsDiv);
-
-
-                        console.log(parentElement);
-                    });
-
-                    console.log(res.data[0]);
-                })
-                .catch(error => {
-                    console.error('Error fetching data:', error);
-                });
-
-            function scrollToBottom() {
-                var element = document.querySelector('.GetKnow-tags');
-                element.scrollTop = element.scrollHeight;
-            }
-
-            function hide(element, threshold_value) {
-                let heading_observer = new IntersectionObserver(entries => {
-                    entries.forEach(entry => {
-                        // console.log(entry.target)
-                        if (entry.isIntersecting) {
-                            var element = document.querySelector('.down-icon');
-                            element.style.display = "none";
-                            // heading_observer.unobserve(entry.target);
-                        }
-                        else {
-                            var element = document.querySelector('.down-icon');
-                            element.style.display = "flex";
-                        }
-                    })
-                    // console.log(entries)
-                }, {
-                    threshold: threshold_value
-                })
-
-                element.forEach(e => {
-                    heading_observer.observe(e)
-                });
-            }
-
-            hide(document.querySelectorAll('#goal'), 0.3);
-        </script> 
 </body>
 
 </html>
