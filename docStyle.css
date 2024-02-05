@@ -528,13 +528,13 @@ color: #37363a;
 
 #mobile {
     width: 225px;
-    height: 430px; 
+    height: 458px; 
     border: 10px solid black;
     border-color: rgb(0, 0, 0);
     border-radius: 50px;
     margin: 0 auto;
     background: rgb(255, 255, 255);
-    background-image: url('./img3.jpg');
+    background-image: url('./docimg/img1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -566,10 +566,10 @@ color: #37363a;
 
 #notch {
     width: 30%;
-    height: 19px;
+    height: 12px;
     background-color: black;
     border-radius: 25px;
-    margin-top: 10px;
+    margin-top: -5px;
 }
 
 .left-controls {
