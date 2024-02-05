@@ -1,11 +1,4 @@
 
-// const category = "business";
-
-// const url = 'https://inshorts.vercel.app/news';
-//business category not working
-
-// const url =
-//     "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=a0bdc49cf2674d7a801743c2611abf3a";
 
 const url = "https://demo-azure-tau.vercel.app/api/getNewsInvApi";
 
@@ -17,14 +10,17 @@ fetch(url)
         return response.json();
     })
     .then((res) => {
-        console.log(res.news);
+        // console.log(res.news);
         // Process the data as needed
         let parentElement = document.getElementById("index-news-row");
-        let three_news = res.news.slice(3, 6);
+        let three_news = res.news.slice(0, 3);
 
         three_news.forEach((newsItem) => {
-            // console.log(newsItem.news_obj.source_url)
+            // console.log(newsItem.news_type)
             // Create elements
+            if(newsItem.news_type === "NEWS"){
+
+            
             const newsDiv = document.createElement("div");
             newsDiv.classList.add("news", "col-md-6", "col-lg-3");
 
@@ -48,6 +44,7 @@ fetch(url)
             parentElement.appendChild(newsDiv);
 
             console.log(parentElement);
+            }
         });
 
         // console.log(res.data[0]);
@@ -55,4 +52,3 @@ fetch(url)
     .catch((error) => {
         console.error("Error during fetch:", error);
     });
-
