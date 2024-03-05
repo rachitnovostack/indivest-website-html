@@ -13,7 +13,7 @@ fetch(url)
         // console.log(res.news);
         // Process the data as needed
         let parentElement = document.getElementById("index-news-row");
-        let three_news = res.news.slice(0, 3);
+        let three_news = res.news.slice(0, 4);
 
         three_news.forEach((newsItem) => {
             // console.log(newsItem.news_type)
