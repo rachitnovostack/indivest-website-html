@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indivest Gov Guide</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./docStyle.css" />
+    <!-- <link rel="stylesheet" href="./mobile.css"> -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* The Modal (background) */
+        .modal,
+        .blueModal,
+        .greenModal,
+        .orangeModal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #FEF6EB;
+            margin: auto;
+            border-radius: 2rem;
+            /* border-color: lightgreen; */
+            padding: 20px;
+            border: 1px solid darkblue;
+            width: 80%;
+            line-height: 200%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .text {
+            position: relative;
+            padding: 6px;
+            border-radius: 2rem;
+            background: #bebebe;
+            font-size: small;
+            color: black;
+            display: none;
+            /* <----- hides text by default */
+        }
+
+        div.app:hover .text {
+            display: block;
+            /* <----- shows text on hover   */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./docimg/indivest logo.png" alt="indivest logo" />
+        </div>
+    </nav>
+    <div class="bigContainer">
+        <div class="left-container">
+            <p id="docText">Get your documents ready with Indivest!</p>
+            <div class="container">
+                <div class="box box-1">
+                    <h2>Aadhar Card</h2>
+                    <div class="btn-box">
+                        <button id="aadharBtn">
+                            <img width="30" height="30" src="./docimg/icons8-doc-red.png" alt="aadhar doc" />
+                        </button>
+                        <div class="text">Check Docs Required</div>
+                        <button>
+                            <a target="_blank"
+                                href="https://appointments.uidai.gov.in/bookappointment.aspx?AspxAutoDetectCookieSupport=1">
+                                <img width="30" height="30" src="./docimg/icons8-link-red.png" alt="aadhar link" />
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="box box-2">
+                    <h2>PAN Card</h2>
+                    <div class="btn-box">
+                        <button id="panBtn">
+                            <img width="30" height="30" src="./docimg/icons8-doc-blue.png" alt="pan doc" />
+                        </button>
+                        <button>
+                            <a target="_blank" href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html">
+                                <img width="30" height="30" src="./docimg/icons8-link-blue.png" alt="pan link" />
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="box box-3">
+                    <h2>Voter ID Card</h2>
+                    <div class="btn-box">
+                        <button id="voterBtn">
+                            <img width="30" height="30" src="./docimg/icons8-doc-green.png" alt="voter doc" />
+                        </button>
+                        <button>
+                            <a target="_blank" href="https://voters.eci.gov.in/">
+                                <img width="30" height="30" src="./docimg/icons8-link-green.png" alt="voter link" />
+    
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="box box-4">
+                    <h2>Bank Account</h2>
+                    <div class="btn-box">
+                        <button id="bankBtn">
+                            <img width="30" height="30" src="./docimg/icons8-doc-orange.png" alt="acc doc" />
+                        </button>
+                        <button>
+                            <a target="_blank" href="https://www.kotak811.com/open-zero-balance-savings-account?source=GoogleSEMNew&banner=Sok-Kotak-811-Search-Core-2023-vKYC_Top-Performing-Phrase&pubild=bank+account&gad_source=1&gclid=Cj0KCQiAn-2tBhDVARIsAGmStVkgH4x6wN1jjDBbMqkceg5dbyQ-l76wS90ni2OJDvYtaPRQ1zzN-f8aAigIEALw_wcB&gclsrc=aw.ds">
+                                <img width="30" height="30" src="./docimg/icons8-link-orange.png" alt="acc link" />
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="iphone-container">
+                <div id="mobile">
+                    <div id="notch"></div>
+                </div>
+    
+                <div class="left-controls">
+                    <div class="silent control"></div>
+                    <div class="controls">
+                        <div class="plus-control control"></div>
+                        <div class="minus-control control"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+    <!-- Modal Styling -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Documents Required for Aadhar Card</h3>
+            <ul class="custom-ul">
+                <li>
+                    <span id="maintext"> Identity Proof (Document must consist photograph) -</span>
+                    PAN card, Driving license, Secondary or Senior School mark sheet/ School leaving
+                    certificate having photograph, Government-issued identity card/
+                    certificate.
+                </li>
+                <li>
+                    <span id="maintext"> Address Proof - </span>Electricity/water/gas bill (last 3 months), Bank
+                    / Post Office passbook, rent/ lease/ leave & license agreement.
+                </li>
+                <li>
+                    <span id="maintext">Both Identity & Address Proof - </span>Ration card, Voter identity card,
+                    Government-issued identity card/ certificate having address, and
+                    Indian Passport.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="blueModal" class="blueModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Documents Required for PAN Card</h3>
+            <ul class="custom-ul">
+                <li>
+                    <span id="maintext">Identity Proof -</span> Ration card, Aadhaar card, Voter ID, Driving license,
+                    Passport.
+                </li>
+                <li>
+                    <span id="maintext">Address Proof -</span> Ration card, Aadhaar card, Voter ID, Driving license,
+                    Passport, Spouse’s Passport,
+                    Post Office Passbook.
+                </li>
+                <li>
+                    <span id="maintext">Date of Birth Proof -</span> Matriculation certificate, Birth Certificate,
+                    Aadhaar card,
+                    Voter ID, Driving license,
+                    Passport.
+                </li>
+            </ul>
+            <p>
+                Fees for PAN applications submitted Online through paperless modes (e-KYC & e-Sign / e-Sign scanned
+                based /
+                DSC scanned based):
+                Dispatch of physical PAN Card in India (Communication address is Indian address) – <span
+                    id="maintext">Rs. 101</span>
+
+            </p>
+            <p>Time period for pan card to be dispatched - <span id="maintext">2 weeks</span></p>
+        </div>
+    </div>
+
+    <div id="greenModal" class="greenModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Documents Required for Voter ID Card</h3>
+            <ul class="custom-ul">
+                <li> <span id="maintext">Address Proof</span> - Electricity/water/gas bill (last 3 months), Bank /
+                    Post Office passbook, rent/
+                    lease/ leave & license agreement.
+                </li>
+
+                <li><span id="maintext">Date of Birth Proof</span> - PAN card, Driving license, Secondary or Senior
+                    School mark sheet/ School
+                    leaving certificate having photograph, Passport.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="orangeModal" class="orangeModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Documents Required for Opening Bank Account</h3>
+            <p>Open your bank account on the go!</p>
+            <a href="https://www.kotak811.com/open-zero-balance-savings-account?source=GoogleSEMNew&banner=Sok-Kotak-811-Search-Core-2023-vKYC_Top-Performing-Phrase&pubild=bank+account&gad_source=1&gclid=Cj0KCQiAn-2tBhDVARIsAGmStVkgH4x6wN1jjDBbMqkceg5dbyQ-l76wS90ni2OJDvYtaPRQ1zzN-f8aAigIEALw_wcB&gclsrc=aw.ds" target="_blank" >Click Here</a>
+        </div>
+    </div>
+
+
+    <!-- About Section Start -->
+    <!-- <hr /> -->
+    <!-- <section class="about-container">
+        <div class="about-head">
+            <p id="about-text">About</p>
+            <div class="About-img">
+                <img src="./docimg/indivest logo.png" alt="indivest logo" />
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="about-left">
+                <div class="hero">
+                    <div class="hero-head">
+                        Investing made <span class="highlight">Uncomplicated</span>
+                    </div>
+                    <div class="hero-text">
+                        Indivest <span id="colorSpan"><b>empowers</b></span> you to take the right financial
+                        decisions. With Indivest, be your own boss and start your wealth creation journey TODAY!
+                    </div>
+
+                </div>
+
+                <div class="btn">
+
+                    <div class="play">
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.indivest.indivest"
+                            class="app-link" target="_blank"><img src="./docimg/google-play-badge.a0416db4.webp"
+                                alt="indivest app download on android"></a>
+                    </div>
+                    <div class="app" id="apple-store">
+                        <a target="_blank" href="" class="app-link" target="_blank">
+                            <img src="./docimg/app-store-logo.151dc39e.webp" alt="indivest app download on apple">
+                        </a>
+                        <div class="text">Coming Soon!</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="iphone-container">
+                <div id="mobile">
+                    <div id="notch"></div>
+                </div>
+
+                <div class="left-controls">
+                    <div class="silent control"></div>
+                    <div class="controls">
+                        <div class="plus-control control"></div>
+                        <div class="minus-control control"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section> -->
+    <!-- About Section End -->
+
+
+
+    <!-- Contact Section -->
+    <!-- <section class="contact-container">
+        <div class="contact-left">
+            <h3>Reach Us At</h3>
+            <ul class="contact-options">
+                <li>B-303, Knox Plaza, Chincholi Bunder Road, Malad(W), 400064</li>
+                <li>022-48933333</li>
+                <li>support@internovo.in</li>
+            </ul>
+            <div class="follow-options">
+                <h3>Follow Us</h3>
+                <ul class="social">
+                    <li class="social__item">
+                        <a href="https://www.instagram.com/indivest_india/" target="_blank"
+                            class="social__link social__link--style1">
+
+                            <img width="40" height="40" src="./docimg/icons8-instagram-96.webp" alt="indirow instagram" />
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://www.linkedin.com/company/indivest/" class="social__link social__link--style1"
+                            target="_blank">
+                            <img width="40" height="40" src="./docimg/icons8-linkedin-96.webp" alt="indirow linkedin" />
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://www.facebook.com/people/Indivest-India/61554251943591/?mibextid=ZbWKwL"
+                            target="_blank" class="social__link social__link--style1">
+
+                            <img width="40" height="40" src="./docimg/icons8-facebook-96.webp" alt="indirow facebook" />
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://www.youtube.com/@InternovoVentures" target="_blank"
+                            class="social__link social__link--style1">
+                            <img width="40" height="40" src="./docimg/icons8-youtube-96.webp"
+                                alt="internovo ventures youtube" />
+                        </a>
+                    </li>
+                </ul>
+                <p>Also, do visit <a href="https://internovo.in/">Internovo&trade;</a></p>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <img src="./docimg/Contact-Us-Page-Examples.jpg" alt="contact image">
+        </div>
+
+    </section> -->
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <!-- <section class="tc">
+        <a href="./docimg/privacy-policy.html">Our Privacy Policy</a>
+        <br>
+        <a href="./docimg/terms-and-conditions.html">T&C</a>
+        <p class="copyright">
+            © 2023-2024 Indivest&trade;. All Rights Reserved.
+        </p>
+    </section> -->
+
+    <script>
+        // Get the modal
+        var redmodal = document.getElementById("myModal");
+        var blueModal = document.getElementById("blueModal");
+        var greenModal = document.getElementById("greenModal");
+        var orangeModal = document.getElementById("orangeModal");
+
+        // Get the button that opens the modal
+        var ab = document.getElementById("aadharBtn");
+        var pb = document.getElementById("panBtn");
+        var vb = document.getElementById("voterBtn");
+        var bb = document.getElementById("bankBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var spanblue = document.getElementsByClassName("close")[1];
+        var spangreen = document.getElementsByClassName("close")[2];
+        var spanorange = document.getElementsByClassName("close")[3];
+
+        // When the user clicks the button, open the modal
+        ab.onclick = function () {
+            redmodal.style.display = "block";
+        };
+        pb.onclick = function () {
+            blueModal.style.display = "block";
+        };
+        vb.onclick = function () {
+            greenModal.style.display = "block";
+        };
+        bb.onclick = function () {
+            orangeModal.style.display = "block";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            redmodal.style.display = "none";
+        };
+        spanblue.onclick = function () {
+            blueModal.style.display = "none";
+        };
+        spangreen.onclick = function () {
+            greenModal.style.display = "none";
+        };
+        spanorange.onclick = function () {
+            orangeModal.style.display = "none";
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (
+                event.target == redmodal ||
+                event.target == blueModal ||
+                event.target == greenModal ||
+                event.target == orangeModal
+            ) {
+                redmodal.style.display = "none";
+                blueModal.style.display = "none";
+                greenModal.style.display = "none";
+                orangeModal.style.display = "none";
+            }
+        };
+
+        // mobile animation
+        let currentIndex = 0;
+        const intervalTime = 1500;
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Automatic screen change
+            setInterval(() => {
+                changeScreen();
+            }, intervalTime);
+
+        });
+
+        function changeScreen() {
+            currentIndex++;
+            if (currentIndex > 3) {
+                currentIndex = 1;
+            }
+
+            document.querySelector('#mobile').style.backgroundImage = `url(./docimg/img${currentIndex}.png)`;
+
+        }
+    </script>
+</body>
+
+</html>

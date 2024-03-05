@@ -300,7 +300,7 @@ body::-webkit-scrollbar-track {
     border-radius: 5px;
     padding: 5px;
     display: block;
-    font-size: 12px;
+    font-size: 15px;
     /* left: 10px; */
     display: none;
 }
@@ -411,6 +411,7 @@ body::-webkit-scrollbar-track {
 /* hero section */
 .hero-section {
     padding: 110px 0;
+    /* background-color: #f4c3c3; */
 }
 
 .hero-section .hero-heading {
@@ -424,16 +425,6 @@ body::-webkit-scrollbar-track {
 
 .highlight {
     color: var(--highlight-color);
-}
-
-.hero-section .phone-container {
-    display: flex;
-    justify-content: center;
-}
-
-.hero-section .phone-img {
-    width: 90%;
-    transform: translateX(150px);
 }
 
 
@@ -517,6 +508,40 @@ body::-webkit-scrollbar-track {
     /* display: none; */
 }
 
+/* axis bank logo */
+
+.axis-container{
+/* background: #000; */
+margin-top: 3rem;
+display: flex;
+flex-wrap: wrap;
+/* width: 500px;
+height: 200px; */
+overflow: hidden;
+
+}
+.axis-head{
+    font-weight: 900;
+    font-size: 2rem;
+    color:#37363a;
+}
+.axis-logo{
+    margin-top: 10px;
+    width: 308px;
+    height: 80px;
+}
+.axis-logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit:fill;
+
+}
+
+#partner-id{
+    color: #64A47C;
+}
+
 .app-btn img {
     width: 100%;
     height: 100%;
@@ -592,6 +617,87 @@ body::-webkit-scrollbar-track {
 .target {
     visibility: hidden;
 }
+
+/* Phone Emulator */
+.phone-container{
+    margin: 0 auto;
+}
+
+.iphone-container {
+    border: 2px solid #000000;
+    border-radius: 50px;
+    width: fit-content;
+    position: relative;
+    margin-top: 20px;
+    transform: translateX(150px);
+}
+
+.iphone-container::after {
+    content: "";
+    color: white;
+    background-color: rgb(137 134 134);
+    position: absolute;
+    right: -4px;
+    top: 28%;
+    width: 3px;
+    height: 50px;
+    border-radius: 4px;
+    border-left: 0.1px solid #fffbfebc;
+}
+
+#mobile {
+    width: 300px;
+    height: 604px;
+    border: 10px solid black;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    background: url('../../docimg/img3.png');
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+#notch {
+    width: 30%;
+    height: 19px;
+    background-color: black;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.left-controls {
+    position: absolute;
+    left: -5px;
+    top: 20%;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-controls .control {
+    width: 3px;
+    height: 40px;
+    background-color: rgb(137 134 134);
+    border-radius: 4px;
+    border-right: 0.1px solid #fffbfebc;
+}
+
+.left-controls>.control:first-child {
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+
+.left-controls .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 @media (max-width: 991px) {
     .hero-section .phone-container {
@@ -854,7 +960,7 @@ body::-webkit-scrollbar-track {
 .coming-soon {
     background-color: var(--cta-btn-bg);
     color: white;
-    font-size: 11px;
+    font-size: 15px;
     position: absolute;
     padding: 4px;
     border-radius: 5px;
@@ -1075,12 +1181,12 @@ text-justify:inter-word;
 margin-bottom: 1rem;
 }
 .media-card h5{
-margin-top: 10px;
+margin-top: 15px;
 font-weight: bold;
 }
 .media-card h6{
 
-font-size: 10px;
+font-size: 15px;
 font-weight: lighter;
 color: #2997ff;
 }
@@ -1106,7 +1212,6 @@ color: #2997ff;
 /* News Section Styling */
 
 .news-section .row {
-    transform: translateY(130px);
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -1115,6 +1220,7 @@ color: #2997ff;
 .news {
     margin-top: 50px;
     margin-bottom: 50px;
+    width: 300px;
 }
 
 .news .news-img {
@@ -1162,6 +1268,7 @@ color: #2997ff;
     transition: 0.3s;
     background-color: var(--cta-btn-hover);
 }
+
 
 /* blog section */
 .blog-section {
@@ -1482,7 +1589,7 @@ color: #2997ff;
     border-radius: 20px;
     outline: none;
     padding: 2px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     border: 2px solid #f3f3f3;
     cursor: pointer;
     color: black;
@@ -1802,80 +1909,6 @@ input[type="submit"]:hover {
 
 
 /* mobile emulator */
-.iphone-container {
-    border: 2px solid #000000;
-    border-radius: 50px;
-    width: fit-content;
-    position: relative;
-    margin-top: 20px;
-    transform: translateX(150px);
-}
-
-.iphone-container::after {
-    content: "";
-    color: white;
-    background-color: rgb(137 134 134);
-    position: absolute;
-    right: -4px;
-    top: 28%;
-    width: 3px;
-    height: 50px;
-    border-radius: 4px;
-    border-left: 0.1px solid #fffbfebc;
-}
-
-#mobile {
-    width: 300px;
-    height: 604px;
-    border: 10px solid black;
-    border-color: rgb(0, 0, 0);
-    border-radius: 50px;
-    margin: 0 auto;
-    background: rgb(255, 255, 255);
-    background: url('../img/img3.jpg');
-    background-size: contain;
-    display: flex;
-    justify-content: center;
-    transition: 0.3s;
-}
-
-#notch {
-    width: 30%;
-    height: 19px;
-    background-color: black;
-    border-radius: 25px;
-    margin-top: 10px;
-}
-
-.left-controls {
-    position: absolute;
-    left: -5px;
-    top: 20%;
-    width: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.left-controls .control {
-    width: 3px;
-    height: 40px;
-    background-color: rgb(137 134 134);
-    border-radius: 4px;
-    border-right: 0.1px solid #fffbfebc;
-}
-
-.left-controls>.control:first-child {
-    height: 25px;
-    margin-bottom: 10px;
-}
-
-
-.left-controls .controls {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
 .tc{
     margin-top: 1rem;
@@ -1897,3 +1930,28 @@ color: #0b008e;
 .none{
     display: none;
 }
+
+.doc-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+#doc-btn{
+    padding: 1rem;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    background: orange;
+    text-decoration: none;
+}
+#doc-btn:hover{
+
+    background: rgb(255, 179, 38);
+    transform: scale(1.01);
+}
+
