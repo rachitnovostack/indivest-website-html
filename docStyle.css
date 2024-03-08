@@ -30,6 +30,80 @@ body {
   background-color: #a8bbbf;
 }
 
+
+
+/* Modal style start */
+.modal,
+.blueModal,
+.greenModal,
+.orangeModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #FEF6EB;
+    margin: auto;
+    border-radius: 2rem;
+    /* border-color: lightgreen; */
+    padding: 20px;
+    border: 1px solid darkblue;
+    width: 80%;
+    line-height: 200%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text {
+    position: relative;
+    padding: 6px;
+    border-radius: 2rem;
+    background: #bebebe;
+    font-size: small;
+    color: black;
+    display: none;
+    /* <----- hides text by default */
+}
+
+div.app:hover .text {
+    display: block;
+    /* <----- shows text on hover   */
+}
+
+/* Modal style End */
+
 nav {
     background: #FEF6EB;
     display: flex;
