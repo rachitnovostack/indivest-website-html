@@ -3,16 +3,16 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JFE037RXJG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JFE037RXJG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-JFE037RXJG');
-</script>
+        gtag('config', 'G-JFE037RXJG');
+    </script>
 
-<!-- Meta Tags -->
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Embark on financial freedom in India with Indivest -
@@ -185,20 +185,16 @@
                 </div>
             </div>
             <div class="message-box col-lg-6">
-                <form action="" class="contact-form" id="contact-form">
-                    <input type="email" placeholder="Enter your email" id="email">
-                    <textarea name="" id="message" cols="30" rows="5" placeholder="Enter your query"
-                        id="message"></textarea>
-                    <input type="submit" value="Submit" id="submit-btn">
+                <form action="" class="contact-form" id="form">
+                    <input type="email" name="email" id="email" placeholder="Email" class="email-input input">
+
+
+                    <textarea name="" id="message" placeholder="Message.." class="message-area input"></textarea>
+
+                    <input type="submit" value="Send" class="send-btn" id="submit-btn">
                 </form>
-                <div class="loader">
-                    <div class="loader1"></div>
-                    <div class="text">Message sending</div>
-                    <div class="success">
-                        <i class="fa-solid fa-check"></i>
-                        <h3>Sent</h3>
-                    </div>
-                </div>
+                <div class="loading-spinner" id="loading-spinner"></div>
+                <div id="success-message"></div>
             </div>
         </div>
     </div>
@@ -215,6 +211,7 @@
     <!-- custom scripts -->
     <script src="./assets/scripts/index.js"></script>
     <script src="./assets/scripts/newsPage.js"></script>
+    <script src="./msgfwd.js"></script>
 </body>
 
 </html>

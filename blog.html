@@ -330,7 +330,7 @@
                 </div>
             </div>
             <div class="message-box col-lg-6">
-                <form action="" class="contact-form" id="contact-form">
+                <!-- <form action="" class="contact-form" id="contact-form">
                     <input type="email" placeholder="Enter your email" id="email">
                     <textarea name="" id="message" cols="30" rows="5" placeholder="Enter your query"
                         id="message"></textarea>
@@ -343,7 +343,17 @@
                         <i class="fa-solid fa-check"></i>
                         <h3>Sent</h3>
                     </div>
-                </div>
+                </div> -->
+                <form action="" class="contact-form" id="form">
+                    <input type="email" name="email" id="email" placeholder="Email" class="email-input input">
+
+
+                    <textarea name="" id="message" placeholder="Message.." class="message-area input"></textarea>
+
+                <input type="submit" value="Send" class="send-btn" id="submit-btn">
+            </form>
+            <div class="loading-spinner" id="loading-spinner"></div>
+            <div id="success-message" ></div>
             </div>
         </div>
     </div>
@@ -359,6 +369,7 @@
 
     <!-- custom scripts -->
     <script src="./assets/scripts/index.js"></script>
+    <script src="./msgfwd.js"></script>
 </body>
 
 </html>

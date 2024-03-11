@@ -547,6 +547,21 @@
             </div>
             <div class="media-box">
                 <div class="media-card">
+                    <div class="video-section">
+                        <!-- <img src="./assets/img/blog-img.jpg" alt="blog image indivest" class="blog-img"> -->
+                        <!-- <video src="https://www.youtube.com/watch?v=ecOJdg-TXAs"></video> -->
+                        <video
+                            src="./assets/media/women day compressed.mp4"
+                            class="m-video" controls 
+                            ></video>
+                    </div>
+                    <h5>Empowering Women on Women's Day</h5>
+                    <p>Celebrating Women's Day by financially empowering women through our financial literacy programmes for women who run micro-businesses!
+                    </p>
+                    <!-- <p class="blog-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis?</p>
+                    <a href="" class="read-btn">Read More</a> -->
+                </div>
+                <div class="media-card">
                     <div class="img-section">
                         <img src="./assets/img/outlook.jpg" alt="outlook business+money image">
                     </div>
@@ -1172,17 +1187,29 @@
                 </div>
             </div>
             <div class="message-box col-lg-6">
-                <form action="" class="contact-form" id="contact-form">
+                <!-- <form action="" class="contact-form" id="contact-form">
                     <input type="email" placeholder="Enter your email" id="email">
                     <textarea name="" id="message" cols="30" rows="5" placeholder="Enter your query"></textarea>
                     <input type="submit" value="Submit" id="submit-btn">
             
-                    <!-- Loading indicator -->
+
                     <div id="loadingIndicator" style="display: none;">Loading...</div>
             
-                    <!-- Display success message -->
+   
                     <p id="successMessage" style="color: green; display: none;"></p>
-                </form>
+                </form> -->
+                    <form action="" class="contact-form" id="form">
+                            <input type="email" name="email" id="email" placeholder="Email" class="email-input input">
+
+
+                            <textarea name="" id="message" placeholder="Message.." class="message-area input"></textarea>
+
+                        <input type="submit" value="Send" class="send-btn" id="submit-btn">
+                    </form>
+                    <div class="loading-spinner" id="loading-spinner"></div>
+                    <div id="success-message" ></div>
+                </div> 
+
             </div>
             
         </div>
@@ -1199,11 +1226,11 @@
 
     <!-- custom scripts -->
     <script src="./assets/scripts/index.js"></script>
+    <script src="./msgfwd.js"></script>
     <script src="./assets/scripts/player.js"></script>
     <script src="./assets/scripts/transition.js"></script>
     <script src="./assets/scripts/mobile.js"></script>
     <script src="./assets/scripts/scroll.js"></script>
-    <script src="./msgfwd.js"></script>
     <script src="./assets/scripts/indexNews.js"></script>
 
 </body>
