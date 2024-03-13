@@ -197,21 +197,24 @@ body::-webkit-scrollbar-track {
     color: var(--nav-link-color);
 }
 
-.cta-btn {
-    /* background-color: var(--cta-btn-bg); */
+.custom-link a{
+    color: var(--cta-btn-bg);
+}
+
+/* .cta-btn {
+    background-color: var(--cta-btn-bg);
     color: var(--cta-btn-bg);
     border-radius: 8px;
 
-}
+} */
 
-.cta-btn .nav-link {
+/* .cta-btn .nav-link {
     color: white;
     color: var(--cta-btn-bg);
-    /* padding: 10px; */
     position: relative;
-}
+} */
 
-.cta-btn .nav-link .coming-soon {
+/* .cta-btn .nav-link .coming-soon {
     font-size: 10px;
     background-color: transparent;
     padding-right: 3px;
@@ -220,7 +223,7 @@ body::-webkit-scrollbar-track {
     color: black;
     font-weight: bold;
     border-radius: 5px;
-}
+} */
 
 .hamburger-menu .app-btn .app-link {
     position: relative;
@@ -233,37 +236,40 @@ body::-webkit-scrollbar-track {
     padding-right: 3px;
 }
 
-.cta-btn .nav-link:last-child {
+/* .cta-btn .nav-link:last-child {
     pointer-events: none;
-}
-
+} */
+/* 
 .cta-btn:hover {
-    /* opacity: 0.6; */
+    opacity: 0.6;
     transition: 0.3s;
-    /* background-color: var(--cta-btn-hover); */
-}
+    background-color: var(--cta-btn-hover);
+} */
 
-#get-started-btn {
+/* #get-started-btn {
+    cursor: pointer;
+} */
+/* #get-started-btn {
     position: relative;
-}
+} */
 
-#get-started-btn::after {
+/* #get-started-btn::after {
     content: "Coming soon";
     position: absolute;
     bottom: -45px;
     background-color: #f2f2f2;
     color: rgb(45, 42, 42);
     font-weight: bold;
-    /* padding: 10px; */
+
     border-radius: 5px;
     padding: 5px;
     display: flex;
     font-size: 12px;
     left: 12%;
     display: none;
-}
+} */
 
-#get-started-btn::before {
+/* #get-started-btn::before {
     content: "";
     position: absolute;
     bottom: -20px;
@@ -272,7 +278,7 @@ body::-webkit-scrollbar-track {
     border-style: solid;
     border-color: transparent transparent #f2f2f2 transparent;
     display: none;
-}
+} */
 
 .apple::after {
     content: "Coming soon";
@@ -562,7 +568,8 @@ overflow: hidden;
 }
 
 .landing-download .app-btn {
-    height: 45px;
+    height: 47px;
+    width: 152px;
 }
 
 .data-section .row {
